@@ -1,0 +1,22 @@
+Full page js:
+    
+https://alvarotrigo.com/angular-fullpage/#page3
+https://github.com/alvarotrigo/fullPage.js/#fullpagejs
+https://github.com/alvarotrigo/fullPage.js/#fullpagejs
+
+https://stackblitz.com/edit/angular-nqsqwk?file=src%2Fapp%2Fapp.component.ts 
+
+
+
+
+madhav:
+  // &:nth-of-type(1) {
+                                //     border-bottom: 2px solid #fbaa0a;
+                                //     // &:hover {
+                                //     //     transition: transform 1s;
+                                //     //     transform: scaleY(1);
+                                //     // }
+                                // }
+                                // &:nth-of-type(2) {
+                                //     border-bottom: 2px solid #e62837;
+                                // }

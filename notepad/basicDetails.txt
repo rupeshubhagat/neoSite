@@ -1,0 +1,88 @@
+url: https://www.neosofttech.com/
+
+Common Component: 
+  02) Header
+  03) Footer
+
+Modules:
+
+01)Index Module:
+   01)Header
+   02)Footer
+   03)Index Component (5 Section One page)
+  
+02) Who We Are Module
+   01) Overview 
+   02) Corporate Facts
+   03) Partners
+   04) Global Presence
+   05) clientele
+   06) Certification
+   07) Infrastuctures
+   08) CSR
+   09) Vision and Mission
+   10) opertunities at neosoft( Career Module) No need to create seprate Component.
+   11) Blogs
+   12) Engagement Models
+   13) Developents Models
+
+03) What We Do Module
+   01) Mobile Application
+   02) Web Development
+   03) Cloud Computing
+   03) AI & ML
+   04) Analytics and Big Data
+   05) Internet Of Things(IoT)
+   06) Blockchain
+   07) DevOps
+   08) QA and Testeing
+   09) SAP
+   10) UX/UI Design
+   11) Software Consulting
+   12) Internet Marketing
+   13) End to end product engineering
+   14) Enterprise Digital Transformation
+   14) Hire Now
+
+
+04) We Work With Module
+
+   01) Enterprise
+   02) Agencies
+   03) Startups
+   04) banking & finance
+   05) Ecommerce & Retail
+   06) Education & Elearning
+   07) Goverment/ Semi Goverments
+   08) Healtcare
+   09) Insurance
+   10) IT and Consulting
+   11) Manufacturing 
+   12) Media and Entertainment
+   13) News & publication
+   14) startups
+   15) Telecom
+
+05) Technology Module
+   01)Microsoft
+   02)Open-Source
+   03)Java
+   04Mobile
+   05)frontend
+   06)Database
+   07)Big Data & Analytics
+   08)Internet Of Things
+   09) Cloud & Infrastructure
+   10) DevOps
+   11) SAP
+   12) AI & ML
+   13)Customer Relationship Management(CRM)
+   14)Ecommerce Solutions
+   15) Contenet Mangamement Sytem
+   16) Enterpise Resource Planning
+
+06) Career Module
+  01) Career component
+   
+07) Contact US Module
+  01) Contact Component.

@@ -1,0 +1,284 @@
+Url: https://www.neosofttech.com/
+
+Common Component: 
+  01) Header Component
+  02) Footer Component
+  03) Contact Us(Form) Component
+
+Modules:
+
+01)Index Module:
+   01)Header
+   02)Footer
+   03)Index Component (5 Section)
+  
+02) Who We Are Module
+   Components:
+   01) Overview  (Client: (who we are : clientele), Overview, competencies(Technology), INDUSTRIES SERVED)
+   02) Corporate Facts
+   03) Partners
+   04) Global Presence
+   05) clientele
+   06) Certification
+   07) Infrastuctures
+   08) CSR
+   09) Vision and Mission
+   10) opertunities at neosoft( Career Module) No need to create seprate Component.
+   11) Blogs
+   12) Engagement Models
+   13) Developents Models
+   140 hire
+
+03) What We Do Module
+   Components:
+   01) Mobile Application
+   02) Web Development
+   03) Cloud Computing
+   03) AI & ML
+   04) Analytics and Big Data
+   05) Internet Of Things(IoT)
+   06) Blockchain
+   07) DevOps
+   08) QA and Testeing
+   09) SAP
+   10) UX/UI Design
+   11) Software Consulting
+   12) Internet Marketing
+   13) End to end product engineering
+   14) Enterprise Digital Transformation
+   14) Hire Now
+
+04) We Work With Module
+   Components:
+   01) Enterprise
+   02) Agencies
+   03) Startups
+   04) banking & finance
+   05) Ecommerce & Retail
+   06) Education & Elearning
+   07) Goverment/ Semi Goverments
+   08) Healtcare
+   09) Insurance
+   10) IT and Consulting
+   11) Manufacturing 
+   12) Media and Entertainment
+   13) News & publication
+   14) startups
+   15) Telecom
+
+05) Technology Module
+   Components:
+   01)Microsoft
+   02)Open-Source
+   03)Java
+   04Mobile
+   05)frontend
+   06)Database
+   07)Big Data & Analytics
+   08)Internet Of Things
+   09) Cloud & Infrastructure
+   10) DevOps
+   11) SAP
+   12) AI & ML
+   13)Customer Relationship Management(CRM)
+   14)Ecommerce Solutions
+   15) Contenet Mangamement Sytem
+   16) Enterpise Resource Planning
+
+06) Career Module
+   01)Career component
+   
+07) Contact US Module
+   01)Contact Component
+
+------------------------------
+punedesksupport@neosofttech.com
+-----------------------
+
+Comman Component:
+
+Client: home page..
+http://www.neosofttech.com/clientele/
+
+01) Client: (who we are : clientele)
+02) Overview(home page)
+03) competencies
+
+
+
+
+
+
+======================================
+======================
+UnComman Component:
+
+01) Who We Are Module
+  
+   Comman Component:
+   01) Header Component
+   02) Footer Component
+   03) Contact Us(Form) Component
+   01) Client:
+   02) Overview
+   03) competencies
+   04) More About Neosoft
+   05) Blogs
+   06) career
+   07) Engagement Models
+   01) End to end product engineering
+   02) Enterprise Digital Transformation
+   03) Team Augmentation(Same as Hire now)
+   04) Technology Stack
+   05) Industries Serve
+   01) Technology Serve
+   02) What we do in technology
+   03) Resource as Service(offshore, onsite, hybrid,ODC/BOT)
+ 
+   UnComponents:  
+   02) Corporate Facts
+   06) Certification
+   03) Partners
+   07) Infrastuctures
+   04) Global Presence
+   08) CSR
+   09) Vision and Mission
+   13) Developments Models
+--------------------------------
+
+02) What We Do Module
+   Common Component:
+   01) End to end product engineering
+   02) Enterprise Digital Transformation
+   03) Team Augmentation(Same as Hire now)
+   04) Technology Stack
+   05) Industries Serve
+
+
+   UnCommon Component:
+  
+   01) Mobile Application
+   02) Web Development
+   03) Cloud Computing
+   03) AI & ML
+   04) Analytics and Big Data
+   05) Internet Of Things(IoT)
+   06) Blockchain
+   07) DevOps
+   08) QA and Testeing
+   09) SAP
+   10) UX/UI Design
+   11) Software Consulting
+   12) Internet Marketing
+   13) End to end product engineering
+   14) Enterprise Digital Transformation
+   
+
+03) We Work With Module
+   Common Component:
+   01) Technology Serve
+   02) What we do in technology
+   03) Resource as Service(offshore, onsite, hybrid,ODC/BOT)
+
+ 
+   UnComponents:
+   01) Enterprise
+   02) Agencies
+   03) Startups
+   04) banking & finance
+   05) Ecommerce & Retail
+   06) Education & Elearning
+   07) Goverment/ Semi Goverments
+   08) Healtcare
+   09) Insurance
+   10) IT and Consulting
+   11) Manufacturing 
+   12) Media and Entertainment
+   13) News & publication
+   14) startups
+   15) Telecom
+
+05) Technology Module
+   Components:
+   01)Microsoft
+   02)Open-Source
+   03)Java
+   04Mobile
+   05)frontend
+   06)Database
+   07)Big Data & Analytics
+   08)Internet Of Things
+   09) Cloud & Infrastructure
+   10) DevOps
+   11) SAP
+   12) AI & ML
+   13)Customer Relationship Management(CRM)
+   14)Ecommerce Solutions
+   15) Contenet Mangamement Sytem
+   16) Enterpise Resource Planning
+
+
+
+=========================================================
+
+Comman Component:
+   01) Header Component
+   02) Footer Component
+   03) Contact Us(Form) Component
+   04) Client
+   05) Neosoft provide services
+   05) Overview
+   06) We Work With
+   06) Competencies
+   07) More About Neosoft
+   08) Blogs
+   09) Career
+   10) Engagement Models
+   11) End to end product engineering
+   12) Enterprise Digital Transformation
+   13) Team Augmentation(Same as Hire now)
+   14) Technology Stack
+   15) Industries Serve
+   16) Technology (Technolgies,What we do in Tech, Resource As Service)
+
+Uncommon Componmet:
+   01) Corporate Facts
+   02) Certification
+   03) Partners
+   04) Infrastuctures
+   05) Global Presence
+   06) CSR
+   07) Vision and Mission
+   08) Developments Models
+   09) Mobile Application
+   10) Web Development
+   11) Cloud Computing
+   12) AI & ML
+   13) Analytics and Big Data
+   14) Internet Of Things(IoT)
+   15) Blockchain
+   16) DevOps
+   17) QA and Testeing
+   18) SAP
+   19) UX/UI Design
+   20) Software Consulting
+   21) Internet Marketing
+   22) End to end product engineering
+   23) Enterprise Digital Transformation
+   24) Enterprise
+   25) Agencies
+   26) Startups
+   27) banking & finance
+   28) Ecommerce & Retail
+   29) Education & Elearning
+   30) Goverment/ Semi Goverments
+   31) Healtcare
+   32) Insurance
+   33) IT and Consulting
+   34) Manufacturing 
+   35) Media and Entertainment
+   36) News & publication
+   37) startups
+   38) Telecom
+
+   

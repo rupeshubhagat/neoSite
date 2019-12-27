@@ -1,0 +1,42 @@
+
+punedesksupport@neosofttech.com (headset)
+fontAwesome: <script src="https://kit.fontawesome.com/b822d0bb3e.js"></script>
+admin: 945...
+
+https://wetransfer.com/ : send a file
+
+
+===========================
+TO:
+
+cristian.rodriguez@saesa.cl
+
+CC:
+shelly@neosofttech.com
+scarlet@neosofttech.com
+
+BCC
+
+shailesh.patel@neosofttech.com
+
+====================
+
+Sprint:
+https://docs.google.com/spreadsheets/d/1xAHxAnSq_upNqz2eiDOx78EVphtU4wYY8tu9hkNzU-U/edit#gid=0
+
+password thundermail:
+3i&HX]@SP$*A
+
+laptop:
+ @media (min-width: 992px) and (max-width: 1199.98px) {
+                    top: 150px;
+                    position: relative;
+ }
+               
+laptop large:
+ @media (min-width: 1199.98px) and (max-width: 1905px) {
+                    // padding-top: 30px;
+                    // padding-bottom: 30px;
+                    top: 290px;
+                    position: relative;
+                }

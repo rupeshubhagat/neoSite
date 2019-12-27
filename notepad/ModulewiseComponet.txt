@@ -1,0 +1,130 @@
+Common For All Modules:
+01) Header Component:
+02) Footer Component:
+03) Contact Us(Form) Component
+----------------------------
+
+01) Index Module:
+
+ 01) Index Component
+----------------------------
+
+02) Who We Are Module:
+  Common Component:
+     01) Who we are Banner(done)
+     02) Neosoft provide services
+     03) Competencies
+     04) Blogs
+     05) Engagement Models
+     06) client
+
+  UnCommon Component:
+     01) Whow we are
+     02) clienttilelist
+     03) clientele(category Wise)
+     03) Corporate Facts
+     04) Certification
+     05) Partners
+     06) Infrastructure
+     07) Global Presence
+     08) CSR
+     09) Vision and Mission
+     10) Development Models
+  
+-----------------------------------------------
+
+03) What We Do Module:
+ Common Component:
+   01) What We Do 
+   02) End to end product engineering
+   03) Enterprise Digital Transformation
+   04) Team Augmentation(Same as Hire now)
+   05) Technology Stack
+
+ UnCommon Component:
+   01) Mobile Application
+   02) Web Development
+   03) Cloud Computing
+   04) AI & ML
+   05) Analytics and Big Data
+   06) Internet Of Things(IoT)
+   07) Blockchain
+   08) DevOps
+   09) QA and Testeing
+   10) SAP
+   11) UX/UI Design
+   12) Software Consulting
+   13) Internet Marketing
+------------------------------------------------
+
+04) We Work With Module:
+ 
+ Common Component:
+   01) Industry Serve
+ 
+ UnCommon Component:
+   01) Enterpises
+   02) Agencies
+   03) Startups
+   04) Industries(For All banking,ecommerce,....etc)
+  
+------------------------------------------------
+04) Technology Module
+
+ Common Component:
+  01) Technolgy
+  02) What we do in technolgy
+  03) Resource And ODC/BOT
+  OR 
+  Instead of these 3 we can create single component Technology.
+
+----------------------------------------------------
+
+If 1 REM = 14 px:
+
+1.2rem = 16.8px; (1.2 * 14Px(1REM) = 16.8px)
+
+Or 
+
+16.8 px
+
+=====================================
+
+Fonts Family:
+
+Lato-Regular
+Lato-Light
+Lato-Bold
+
+ProximaNovaA-Regular
+ProximaNovaA-Light
+ProximaNovaA-Bold
+
+Renogare-Regular
+Renogare-Light
+Renogare-Bold
+
+26
+13
+.................
+npm install ngx-bootstrap bootstrap --save
+Error: Can't resolve 'D:\rupeshBhagatNeosoftTech\node_modules\@angular\material\prebuilt-themes\indigo-pink.css' in 'D:\rupeshBhagatNeosoftTech\neosofttech'
+encapsulation: ViewEncapsulation.None 
+https://stackoverflow.com/questions/54029193/change-color-of-matinput (Style of matinputFields)
+https://stackblitz.com/edit/angular-nhvrog-zexty5?file=styles.css
+
+italic
+search
+close
+
+57.53* 35
+span
+    display: block;
+    margin: -8px 0 -8px -9px;
+
+
+
+
+
+
+

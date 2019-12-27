@@ -1,0 +1,125 @@
+@import "src/assets/scss/index";
+// overview 
+.overView {
+    background-image: url(../../../../assets/images/whowearemodule/banner/overview-bg.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/overview-bottom-bg.png);
+    }
+}
+
+.bannerSection {
+    // background-image: url(../../../../assets/images/whowearemodule/banner/overview-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 257px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
+    &.overview-bottom-bg:before {
+        // background-image: url(../../../../assets/images/whowearemodule/banner/overview-bottom-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 257px;
+        text-align: center;
+        position: relative;
+        z-index: 0;
+        // z-index: 1;
+    }
+    &.bottom-gradient-bg:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        height: 100%;
+        background-size: 100% 100%;
+    }
+    .bannerContainer {
+        .bannerWrapper {
+            .banner-breadcumb {
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: baseline;
+                    padding-top: 8px;
+                    li {
+                        display: inline-block;
+                        vertical-align: middle;
+                        padding-right: 21px;
+                        position: relative;
+                        color: #ffffff;
+                        opacity: 0.6;
+                        line-height: 14px;
+                        a {
+                            color: #ffffff;
+                            font-size: 12.6px;
+                            span {
+                                font-size: 17px;
+                            }
+                        }
+                        strong {
+                            font-weight: 400;
+                            font-size: 12.6px;
+                        }
+                        &.home:after {
+                            content: "t";
+                            font-family: "neofont" !important;
+                            font-size: 11px;
+                            position: absolute;
+                            right: 3px;
+                            top: 0;
+                            margin: auto;
+                            height: 11px;
+                            bottom: 0;
+                        }
+                        &.company:after {
+                            content: "t";
+                            font-family: "neofont" !important;
+                            font-size: 11px;
+                            position: absolute;
+                            right: 3px;
+                            top: 0;
+                            margin: auto;
+                            height: 11px;
+                            bottom: 0;
+                        }
+                    }
+                }
+            }
+            .banner-content {
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                .inner-page-title {
+                    color: #ffffff;
+                    margin-bottom: 11.20px;
+                    letter-spacing: 1px;
+                    margin-top: 0;
+                    /* position: relative; */
+                    // display: inline-block;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    &:after {
+                        height: 2px;
+                        width: 5rem;
+                        content: "";
+                        display: block;
+                        margin: 14px auto;
+                        background: #ffffff;
+                    }
+                }
+                .title-description {
+                    color: #ffffff;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

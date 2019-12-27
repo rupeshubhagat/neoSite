@@ -1,0 +1,20 @@
+<div class="container-fluid bannerSection overview-bottom-bg bottom-gradient-bg" [ngClass]="{'overView':title == 'overview'}">
+    <div class="container bannerContainer">
+        <div class="bannerWrapper">
+            <div class="banner-breadcumb">
+                <ul>
+                    <li class="home">
+                        <a href="javascript:void(0)"><span class="icon-home"></span></a>
+                    </li>
+                    <li class="company"><a href="javascript:void(0);">Company</a></li>
+                    <li><strong>{{title | titlecase}}</strong></li>
+                </ul>
+
+            </div>
+            <div class="banner-content">
+                <h1 class="inner-page-title">{{title}}</h1>
+                <p class="title-description">{{description}}</p>
+            </div>
+        </div>
+    </div>
+</div>

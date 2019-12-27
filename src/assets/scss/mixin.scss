@@ -72,6 +72,9 @@
         font-weight: 400;
         color: #d5d5d5;
         font-size: 14.62px;
+        @media (min-width: 992px) and (max-width: 1199.98px) {
+            font-size: 12px;
+        }
     }
     .Icon {
         min-width: 63px;

@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './shared/material/material.module';
 import { ClickOutsideModule } from 'ng-click-outside';
+import { IndexModule } from './layout/index/index.module';
+import { WhoWeAreModule } from './layout/who-we-are/who-we-are.module';
 
 
 @NgModule({
@@ -14,6 +16,8 @@ import { ClickOutsideModule } from 'ng-click-outside';
   ],
   imports: [
     BrowserModule,
+    IndexModule,
+    WhoWeAreModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,

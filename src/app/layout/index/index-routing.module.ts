@@ -8,27 +8,23 @@ import { FulljsComponent } from './fulljs/fulljs.component';
 
 
 const routes: Routes = [
-  {
-    path: '',
-    redirectTo: 'footer',
-    pathMatch: 'full'
-  },
+  
   {
     path: 'index',
     component: IndexComponent
-  },
-  {
-    path: 'header',
-    component: HeaderComponent
-  },
-  {
-    path: 'footer',
-    component: FooterComponent
-  },
-  {
-    path: 'fulljs',
-    component: FulljsComponent
   }
+  // {
+  //   path: 'header',
+  //   component: HeaderComponent
+  // },
+  // {
+  //   path: 'footer',
+  //   component: FooterComponent
+  // },
+  // {
+  //   path: 'fulljs',
+  //   component: FulljsComponent
+  // }
 
 
 ];

@@ -1,9 +1,51 @@
 @import "src/assets/scss/index";
 // overview 
-.overView {
+.overview {
     background-image: url(../../../../assets/images/whowearemodule/banner/overview-bg.png);
     &:before {
         background-image: url(../../../../assets/images/whowearemodule/banner/overview-bottom-bg.png);
+    }
+}
+
+.clientele {
+    background-image: url(../../../../assets/images/whowearemodule/banner/clientele-bg.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/clientele-bottom-bg.png);
+    }
+}
+
+.coreporatefact {
+    background-image: url(../../../../assets/images/whowearemodule/banner/corporate-bg.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/corporate-bottom-bg.png);
+    }
+}
+
+.certification {
+    background-image: url(../../../../assets/images/whowearemodule/banner/certifications-bg.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/corporate-bottom-bg.png);
+    }
+}
+
+.patners {
+    background-image: url(../../../../assets/images/whowearemodule/banner/partner-bg.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/partner-bottom-bg.png);
+    }
+}
+
+.infrastructure {
+    background-image: url(../../../../assets/images/whowearemodule/banner/infrastructure-bg.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/infrastructure-bottom-bg.png);
+    }
+}
+
+.csr {
+    background-image: url(../../../../assets/images/whowearemodule/banner/csr-banner.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/csr-banner.png);
     }
 }
 

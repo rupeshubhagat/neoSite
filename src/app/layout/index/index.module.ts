@@ -22,6 +22,7 @@ import { FulljsComponent } from './fulljs/fulljs.component';
     ClickOutsideModule,
     CarouselModule,
     AngularFullpageModule
-  ]
+  ],
+  exports: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent]
 })
 export class IndexModule { }

@@ -8,7 +8,7 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 export class BannerComponent implements OnInit {
 
   @Input() title: string;
-  // @Input() backgroundImage: string = "../../../../assets/images/whowearemodule/banner/overview-bg.png";
+  //@Input() backgroundImage: string = "../../../../assets/images/whowearemodule/banner/overview-bg.png";
   @Input() bottomIMage: string;
   @Input() description: string;
 

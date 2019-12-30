@@ -1,2 +1,8 @@
 <p>overview works!</p>
 <app-banner [title]="'overview'" [description]="'A Digital Experience Company, One-Stop shop for all your Digital needs'"></app-banner>
+
+<ng-container *ngFor="let prod of products">
+    <app-competencies [title]="prod.title" [description]="prod.description" [posts]="prod.posts" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.open"></app-competencies>
+</ng-container>
+
+<!-- <img src="../../../../assets/images/whowearemodule/competencies/testing.jpg" alt=""> -->

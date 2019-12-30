@@ -1,0 +1,55 @@
+<div class="container competencies">
+    <div class="competenciesWrapper">
+        <div class="competenciesHeader" (click)="isCompetencies = !isCompetencies">
+            <div class="row">
+                <div class="col-lg-5 colFirst">
+                    <div class="title">
+                        {{title}}
+                    </div>
+                </div>
+                <div class="col-lg-6 colSecond">
+                    <div class="decscription">
+                        <h2>
+                            {{description}}
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-lg-1 colThird">
+                    <div class="icon">
+                        <!-- <span [ngClass]="{'icon-right-open-big':!isCompetencies, 'icon-cancel': isCompetencies}"></span> -->
+                        <!-- <img [src]="'right-arrow-sign': !  isCompetencies, 'close-sign':isCompetencies" /> -->
+                        <img [src]="arrowRight" alt="" *ngIf="!isCompetencies">
+                        <img [src]="close" alt="" *ngIf="isCompetencies">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="competenciesBody" *ngIf="isCompetencies">
+            <div class="row">
+                <div class="col-lg-4 left-col">
+                    <div class="img-box">
+                        <img [src]="imgUrl" alt="microsoft">
+                        <!-- <img src="../../../../assets/images/whowearemodule/competencies/database.jpg" alt=""> -->
+                    </div>
+
+                </div>
+                <div class="col-lg-8 right-col">
+                    <div class="lists">
+                        <ul>
+                            <ng-container *ngFor="let post of posts">
+                                <li class="col-lg-6"><a [routerLink]="[post.path]">{{post.name}}</a></li>
+                            </ng-container>
+
+                            <!-- <li class="col-lg-6"><a href="#">Microsoft</a></li> -->
+                            <!-- <li class="col-lg-6"><a href="#">Microsoft</a></li>
+                            <li class="col-lg-6"><a href="#">Microsoft</a></li>
+                            <li class="col-lg-6"><a href="#">Microsoft</a></li>
+                            <li class="col-lg-6"><a href="#">Microsoft</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

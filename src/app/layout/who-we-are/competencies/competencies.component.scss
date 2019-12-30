@@ -1,0 +1,113 @@
+@import "src/assets/scss/index";
+.right-arrow-sign {
+    background-image: url(../../../../assets/images/whowearemodule/accordian/accordion-arrow.png);
+}
+
+.close-sign {
+    background-image: url(../../../../assets/images/whowearemodule/accordian/accordion-close.png);
+}
+
+.competencies {
+    background-color: #fff;
+    margin-bottom: 8px;
+    .competenciesWrapper {
+        .competenciesHeader {
+            .row {
+                background-color: #fff;
+                // border: 1px solid black;
+                .colFirst {
+                    display: flex;
+                    align-items: center;
+                    height: auto;
+                    padding: 22.23px 27.82px;
+                    .title {
+                        text-transform: uppercase;
+                        font-size: 20.02px;
+                        display: flex;
+                        align-items: center;
+                        height: auto;
+                        color: #2f3030;
+                        // padding: 22.23px 0 22.23px 0;
+                    }
+                }
+                .colSecond {
+                    display: flex;
+                    align-items: center;
+                    height: auto;
+                    padding: 22.23px 27.82px;
+                    .decscription {
+                        h2 {
+                            font-size: 1.14rem;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                            color: #2f3030;
+                        }
+                    }
+                }
+                .colThird {
+                    padding: 22.23px 27.82px;
+                    display: flex;
+                    /* align-items: center; */
+                    justify-content: center;
+                    background-color: #ffbc46;
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 26px;
+                    }
+                }
+            }
+        }
+        .competenciesBody {
+            .row {
+                padding-top: 20px;
+                border-top: 1px solid #d3d3d3;
+                .left-col {
+                    .img-box {
+                        padding-right: 40px;
+                        img {
+                            width: 100%;
+                            filter: grayscale(1);
+                        }
+                    }
+                }
+                .right-col {
+                    .lists {
+                        ul {
+                            display: inline-block;
+                            width: 100%;
+                            list-style-type: none;
+                            position: relative;
+                            padding-top: 20px;
+                            li {
+                                width: 50%;
+                                float: left;
+                                position: relative;
+                                a {
+                                    font-size: 14.92px;
+                                    color: #414160;
+                                    line-height: 1.8rem;
+                                    padding-left: 19px;
+                                    &::before {
+                                        content: "t";
+                                        font-family: "neofont" !important;
+                                        color: #e23434;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: auto;
+                                        font-size: 0.8rem;
+                                        font-weight: 700;
+                                        vertical-align: middle;
+                                        line-height: 28px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

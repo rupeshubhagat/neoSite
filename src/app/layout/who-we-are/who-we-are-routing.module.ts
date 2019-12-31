@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { OverviewComponent } from './overview/overview.component';
 import { BannerComponent } from './banner/banner.component';
 import { CompetenciesComponent } from './competencies/competencies.component';
+import { IndustryserveComponent } from './industryserve/industryserve.component';
+import { MoreaboutneosoftComponent } from './moreaboutneosoft/moreaboutneosoft.component';
 
 
 const routes: Routes = [
@@ -17,6 +19,14 @@ const routes: Routes = [
   {
     path: 'competencies',
     component: CompetenciesComponent
+  },
+  {
+    path: 'industryserve',
+    component: IndustryserveComponent
+  },
+  {
+    path: 'moreaboutneosoft',
+    component: MoreaboutneosoftComponent
   }
 
 ];

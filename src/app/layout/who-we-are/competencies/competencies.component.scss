@@ -82,7 +82,7 @@
                             position: relative;
                             padding-top: 20px;
                             li {
-                                width: 50%;
+                                width: 100%;
                                 float: left;
                                 position: relative;
                                 a {
@@ -90,6 +90,7 @@
                                     color: #414160;
                                     line-height: 1.8rem;
                                     padding-left: 19px;
+                                    display: block;
                                     &::before {
                                         content: "t";
                                         font-family: "neofont" !important;

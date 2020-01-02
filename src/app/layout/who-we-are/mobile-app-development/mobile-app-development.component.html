@@ -1,0 +1,14 @@
+<p>mobile-app-development works!</p>
+
+<!-- <ng-container *ngFor="let prod of products">
+    <app-competencies [title]="prod.title" [description]="prod.description" [posts]="prod.posts" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.open"></app-competencies>
+</ng-container>
+-->
+
+<img src="../../../../assets/images/whowearemodule/overview/services/mobile-app-dev/mobile-app-marketing.png" alt="">
+
+
+<ng-container *ngFor="let prod of product">
+    <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [posts]="prod.posts" [postsSecond]="prod.postsSecond" [imgUrl]="prod.imgUrl"
+        [isCompetencies]="prod.isCompetencies"></app-competencies-services>
+</ng-container>

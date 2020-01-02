@@ -15,6 +15,8 @@ export class CompetenciesComponent implements OnInit {
   @Input() description:string;
   @Input() imgUrl:string;
   @Input() posts:object[];
+  // @Input() col:any;
+  // // @Input() col12:any;
    
   constructor() { }
   

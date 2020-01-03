@@ -19,7 +19,7 @@ export class MobileAppDevelopmentComponent implements OnInit {
       paraDescriptionSecond:"First, we categorize the enterprise into Void, Exploratory, Intermediate OR Expert Areas depending upon the current state of mobility in the enterprise. Thereafter, we help in their transformation toward creating Mobile First organization - with following step-by-step approach",
       posts:[
         {
-          name: "Design Architecture, Select Right Technology Stack & Infrastructure Design Architecture, Select Right Technology Stack & Infrastructure"
+          name: "Design Architecture, Select Right Technology Stack & Infrastructure"
         },
         {
           name: "UX / UI Design Strategy"
@@ -119,7 +119,41 @@ export class MobileAppDevelopmentComponent implements OnInit {
       imgUrl:"../../../../assets/images/whowearemodule/overview/services/mobile-app-dev/deployment-and-support.png",
       paraDescriptionFirst:"App Deployment depends upon target audience & type of application - either it can be done via regular channels like Apple App Store, Google Play Store & Windows Phone Store if its open for all, OR it can be managed via MDM (Mobile Device Management Software) OR MAM (Mobile Application Management Software) OR EAS (Enterprise Application Stores).",
       paraDescriptionSecond:"It’s very important to measure different critical metrics like:",
+      listTitleFirst:"We use various free / paid tools like:",
+      listTitleSecond:"We use various free / paid tools like:",
       posts:[
+        {
+          name: "DAU - Daily Active User"
+        },
+        {
+          name: "In-App Referrals"
+        },
+        {
+          name: "MAU - Monthly Active User"
+        },
+        {
+          name: "In App Feedback"
+        },
+        {
+          name: "User Lifetime Value (LTV)"
+        },
+        {
+          name: "App Ratings and Review Analytics"
+        },
+        {
+          name: "Average Session Length - Foreground & Background"
+        },
+        {
+          name: "App Performance Analytics"
+        },
+        {
+          name: "Retention Rates, Engagement Rates"
+        },
+        {
+          name: "App Ratings and Review Analytics etc."
+        }
+      ],
+      postsSecond:[
         {
           name: "DAU - Daily Active User"
         },

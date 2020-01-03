@@ -40,28 +40,32 @@
                 </div>
                 <div class="col-lg-10 right-col">
                     <div class="description-title">
-                        <p class="para-first">{{ paraDescriptionFirst }}</p>
-                        <p class="para-second">{{ paraDescriptionSecond }}</p>
+                        <p class="para-first" *ngIf="paraDescriptionFirst">{{ paraDescriptionFirst }}</p>
+                        <p class="para-second" *ngIf="paraDescriptionSecond">{{ paraDescriptionSecond }}</p>
                     </div>
 
                     <div class="lists">
-                        <ul>
-                            <p>List paragraph one</p>
+                        <p class="list-tittle-first" *ngIf="listTitleFirst">{{ listTitleFirst }}</p>
+                        <ul *ngIf="posts">
                             <ng-container *ngFor="let post of posts">
-                                <li class="col-lg-6"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                <li><a href="javascript:void(0)"> {{ post.name }}</a></li>
                             </ng-container>
                         </ul>
-                        <ul>
-                            <p>List paragraph two</p>
+                        <p class="list-tittle-second" *ngIf="listTitleSecond">{{ listTitleSecond }}</p>
+                        <ul *ngIf="postsSecond" class="list-second">
                             <ng-container *ngFor="let post of postsSecond">
-                                <li class="col-lg-12"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                            </ng-container>
+                        </ul>
+                        <p class="list-tittle-third" *ngIf="listTitleThird">{{ listTitleThird }}</p>
+                        <ul *ngIf="postsThird" class="list-second">
+                            <ng-container *ngFor="let post of postsThird">
+                                <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
                             </ng-container>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </div>
 </div>

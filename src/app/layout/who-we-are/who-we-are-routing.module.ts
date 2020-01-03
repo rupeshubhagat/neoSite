@@ -7,6 +7,14 @@ import { IndustryserveComponent } from './industryserve/industryserve.component'
 import { MoreaboutneosoftComponent } from './moreaboutneosoft/moreaboutneosoft.component';
 import { CompetenciesServicesComponent } from './competencies-services/competencies-services.component';
 import { MobileAppDevelopmentComponent } from './mobile-app-development/mobile-app-development.component';
+import { WebDevelopmentComponent } from './web-development/web-development.component';
+import { CloudComputingComponent } from './cloud-computing/cloud-computing.component';
+import { AiandmlComponent } from './aiandml/aiandml.component';
+import { AnalyticsBigdataComponent } from './analytics-bigdata/analytics-bigdata.component';
+import { InternetOfThingsComponent } from './internet-of-things/internet-of-things.component';
+import { BlockchainComponent } from './blockchain/blockchain.component';
+import { DevOpsComponent } from './dev-ops/dev-ops.component';
+import { QaTestingComponent } from './qa-testing/qa-testing.component';
 
 
 const routes: Routes = [
@@ -37,6 +45,38 @@ const routes: Routes = [
   {
     path: 'mobileappdevelopment',
     component: MobileAppDevelopmentComponent
+  },
+  {
+    path: 'webdevelopment',
+    component: WebDevelopmentComponent
+  },
+  {
+    path: 'cloudcomputing',
+    component: CloudComputingComponent
+  },
+  {
+    path: 'aiandml',
+    component: AiandmlComponent
+  },
+  {
+    path: 'analyticsbigdata',
+    component: AnalyticsBigdataComponent
+  },
+  {
+    path: 'iot',
+    component: InternetOfThingsComponent
+  },
+  {
+    path: 'blockchain',
+    component: BlockchainComponent
+  },
+  {
+    path: 'devops',
+    component: DevOpsComponent
+  },
+  {
+    path: 'qa-and-testing',
+    component: QaTestingComponent
   }
 
 ];

@@ -11,6 +11,7 @@ export class BannerComponent implements OnInit {
   //@Input() backgroundImage: string = "../../../../assets/images/whowearemodule/banner/overview-bg.png";
   @Input() bottomIMage: string;
   @Input() description: string;
+  @Input() pageName:string;
 
   @ViewChild('wrapper',{static:true}) el:ElementRef;
 

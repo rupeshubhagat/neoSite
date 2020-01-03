@@ -1,0 +1,30 @@
+<img src="../../../../assets/images/whowearemodule/overview/services/IoT/run.png" alt="">
+
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
+
+<!-- banner section start -->
+<app-banner [title]="'Internet of Things (IoT)'" [pageName]="'What We Do'" [description]="'Leverage sensor technology through integration with business applications'">
+</app-banner>
+<!-- banner section ends -->
+
+<div class="container-fluid internetOfThings">
+
+    <div class="container containerIoT">
+        <div class="competencyWrapper">
+            <ng-container *ngFor="let prod of product">
+                <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [listTitleThird]="prod.listTitleThird" [listTitleSecond]="prod.listTitleSecond"
+                    [listTitleFirst]="prod.listTitleFirst" [posts]="prod.posts" [postsSecond]="prod.postsSecond" [postsThird]="prod.postsThird" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.isCompetencies"></app-competencies-services>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="container containerTechnologyStack">
+        <div class="technolgyWrapper">
+
+        </div>
+    </div>
+
+</div>

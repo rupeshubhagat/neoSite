@@ -11,12 +11,17 @@ export class CompetenciesServicesComponent implements OnInit {
 
   @Input() isCompetencies:boolean;
   @Input() title:string;
-  @Input() description:string;
-  @Input() paraDescriptionFirst:string;
-  @Input() paraDescriptionSecond:string;
+  @Input() description:any;
+  @Input() paraDescriptionFirst:any;
+  @Input() paraDescriptionSecond:any;
+  @Input() listTitleFirst:any;
+  @Input() listTitleSecond:any;
+  @Input() listTitleThird:any;
+
   @Input() imgUrl:string;
   @Input() posts:object[];
   @Input() postsSecond:object[];
+  @Input() postsThird:object[];
 
   constructor() { }
 

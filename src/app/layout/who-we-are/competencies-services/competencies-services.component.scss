@@ -12,6 +12,8 @@
     margin-bottom: 8px;
     .competenciesWrapper {
         .competenciesHeader {
+            width: 100%;
+            display: inline-block;
             .row {
                 background-color: #fff;
                 // border: 1px solid black;
@@ -62,14 +64,16 @@
         }
         .competenciesBody {
             .row {
-                padding-top: 20px;
+                padding: 20px 20px;
                 border-top: 1px solid #d3d3d3;
                 .left-col {
                     .img-box {
                         padding-right: 40px;
                         img {
-                            width: 100%;
+                            // width: 100%;
                             // filter: grayscale(1);
+                            max-width: 98px;
+                            max-height: 98px;
                         }
                     }
                 }
@@ -84,6 +88,24 @@
                         }
                     }
                     .lists {
+                        .list-tittle-first {
+                            padding-top: 13px;
+                            font-size: 15.95px;
+                            color: #414140;
+                            line-height: 25.2px;
+                        }
+                        .list-tittle-second {
+                            padding: 13px 0px;
+                            font-size: 15.95px;
+                            color: #414140;
+                            line-height: 25.2px;
+                        }
+                        .list-tittle-third {
+                            padding: 13px 0px;
+                            font-size: 15.95px;
+                            color: #414140;
+                            line-height: 25.2px;
+                        }
                         ul {
                             display: inline-block;
                             width: 100%;
@@ -91,7 +113,7 @@
                             position: relative;
                             padding-top: 20px;
                             li {
-                                width: 100%;
+                                width: 50%;
                                 float: left;
                                 position: relative;
                                 a {
@@ -114,6 +136,15 @@
                                     }
                                 }
                             }
+                            .li-second {
+                                width: 100%;
+                                float: left;
+                                position: relative;
+                            }
+                        }
+                        .list-second {
+                            padding-top: 0px;
+                            padding-top: 20px;
                         }
                     }
                 }

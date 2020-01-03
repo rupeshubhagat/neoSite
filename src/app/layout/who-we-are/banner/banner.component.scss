@@ -49,6 +49,98 @@
     }
 }
 
+// services banners..
+.enterpriseMobility {
+    background-image: url(../../../../assets/images/whowearemodule/banner/mobile-application.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/mobile-application-gradient.png);
+    }
+}
+
+.webDevelopment {
+    background-image: url(../../../../assets/images/whowearemodule/banner/web-development.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/web-development-gradient.png);
+    }
+}
+
+.cloudComputing {
+    background-image: url(../../../../assets/images/whowearemodule/banner/cloud-computing.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/cloud-computing-gradient.png);
+    }
+}
+
+.aiAndMl {
+    background-image: url(../../../../assets/images/whowearemodule/banner/ai-ml-banner.jpg);
+    // &:before {
+    //     background-image: url(../../../../assets/images/whowearemodule/banner/cloud-computing-gradient.png);
+    // }
+}
+
+.analyticsAndBigdata {
+    background-image: url(../../../../assets/images/whowearemodule/banner/bigdata.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/bigdata-gradient.png);
+    }
+}
+
+.internetOfThings {
+    background-image: url(../../../../assets/images/whowearemodule/banner/internet-of-things.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/internet-of-things-gradient.png);
+    }
+}
+
+.blockChain {
+    background-image: url(../../../../assets/images/whowearemodule/banner/blockchain-service.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/blockchain-service-gradient-bg.png);
+    }
+}
+
+.devOpsBanner {
+    background-image: url(../../../../assets/images/whowearemodule/banner/devops-banner.png);
+    // &:before {
+    //     background-image: url(../../../../assets/images/whowearemodule/banner/de);
+    // }
+}
+
+.qaAndTesting {
+    background-image: url(../../../../assets/images/whowearemodule/banner/qa-testing.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/qa-testing-gradient.png);
+    }
+}
+
+.sap {
+    background-image: url(../../../../assets/images/whowearemodule/banner/mobile-application.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/mobile-application-gradient.png);
+    }
+}
+
+.uiAndUx {
+    background-image: url(../../../../assets/images/whowearemodule/banner/ux-ui.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/ux-ui-gradient.png);
+    }
+}
+
+.softwareConsulting {
+    background-image: url(../../../../assets/images/whowearemodule/banner/software-consulting.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/software-consulting-gradient.png);
+    }
+}
+
+.internetMarketing {
+    background-image: url(../../../../assets/images/whowearemodule/banner/internet-marketing.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/internet-marketing-gradient.png);
+    }
+}
+
 .bannerSection {
     // background-image: url(../../../../assets/images/whowearemodule/banner/overview-bg.png);
     background-repeat: no-repeat;

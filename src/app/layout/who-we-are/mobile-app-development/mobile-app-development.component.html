@@ -1,14 +1,29 @@
-<p>mobile-app-development works!</p>
+<!-- <img src="../../../../assets/images/whowearemodule/overview/services/mobile-app-dev/mobile-app-marketing.png" alt=""> -->
 
-<!-- <ng-container *ngFor="let prod of products">
-    <app-competencies [title]="prod.title" [description]="prod.description" [posts]="prod.posts" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.open"></app-competencies>
-</ng-container>
--->
-
-<img src="../../../../assets/images/whowearemodule/overview/services/mobile-app-dev/mobile-app-marketing.png" alt="">
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
 
 
-<ng-container *ngFor="let prod of product">
-    <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [posts]="prod.posts" [postsSecond]="prod.postsSecond" [imgUrl]="prod.imgUrl"
-        [isCompetencies]="prod.isCompetencies"></app-competencies-services>
-</ng-container>
+<!-- banner section start -->
+<app-banner [title]="'enterprsie mobility'" [pageName]="'What We Do'" [description]="'Harness the power of a mobile-first journey with industry-specific solutions'">
+</app-banner>
+<!-- banner section ends -->
+
+<div class="container-fluid mobileAppDev">
+
+    <div class="container containerCompetencyMobile">
+        <div class="competencyWrapper">
+            <ng-container *ngFor="let prod of product">
+                <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [listTitleSecond]="prod.listTitleSecond" [listTitleFirst]="prod.listTitleFirst"
+                    [posts]="prod.posts" [postsSecond]="prod.postsSecond" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.isCompetencies"></app-competencies-services>
+            </ng-container>
+        </div>
+    </div>
+    <div class="container containerTechnologyStack">
+        <div class="technolgyWrapper">
+
+        </div>
+    </div>
+
+</div>

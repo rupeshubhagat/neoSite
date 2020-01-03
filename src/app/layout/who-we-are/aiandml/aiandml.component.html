@@ -1,0 +1,30 @@
+<!-- <img src="../../../../assets/images/whowearemodule/overview/services/ai-ml/ai-data-management.png" alt=""> -->
+
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
+
+<!-- banner section start -->
+<app-banner [title]="'Artificial Intelligence and Machine Learning'" [pageName]="'What We Do'" [description]="'Building and Fueling Intelligent Businesses'">
+</app-banner>
+<!-- banner section ends -->
+
+<div class="container-fluid aiAndMl">
+
+    <div class="container containerAiAndMl">
+        <div class="competencyWrapper">
+            <ng-container *ngFor="let prod of product">
+                <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [listTitleSecond]="prod.listTitleSecond" [listTitleFirst]="prod.listTitleFirst"
+                    [posts]="prod.posts" [postsSecond]="prod.postsSecond" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.isCompetencies"></app-competencies-services>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="container containerTechnologyStack">
+        <div class="technolgyWrapper">
+
+        </div>
+    </div>
+
+</div>

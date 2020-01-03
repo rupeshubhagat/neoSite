@@ -1,0 +1,30 @@
+<img src="../../../../assets/images/whowearemodule/overview/services/blockchain/Testing.png" alt="">
+
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
+
+<!-- banner section start -->
+<app-banner [title]="'Blockchain'" [pageName]="'What We Do'" [description]="'Deciphering Blockchain and building sustainable and robust custom solutions'">
+</app-banner>
+<!-- banner section ends -->
+
+<div class="container-fluid blockChain">
+
+    <div class="container containerBlockChain">
+        <div class="competencyWrapper">
+            <ng-container *ngFor="let prod of product">
+                <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [listTitleSecond]="prod.listTitleSecond" [listTitleFirst]="prod.listTitleFirst"
+                    [posts]="prod.posts" [postsSecond]="prod.postsSecond" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.isCompetencies"></app-competencies-services>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="container containerTechnologyStack">
+        <div class="technolgyWrapper">
+
+        </div>
+    </div>
+
+</div>

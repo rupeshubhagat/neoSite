@@ -45,24 +45,111 @@
                     </div>
 
                     <div class="lists">
-                        <p class="list-tittle-first" *ngIf="listTitleFirst">{{ listTitleFirst }}</p>
-                        <ul *ngIf="posts">
-                            <ng-container *ngFor="let post of posts">
-                                <li><a href="javascript:void(0)"> {{ post.name }}</a></li>
-                            </ng-container>
-                        </ul>
-                        <p class="list-tittle-second" *ngIf="listTitleSecond">{{ listTitleSecond }}</p>
-                        <ul *ngIf="postsSecond" class="list-second">
-                            <ng-container *ngFor="let post of postsSecond">
-                                <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
-                            </ng-container>
-                        </ul>
-                        <p class="list-tittle-third" *ngIf="listTitleThird">{{ listTitleThird }}</p>
-                        <ul *ngIf="postsThird" class="list-second">
-                            <ng-container *ngFor="let post of postsThird">
-                                <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
-                            </ng-container>
-                        </ul>
+
+                        <div class="listFirst">
+                            <p class="custom-heading" *ngIf="listHeadingFirst"><strong>{{ listHeadingFirst }}</strong></p>
+                            <p class="list-tittle-first" *ngIf="listTitleFirst">{{ listTitleFirst }}</p>
+                            <ul *ngIf="posts">
+                                <ng-container *ngFor="let post of posts">
+                                    <li><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaFirst">{{ moreInfoParaFirst }}</p>
+                        </div>
+
+                        <div class="listSecond">
+                            <p class="custom-heading" *ngIf="listHeadingSecond"><strong>{{ listHeadingSecond }}</strong></p>
+                            <p class="list-tittle-second" *ngIf="listTitleSecond">{{ listTitleSecond }}</p>
+                            <ul *ngIf="postsSecond" class="list-second">
+                                <ng-container *ngFor="let post of postsSecond">
+                                    <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaSecond">{{ moreInfoParaSecond }}</p>
+                        </div>
+
+                        <div class="listThird">
+                            <p class="custom-heading" *ngIf="listHeadingThird"><strong>{{ listHeadingThird }}</strong></p>
+                            <p class="list-tittle-third" *ngIf="listTitleThird">{{ listTitleThird }}</p>
+                            <ul *ngIf="postsThird" class="list-second">
+                                <ng-container *ngFor="let post of postsThird">
+                                    <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaThird">{{ moreInfoParaThird }}</p>
+                        </div>
+
+                        <div class="listForth">
+                            <p class="custom-heading" *ngIf="listHeadingForth"><strong>{{ listHeadingForth }}</strong></p>
+                            <p class="list-tittle-third" *ngIf="listTitleForth">{{ listTitleForth }}</p>
+                            <ul *ngIf="postsForth" class="list-second">
+                                <ng-container *ngFor="let post of postsForth">
+                                    <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaForth">{{ moreInfoParaForth }}</p>
+                        </div>
+
+
+                        <div class="listFifth">
+                            <p class="custom-heading" *ngIf="listHeadingFifth"><strong>{{ listHeadingFifth }}</strong></p>
+                            <p class="list-tittle-third" *ngIf="listTitleFifth">{{ listTitleFifth }}</p>
+                            <ul *ngIf="postsFifth" class="list-second">
+                                <ng-container *ngFor="let post of postsFifth">
+                                    <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaFifth">{{ moreInfoParaFifth }}</p>
+                        </div>
+
+
+
+                        <div class="listSix">
+                            <p class="custom-heading" *ngIf="listHeadingSix"><strong>{{ listHeadingSix }}</strong></p>
+                            <p class="list-tittle-third" *ngIf="listTitleSix">{{ listTitleSix }}</p>
+                            <ul *ngIf="postsSix" class="list-second">
+                                <ng-container *ngFor="let post of postsSix">
+                                    <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaSix">{{ moreInfoParaSix }}</p>
+                        </div>
+
+                        <div class="listSeven">
+                            <p class="custom-heading" *ngIf="listHeadingSeven"><strong>{{ listHeadingSeven }}</strong></p>
+                            <p class="list-tittle-third" *ngIf="listTitleSeven">{{ listTitleSeven }}</p>
+                            <ul *ngIf="postsSeven" class="list-second">
+                                <ng-container *ngFor="let post of postsSeven">
+                                    <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaSeven">{{ moreInfoParaSeven}}</p>
+                        </div>
+
+
+
+                        <div class="listEight">
+                            <p class="custom-heading" *ngIf="listHeadingEight"><strong>{{ listHeadingEight }}</strong></p>
+                            <p class="list-tittle-third" *ngIf="listTitleEight">{{ listTitleEight }}</p>
+                            <ul *ngIf="postsEight" class="list-second">
+                                <ng-container *ngFor="let post of postsEight">
+                                    <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaEight">{{ moreInfoParaEight }}</p>
+                        </div>
+
+                        <div class="listNine">
+                            <p class="custom-heading" *ngIf="listHeadingNine"><strong>{{ listHeadingNine }}</strong></p>
+                            <p class="list-tittle-third" *ngIf="listTitleNine">{{ listTitleNine }}</p>
+                            <ul *ngIf="postsNine" class="list-second">
+                                <ng-container *ngFor="let post of postsNine">
+                                    <li class="li-second"><a href="javascript:void(0)"> {{ post.name }}</a></li>
+                                </ng-container>
+                            </ul>
+                            <p class="moreInfoPara" *ngIf="moreInfoParaNine">{{ moreInfoParaNine }}</p>
+
+                        </div>
                     </div>
                 </div>
             </div>

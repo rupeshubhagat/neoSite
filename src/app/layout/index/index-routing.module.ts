@@ -12,11 +12,11 @@ const routes: Routes = [
   {
     path: 'index',
     component: IndexComponent
-  }
-  // {
-  //   path: 'header',
-  //   component: HeaderComponent
-  // },
+  },
+  {
+    path: 'header',
+    component: HeaderComponent
+  },
   // {
   //   path: 'footer',
   //   component: FooterComponent

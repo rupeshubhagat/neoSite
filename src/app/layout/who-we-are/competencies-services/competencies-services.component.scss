@@ -106,6 +106,23 @@
                             color: #414140;
                             line-height: 25.2px;
                         }
+                        .custom-heading {
+                            // margin-top: 2.5rem !important;
+                            // margin-bottom: 1rem !important;
+                            margin-top: 1rem;
+                            font-size: 15.95px;
+                            color: #414140;
+                            line-height: 25.2px;
+                            strong {
+                                font-weight: 700;
+                            }
+                        }
+                        .moreInfoPara {
+                            font-size: 14.82px;
+                            color: #414140;
+                            line-height: 25.2px;
+                            margin-top: 6px;
+                        }
                         ul {
                             display: inline-block;
                             width: 100%;
@@ -144,6 +161,7 @@
                         }
                         .list-second {
                             padding-top: 0px;
+                            // padding-top: 20px;
                             padding-top: 20px;
                         }
                     }

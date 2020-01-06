@@ -14,14 +14,50 @@ export class CompetenciesServicesComponent implements OnInit {
   @Input() description:any;
   @Input() paraDescriptionFirst:any;
   @Input() paraDescriptionSecond:any;
+  @Input() paraDescriptionThird:any;
+  @Input() paraDescriptionForth:any;
+
+  @Input() moreInfoParaFirst:any;
+  @Input() moreInfoParaSecond:any;
+  @Input() moreInfoParaThird:any;
+  @Input() moreInfoParaForth:any;
+  @Input() moreInfoParaFifth:any;
+  @Input() moreInfoParaSix:any;
+  @Input() moreInfoParaSeven:any;
+  @Input() moreInfoParaEight:any;
+  @Input() moreInfoParaNine:any;
+
+  @Input() listHeadingFirst:any;
+  @Input() listHeadingSecond:any;
+  @Input() listHeadingThird:any;
+  @Input() listHeadingForth:any;
+  @Input() listHeadingFifth:any;
+  @Input() listHeadingSix:any;
+  @Input() listHeadingSeven:any;
+  @Input() listHeadingEight:any;
+  @Input() listHeadingNine:any;
+
   @Input() listTitleFirst:any;
   @Input() listTitleSecond:any;
   @Input() listTitleThird:any;
+  @Input() listTitleForth:any;
+  @Input() listTitleFifth:any;
+  @Input() listTitleSix:any;
+  @Input() listTitleSeven:any;
+  @Input() listTitleEight:any;
+  @Input() listTitleNine:any;
+ 
 
   @Input() imgUrl:string;
   @Input() posts:object[];
   @Input() postsSecond:object[];
   @Input() postsThird:object[];
+  @Input() postsForth:object[];
+  @Input() postsFifth:object[];
+  @Input() postsSix:object[];
+  @Input() postsSeven:object[];
+  @Input() postsEight:object[];
+  @Input() postsNine:object[];
 
   constructor() { }
 

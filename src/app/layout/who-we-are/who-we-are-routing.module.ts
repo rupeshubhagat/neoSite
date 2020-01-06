@@ -15,6 +15,10 @@ import { InternetOfThingsComponent } from './internet-of-things/internet-of-thin
 import { BlockchainComponent } from './blockchain/blockchain.component';
 import { DevOpsComponent } from './dev-ops/dev-ops.component';
 import { QaTestingComponent } from './qa-testing/qa-testing.component';
+import { SapComponent } from './sap/sap.component';
+import { UxUiComponent } from './ux-ui/ux-ui.component';
+import { SoftwareConsultingComponent } from './software-consulting/software-consulting.component';
+import { InternetMarketingComponent } from './internet-marketing/internet-marketing.component';
 
 
 const routes: Routes = [
@@ -77,6 +81,22 @@ const routes: Routes = [
   {
     path: 'qa-and-testing',
     component: QaTestingComponent
+  },
+  {
+    path: 'sap',
+    component: SapComponent
+  },
+  {
+    path: 'ux-ui',
+    component: UxUiComponent
+  },
+  {
+    path: 'softwareconsulting',
+    component: SoftwareConsultingComponent
+  },
+  {
+    path: 'internetmarketing',
+    component: InternetMarketingComponent
   }
 
 ];

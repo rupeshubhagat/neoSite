@@ -3,6 +3,19 @@
                 //     position: fixed;
                 //     width: 100%;
                 // }
+                .plus-icon {
+                    content: "+";
+                    position: absolute;
+                    right: 0;
+                    padding: 5px 10px;
+                    top: 7px;
+                    vertical-align: middle;
+                    -webkit-transition: -webkit-transform 0.3s ease;
+                    transition: -webkit-transform 0.3s ease;
+                    transition: transform 0.3s ease;
+                    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+                }
+                
                 header {
                     position: relative;
                     width: 100%;
@@ -32,6 +45,9 @@
                                 // padding: 7px 8px;
                                 padding: 4px 10px;
                                 cursor: pointer;
+                                @media (max-width: 575.98px) {
+                                    // width: 51px;
+                                }
                                 a {
                                     text-decoration: none;
                                     color: white;
@@ -129,6 +145,9 @@
                             // height: 21px;
                             padding: 4px 6px;
                             cursor: pointer;
+                            @media (max-width: 575.98px) {
+                                // width: 51px;
+                            }
                             a {
                                 text-decoration: none;
                                 background-color: #ffffff;
@@ -190,6 +209,340 @@
                             .phone-no {
                                 font-size: 11.7px;
                                 font-family: $primary-font;
+                            }
+                        }
+                    }
+                }
+                
+                .responsiveMenu {
+                    // background-color: black;
+                    background-color: black;
+                    position: relative;
+                    top: -91px;
+                    z-index: 9;
+                    .closeHeader {
+                        width: 100%;
+                        height: 28px;
+                        position: sticky;
+                        left: 0;
+                        right: 0;
+                        color: white;
+                        opacity: 01;
+                        background-color: black;
+                        top: 0;
+                        z-index: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        a {
+                            color: #ffffff;
+                            font-size: 23px;
+                            span {}
+                        }
+                    }
+                    .responsiveWrapper {
+                        display: inline-block;
+                        width: 100%;
+                        // overflow-y: scroll;
+                        height: 100%;
+                        .responsiveContent {
+                            width: 100%;
+                            height: 100%;
+                            color: white;
+                            .leftContent {
+                                display: inline-block;
+                                width: 70%;
+                                float: left;
+                                .heading {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    h5 {
+                                        display: inline-block;
+                                        margin-bottom: 1rem;
+                                        position: relative;
+                                        padding-bottom: 0.8rem;
+                                        text-transform: uppercase;
+                                        font-size: 1.14rem;
+                                        &:after {
+                                            position: absolute;
+                                            content: "";
+                                            background-color: #e23434;
+                                            bottom: 0;
+                                            left: 0;
+                                            width: 30px;
+                                            height: 2px;
+                                            background-size: 100%;
+                                        }
+                                    }
+                                    span {
+                                        // display: inline-block;
+                                        display: none;
+                                    }
+                                }
+                                .whatWeDoContent {
+                                    width: 66.66%;
+                                    float: left;
+                                    ul {
+                                        width: 100%;
+                                        list-style-type: none;
+                                        display: inline-block;
+                                        padding-bottom: 12px;
+                                        li {
+                                            width: 50%;
+                                            float: left;
+                                            padding: 0.7em 0;
+                                            height: 3em;
+                                            a {
+                                                color: #8f8f91;
+                                                display: block;
+                                                font-size: 0.9rem;
+                                                position: relative;
+                                                padding-left: 0.9rem;
+                                                padding-right: 1rem;
+                                                &:before {
+                                                    position: absolute;
+                                                    content: "";
+                                                    left: 0;
+                                                    height: 4px;
+                                                    width: 4px;
+                                                    background-color: #8f8f91;
+                                                    border-radius: 2px;
+                                                    top: 7px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .weWorkWithDoContent {
+                                    width: 33.33%;
+                                    float: left;
+                                    ul {
+                                        width: 100%;
+                                        list-style-type: none;
+                                        display: inline-block;
+                                        padding-bottom: 12px;
+                                        li {
+                                            width: 100%;
+                                            padding: 0.7em 0;
+                                            height: 3em;
+                                            a {
+                                                color: #8f8f91;
+                                                display: block;
+                                                font-size: 0.9rem;
+                                                position: relative;
+                                                padding-left: 0.9rem;
+                                                padding-right: 1rem;
+                                                &:before {
+                                                    position: absolute;
+                                                    content: "";
+                                                    left: 0;
+                                                    height: 4px;
+                                                    width: 4px;
+                                                    background-color: #8f8f91;
+                                                    border-radius: 2px;
+                                                    top: 7px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .technologyContent {
+                                    width: 66.66%;
+                                    float: left;
+                                    ul {
+                                        width: 100%;
+                                        list-style-type: none;
+                                        display: inline-block;
+                                        padding-bottom: 12px;
+                                        li {
+                                            width: 50%;
+                                            float: left;
+                                            padding: 0.7em 0;
+                                            height: 3em;
+                                            a {
+                                                color: #8f8f91;
+                                                display: block;
+                                                font-size: 0.9rem;
+                                                position: relative;
+                                                padding-left: 0.9rem;
+                                                padding-right: 1rem;
+                                                &:before {
+                                                    position: absolute;
+                                                    content: "";
+                                                    left: 0;
+                                                    height: 4px;
+                                                    width: 4px;
+                                                    background-color: #8f8f91;
+                                                    border-radius: 2px;
+                                                    top: 7px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .enterpriseContent {
+                                    width: 33.33%;
+                                    float: left;
+                                    ul {
+                                        width: 100%;
+                                        list-style-type: none;
+                                        display: inline-block;
+                                        padding-bottom: 12px;
+                                        li {
+                                            width: 100%;
+                                            padding: 0.7em 0;
+                                            height: 3em;
+                                            a {
+                                                color: #8f8f91;
+                                                display: block;
+                                                font-size: 0.9rem;
+                                                position: relative;
+                                                padding-left: 0.9rem;
+                                                padding-right: 1rem;
+                                                &:before {
+                                                    position: absolute;
+                                                    content: "";
+                                                    left: 0;
+                                                    height: 4px;
+                                                    width: 4px;
+                                                    background-color: #8f8f91;
+                                                    border-radius: 2px;
+                                                    top: 7px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .rightContent {
+                                display: inline-block;
+                                width: 30%;
+                                .rightWhoWeAre {
+                                    background-color: #e23434;
+                                    padding-top: 23px;
+                                    height: 397px !important;
+                                    margin-right: 12px;
+                                    .containWhoWeAre {
+                                        padding-left: 2rem;
+                                        .heading {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            h5 {
+                                                display: inline-block;
+                                                margin-bottom: 1rem;
+                                                position: relative;
+                                                padding-bottom: 0.8rem;
+                                                text-transform: uppercase;
+                                                font-size: 1.14rem;
+                                                &:after {
+                                                    position: absolute;
+                                                    content: "";
+                                                    background-color: #ffffff;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    width: 30px;
+                                                    height: 2px;
+                                                    background-size: 100%;
+                                                }
+                                            }
+                                            span {
+                                                // display: inline-block;
+                                                display: none;
+                                            }
+                                        }
+                                        ul {
+                                            width: 100%;
+                                            list-style-type: none;
+                                            display: inline-block;
+                                            padding-bottom: 12px;
+                                            li {
+                                                width: 100%;
+                                                padding: 5px 0;
+                                                height: 38px;
+                                                a {
+                                                    color: #ffffff;
+                                                    display: block;
+                                                    font-size: 0.9rem;
+                                                    position: relative;
+                                                    // padding-left: 0.9rem;
+                                                    // padding-right: 1rem;
+                                                    // &:before {
+                                                    //     position: absolute;
+                                                    //     content: "";
+                                                    //     left: 0;
+                                                    //     height: 4px;
+                                                    //     width: 4px;
+                                                    //     background-color: #8f8f91;
+                                                    //     border-radius: 2px;
+                                                    //     top: 7px;
+                                                    // }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .rightQuickLinks {
+                                    background-color: #000000;
+                                    padding-top: 20px;
+                                    .containQuickLinks {
+                                        padding-left: 28px;
+                                        margin-right: 12px;
+                                        .heading {
+                                            display: flex;
+                                            justify-content: space-between;
+                                            h5 {
+                                                display: inline-block;
+                                                margin-bottom: 1rem;
+                                                position: relative;
+                                                padding-bottom: 0.8rem;
+                                                text-transform: uppercase;
+                                                font-size: 1.14rem;
+                                                &:after {
+                                                    position: absolute;
+                                                    content: "";
+                                                    background-color: #e23434;
+                                                    bottom: 0;
+                                                    left: 0;
+                                                    width: 30px;
+                                                    height: 2px;
+                                                    background-size: 100%;
+                                                }
+                                            }
+                                            span {
+                                                // display: inline-block;
+                                                display: none;
+                                            }
+                                        }
+                                        ul {
+                                            width: 100%;
+                                            list-style-type: none;
+                                            display: inline-block;
+                                            padding-bottom: 12px;
+                                            li {
+                                                width: 100%;
+                                                padding: 5px 0;
+                                                height: 38px;
+                                                a {
+                                                    color: #8f8f91;
+                                                    display: block;
+                                                    font-size: 0.9rem;
+                                                    position: relative;
+                                                    // padding-left: 0.9rem;
+                                                    // padding-right: 1rem;
+                                                    &:before {
+                                                        position: absolute;
+                                                        content: "";
+                                                        left: 0;
+                                                        height: 4px;
+                                                        width: 4px;
+                                                        background-color: #8f8f91;
+                                                        border-radius: 2px;
+                                                        top: 7px;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -917,6 +1270,10 @@
                             display: inline-block;
                             float: left;
                             width: 15%;
+                            @media (min-width: 768px) and (max-width: 980px) {
+                                position: relative;
+                                left: 186px;
+                            }
                             @media (min-width: 992px) and (max-width: 1199.98px) {
                                 width: 15%;
                             }
@@ -933,11 +1290,40 @@
                                 }
                             }
                         }
+                        .menuIcon {
+                            display: inline-block;
+                            float: left;
+                            width: 6%;
+                            /* display: flex; */
+                            /* justify-content: center; */
+                            position: relative;
+                            top: 25px;
+                            @media (min-width: 981px) {
+                                display: none;
+                            }
+                            .menu-icon {
+                                position: relative;
+                                /* top: 134%; */
+                                display: block;
+                                vertical-align: middle;
+                                cursor: pointer;
+                                i {
+                                    height: 1px;
+                                    width: 20px;
+                                    display: block;
+                                    margin-bottom: 5px;
+                                    background: #000000;
+                                }
+                            }
+                        }
                         .nav-links {
                             display: inline-block;
                             float: left;
                             width: 63%;
-                            @media (min-width: 992px) and (max-width: 1199.98px) {
+                            @media (max-width: 980px) {
+                                display: none;
+                            }
+                            @media (min-width: 980px) and (max-width: 1199.98px) {
                                 width: 64%;
                             }
                             @media (min-width: 1199.98px) and (max-width: 1905px) {
@@ -961,7 +1347,7 @@
                                     border-right: 9px solid transparent;
                                     border-bottom: 9px solid #212223;
                                 }
-                                @media (min-width: 992px) and (max-width: 1199.98px) {
+                                @media (min-width: 980px) and (max-width: 1199.98px) {
                                     padding-left: 5px;
                                 }
                                 display: flex;
@@ -973,7 +1359,7 @@
                                     margin: 0 6.5px;
                                     line-height: 67px;
                                     width: 152px;
-                                    @media (min-width: 992px) and (max-width: 1199.98px) {
+                                    @media (min-width: 980px) and (max-width: 1199.98px) {
                                         width: auto;
                                     }
                                     a {
@@ -1221,6 +1607,10 @@
                             border-bottom: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
+                            @media (min-width: 768px) and (max-width: 980px) {
+                                position: relative;
+                                left: 374px;
+                            }
                             @media (min-width: 992px) and (max-width: 1199.98px) {
                                 position: relative;
                                 left: 26px;
@@ -1256,6 +1646,10 @@
                             border-bottom: 1px solid #e5e5e5;
                             border-right: 1px solid #e5e5e5;
                             border-left: 1px solid #e5e5e5;
+                            @media (min-width: 768px) and (max-width: 980px) {
+                                position: relative;
+                                left: 376px;
+                            }
                             @media (min-width: 992px) and (max-width: 1199.98px) {
                                 position: relative;
                                 left: 24px;

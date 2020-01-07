@@ -1,14 +1,17 @@
-import { Component, OnInit, ViewEncapsulation, HostListener, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, HostListener, ElementRef, ViewChild } from '@angular/core';
 
-declare var $: any;
+// declare var $: any;
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
-  encapsulation: ViewEncapsulation.None
+  // encapsulation: ViewEncapsulation.None
 })
 export class HeaderComponent implements OnInit {
+
+  // @ViewChild('menu',{static:true}) menu:ElementRef;
+  // @ViewChild('ulFirst',{static:true}) ulFirst:ElementRef;
 
   isLang: boolean = false;
   isSearch: boolean = false;
@@ -29,6 +32,7 @@ export class HeaderComponent implements OnInit {
   angleDown: string = "fa fa-angle-down";
   angleUp: string = "fa fa-angle-up";
   close: string = "fa fa-times";
+  iconPlus:string ="fa fa-plus";
   public iconWhoWeAre = 'fa fa-angle-down';
   public iconWhatWeDo = 'fa fa-angle-down';
   public iconWeWorkWith = 'fa fa-angle-down';
@@ -37,43 +41,57 @@ export class HeaderComponent implements OnInit {
   isActive: boolean = false;
   isCheck: boolean = false;
 
-  // showBox = true;
-  // public text: String;
-  // @HostListener('document:click', ['$event'])
-  // clickout(event) {
-  //   if(this.eRef.nativeElement.contains(event.target)) {
-  //     // this.text = "clicked inside";
-  //     // this.isLang = true;
-  //   } else {  
-  //     this.text = "clicked outside";
-  //     this.isLang = true;
-  //   }
-  // }
+  isResponsive:boolean = false;
+
+  
+
+  
+  whatWeDoUl:boolean = true;
+  WeWorkWithUl:boolean = true;
+  technologyUl:boolean = true;
+  enterpriseSolUl:boolean = true;
+  whoWeAreUl:boolean = true;
+  quickLinksUl:boolean = true;
+
+  constructor() { 
+    //private eRef: ElementRef
+  }
+
+// responsive Menu
+
+  openMenu(){
+    // alert("Working");
+    this.isResponsive = true;
+  }
+  closeMenu(){
+    this.isResponsive = false;
+  }
+
+  menuWhatWeDo(){
+  this.whatWeDoUl = !this.whatWeDoUl; 
+  }
+  menuWeWorkWith(){
+    this.WeWorkWithUl = !this.WeWorkWithUl; 
+  }
+
+  menuTechnology(){
+    this.technologyUl = !this.technologyUl; 
+   }
+    menuenterpriseSol(){
+      this.enterpriseSolUl = !this.enterpriseSolUl; 
+  }
+
+  menuWhoWeAre(){
+    this.whoWeAreUl = !this.whoWeAreUl; 
+   }
+    menueQuickLink(){
+      this.quickLinksUl = !this.quickLinksUl; 
+  }
 
 
-  constructor(private eRef: ElementRef) { }
+// responsive Menu
 
-  // onClickedOutside(event) {
-  //   // this.showBox = false;
-  //   if(event && event['value'] === true) {
-  //    this.isLang = false;
-  //   } else {
-  //     this.isLang = true;
-  //   }
-
-  // }
-  // onClickedOutside(e: Event) {
-  //   this.isLang = false;
-  // }
-  // onClickedOutside(e: Event) {
-  //   console.log('Clicked outside:', e);
-  //   // alert("Click outside");
-  //   if(this.isLang){
-
-  //   }
-
-
-  // }
+ 
 
   whoWeAre() {
     this.isWhoWeAre = !this.isWhoWeAre;
@@ -190,85 +208,17 @@ export class HeaderComponent implements OnInit {
     
   }
   closeTopList(){
-    // alert("I am closing top bar");
-    // this.isLang = false;
-    // this.isSearch = false;
-    // this.isAccount = false;
-    // this.isCountry = false;
-    // this.isIcon = false;
+    
     this.closeAccount();
     this.closeLang();
     this.closeSearch();
     this.closeCountry();
-    // this.isCountry = false;
-    // this.isCountry = !this.isCountry;
+    
   }
-  // closeTopListBar(){
-  //   // alert("I am closing top bar");
-  //   // this.isLang = ! this.isLang;
-  //   // this.isSearch = ! this.isSearch;
-  //   // this.isAccount = ! this.isAccount;
-  //   // this.isCountry = ! this.isCountry;
-  //   // this.isIcon = ! this.isIcon;
-  //   // if(this.isLang){ 
-  //   //   //alert("Working");
-  //   //   this.isLang = true;
-  //   // }
-  //   // else{
-  //   //   this.isLang = false;
-  //   // }
-  //   // this.isLang =! this.isLang;
-  //   // this.closeAccount();
-  //   // this.closeLang();
-  //   // this.closeSearch();
-  //   // this.closeCountry();
-  //   // this.isCountry = false;
-  //   // this.isCountry = !this.isCountry;
-  // }
-
-
-
-  ngOnInit() {
-
-    // $('button').click(function () {
-    //   alert("I am sign in");
-    // });
-    //   $(function() {
-    //     $('#dialogdiv').dialog({
-    //       modal: true,
-    //         open:function() {
-    //             $(".ui-widget-overlay").click(function() {
-    //                 $('#dialogdiv').dialog('close');
-    //             });
-    //         }
-    //     });
-    // });
-    //   $('#dialogdiv').click(function() {
-    //    alert("adsk");
-    //    console.log("working");
-    //  });
-    // $('#clkMee').on('click', function(event) {
-    //           if ($(event.target).closest("#div1").length == 0) {
-    //               $("#div1").hide();
-    //           }
-    //       });
-    // $(".language").click(function(e) {
-    // e.preventDefault();
-    // this.isLang = true;
-    // if (this.isLang) {
-    //   $(".isLangActive").fadeIn(300, function () {
-    //     $(this).focus();
-    //   });
-    // }
-  //   $(".isLangActive").on('blur',function(){
-  //     $(this).fadeOut(300);
-  //  }); 
   
 
 
-    //  });
-
-
-
+  ngOnInit() {
+    
   }
 }

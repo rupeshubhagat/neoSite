@@ -53,39 +53,40 @@
     <!-- Main header -->
     <div class="container-fluid main-header" (click)="closeTopList()">
         <div class="container main-header-wrapper">
+
+            <div class="menuIcon">
+                <a href="javascript:void(0)" (click)="openMenu()">
+                    <span class="menu-icon">
+                    <i> &nbsp;</i>
+                    <i> &nbsp;</i>
+                    <i> &nbsp;</i>
+                </span>
+                </a>
+            </div>
+
             <div class="logo">
                 <a href="" routerLink=""><img src="../../../../assets/images/logo/logo.png" alt="Neosoftlogo"></a>
             </div>
+
+
             <div class="nav-links">
                 <ul>
                     <li class="whoWeAre nav-list" [ngClass]="isWhoWeAre ? 'isWhoWeAreActive active' : 'isWhoWeAreNotActive'">
-                        <!-- <a routerLink="." (click)="whoWeAre()">Who We Are<i class="icon" [ngClass]="iconWhoWeAre" aria-hidden="true"></i></a> -->
                         <a routerLink="." (click)="whoWeAre()">Who We Are <span class="icon" [ngClass]="isWhoWeAre ? 'icon-cancel' : 'icon-down-open-big'"></span></a>
-                        <!-- <a routerLink="." *ngIf="isWhoWeAre">Who We Are&nbsp;<span style="font-size: 18px;">&times;</span></a> -->
-                        <!-- <i class="fa fa-times" id="close" style="font-size:14px" aria-hidden="true"></i> -->
-                        <!-- <i class="fa fa-times"></i> -->
                     </li>
                     <li class="nav-list" [ngClass]="isWhatWeDo ? 'isWhatWeDoActive active' : 'isWhatWeDoNotActive'">
-                        <!-- <a routerLink="." (click)="whatWeDo()">What We Do<i class="icon" [ngClass]="iconWhatWeDo" aria-hidden="true"></i></a> -->
                         <a routerLink="." (click)="whatWeDo()">What We Do <span class="icon" [ngClass]="isWhatWeDo ? 'icon-cancel' : 'icon-down-open-big'"></span></a>
-                        <!-- <a routerLink="." *ngIf="isWhatWeDo">What We Do&nbsp;<span style="font-size: 18px;">&times;</span></a> -->
-
                     </li>
                     <li class="nav-list" [ngClass]="isWeWorkWith ? 'isWeWorkWithActive active' : 'isWeWorkWithNotActive'">
                         <a routerLink="." (click)="weWorkWith()">We Work With <span class="icon" [ngClass]="isWeWorkWith ? 'icon-cancel' : 'icon-down-open-big'"></span></a>
-                        <!-- <a routerLink="." (click)="weWorkWith()">We Work With<i class="icon" [ngClass]="iconWeWorkWith" aria-hidden="true"></i></a> -->
-                        <!-- <a routerLink="." *ngIf="isWeWorkWith">We Work With&nbsp;<span style="font-size: 18px;">&times;</span></a> -->
                     </li>
-
                     <li class="nav-list" [ngClass]="isTechnology ? 'isTechnology active' : 'isTechnologyNotActive'">
                         <a routerLink="." (click)="technologly()">Technologies <span class="icon" [ngClass]="isTechnology ? 'icon-cancel' : 'icon-down-open-big'"></span></a>
-                        <!-- <a routerLink="." (click)="technologly()">Technology<i class="icon" [ngClass]="iconTechnology" aria-hidden="true"></i></a> -->
-                        <!-- <a routerLink="." *ngIf="isTechnology">Technology&nbsp;<span style="font-size: 18px;">&times;</span></a> -->
                     </li>
-                    <!-- <li><a routerLink=".">Technolgies <i class="fa fa-angle-down" aria-hidden="true"></i></a></li> -->
-
                 </ul>
             </div>
+
+
             <div class="cmmi">
                 <p>CMMi</p>
                 <p>LEVEL</p>
@@ -98,6 +99,125 @@
             </div>
         </div>
     </div>
+
+    <div class="container-fluid responsiveMenu" *ngIf="isResponsive">
+        <div class="closeHeader">
+            <a href="javascript:void(0)" (click)="closeMenu()"><span class="icon-cancel"></span></a>
+        </div>
+        <div class="responsiveWrapper">
+            <div class="responsiveContent">
+                <div class="leftContent">
+                    <div class="whatWeDoContent">
+                        <div class="heading" (click)="menuWhatWeDo()">
+                            <h5>What We Do</h5>
+                            <span>+</span>
+                        </div>
+                        <ul *ngIf="whatWeDoUl">
+                            <li><a href="javascript:void(0)">Mobile Application</a></li>
+                            <li><a href="javascript:void(0)">Web Development</a></li>
+                            <li><a href="javascript:void(0)">Cloud Computing</a></li>
+                            <li><a href="javascript:void(0)">AI & ML</a></li>
+                            <li><a href="javascript:void(0)">Analytics and Big Data</a></li>
+                            <li><a href="javascript:void(0)">Internet of Things</a></li>
+                            <li><a href="javascript:void(0)">Blockchain</a></li>
+                            <li><a href="javascript:void(0)">DevOps</a></li>
+                            <li><a href="javascript:void(0)">QA & Testing</a></li>
+                            <li><a href="javascript:void(0)">SAP</a></li>
+                            <li><a href="javascript:void(0)">UX/UI Design</a></li>
+                            <li><a href="javascript:void(0)">Software Consulting</a></li>
+                            <li><a href="javascript:void(0)">Internet Marketing</a></li>
+                            <li><a href="javascript:void(0)">End-To-End Product Enggineering</a></li>
+                            <li><a href="javascript:void(0)">Enterprise Digital Transformation</a></li>
+                            <li><a href="javascript:void(0)">Hire Now</a></li>
+                        </ul>
+                    </div>
+                    <div class="weWorkWithDoContent">
+                        <div class="heading" (click)="menuWeWorkWith()">
+                            <h5>We Work With</h5>
+                            <span>+</span>
+                        </div>
+                        <ul *ngIf="WeWorkWithUl">
+                            <li><a href="">Enterprise</a></li>
+                            <li><a href="">Agencies</a></li>
+                            <li><a href="">Startups</a></li>
+                        </ul>
+                    </div>
+                    <div class="technologyContent">
+                        <div class="heading" (click)="menuTechnology()">
+                            <h5>Technolgoy</h5>
+                            <span>+</span>
+                        </div>
+                        <ul *ngIf="technologyUl">
+                            <li><a href="">Microsoft</a></li>
+                            <li><a href="">Open-Source</a></li>
+                            <li><a href="">Java</a></li>
+                            <li><a href="">Mobile</a></li>
+                            <li><a href="">Frontend</a></li>
+                            <li><a href="">Databases</a></li>
+                            <li><a href="">Big Data Analytics</a></li>
+                            <li><a href="">Internet Of Things</a></li>
+                            <li><a href="">Cloud & Infrastructure</a></li>
+                            <li><a href="">Blockchain</a></li>
+                            <li><a href="">DevOps</a></li>
+                            <li><a href="">SAP</a></li>
+                            <li><a href="">AI &ML</a></li>
+                        </ul>
+                    </div>
+                    <div class="enterpriseContent">
+                        <div class="heading" (click)="menuenterpriseSol()">
+                            <h5>Enterprise Solution</h5>
+                            <span>+</span>
+                        </div>
+                        <ul *ngIf="enterpriseSolUl">
+                            <li><a href="">Ecommerce Solution</a></li>
+                            <li><a href="">CMS</a></li>
+                            <li><a href="">CRM</a></li>
+                            <li><a href="">ERP</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="rightContent">
+                    <div class="rightWhoWeAre">
+                        <div class="containWhoWeAre">
+                            <div class="heading" (click)="menuWhoWeAre()">
+                                <h5>Who We Are</h5>
+                                <span>+</span>
+                            </div>
+                            <ul *ngIf="whoWeAreUl">
+                                <li><a href="">Overview</a></li>
+                                <li><a href="">Clientele</a></li>
+                                <li><a href="">Corporate Fact</a></li>
+                                <li><a href="">Certification</a></li>
+                                <li><a href="">Partners</a></li>
+                                <li><a href="">Infrastructure</a></li>
+                                <li><a href="">Global Presence</a></li>
+                                <li><a href="">CSR</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rightQuickLinks">
+                        <div class="containQuickLinks">
+                            <div class="heading" (click)="menueQuickLink()">
+                                <h5>Quick Links</h5>
+                                <span>+</span>
+                            </div>
+                            <ul *ngIf="quickLinksUl">
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">Engagement Model</a></li>
+                                <li><a href="">Development Model</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
 </header>
 
 <!-- Onclick Events Header TOP BAR start -->

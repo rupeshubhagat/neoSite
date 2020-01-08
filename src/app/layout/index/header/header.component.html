@@ -98,6 +98,11 @@
                 <p>EXCELLENCE</p>
             </div>
         </div>
+
+    </div>
+    <div class="container-fluid cmmiMobile">
+        <div class="leftCmmi">CMMi LEVEL 5</div>
+        <div class="rightExp">23<sup>+</sup>Years of Excellence</div>
     </div>
 
     <div class="container-fluid responsiveMenu" *ngIf="isResponsive">
@@ -110,9 +115,9 @@
                     <div class="whatWeDoContent">
                         <div class="heading" (click)="menuWhatWeDo()">
                             <h5>What We Do</h5>
-                            <span>+</span>
+                            <span class="icon-cancel" [ngClass]="whatWeDoUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
-                        <ul *ngIf="whatWeDoUl">
+                        <ul [ngClass]="whatWeDoUl ? 'showUl': 'hideUl'">
                             <li><a href="javascript:void(0)">Mobile Application</a></li>
                             <li><a href="javascript:void(0)">Web Development</a></li>
                             <li><a href="javascript:void(0)">Cloud Computing</a></li>
@@ -134,9 +139,9 @@
                     <div class="weWorkWithDoContent">
                         <div class="heading" (click)="menuWeWorkWith()">
                             <h5>We Work With</h5>
-                            <span>+</span>
+                            <span class="icon-cancel" [ngClass]="WeWorkWithUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
-                        <ul *ngIf="WeWorkWithUl">
+                        <ul [ngClass]="WeWorkWithUl ? 'showUl': 'hideUl'">
                             <li><a href="">Enterprise</a></li>
                             <li><a href="">Agencies</a></li>
                             <li><a href="">Startups</a></li>
@@ -145,9 +150,9 @@
                     <div class="technologyContent">
                         <div class="heading" (click)="menuTechnology()">
                             <h5>Technolgoy</h5>
-                            <span>+</span>
+                            <span class="icon-cancel" [ngClass]="technologyUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
-                        <ul *ngIf="technologyUl">
+                        <ul [ngClass]="technologyUl ? 'showUl': 'hideUl'">
                             <li><a href="">Microsoft</a></li>
                             <li><a href="">Open-Source</a></li>
                             <li><a href="">Java</a></li>
@@ -166,9 +171,9 @@
                     <div class="enterpriseContent">
                         <div class="heading" (click)="menuenterpriseSol()">
                             <h5>Enterprise Solution</h5>
-                            <span>+</span>
+                            <span class="icon-cancel" [ngClass]="enterpriseSolUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
-                        <ul *ngIf="enterpriseSolUl">
+                        <ul [ngClass]="enterpriseSolUl ? 'showUl': 'hideUl'">
                             <li><a href="">Ecommerce Solution</a></li>
                             <li><a href="">CMS</a></li>
                             <li><a href="">CRM</a></li>
@@ -182,9 +187,9 @@
                         <div class="containWhoWeAre">
                             <div class="heading" (click)="menuWhoWeAre()">
                                 <h5>Who We Are</h5>
-                                <span>+</span>
+                                <span class="icon-cancel" [ngClass]="whoWeAreUl ? 'iconPlus': 'iconCancel'"></span>
                             </div>
-                            <ul *ngIf="whoWeAreUl">
+                            <ul [ngClass]="whoWeAreUl ? 'showUl': 'hideUl'">
                                 <li><a href="">Overview</a></li>
                                 <li><a href="">Clientele</a></li>
                                 <li><a href="">Corporate Fact</a></li>
@@ -200,13 +205,12 @@
                         <div class="containQuickLinks">
                             <div class="heading" (click)="menueQuickLink()">
                                 <h5>Quick Links</h5>
-                                <span>+</span>
+                                <span class="icon-cancel" [ngClass]="quickLinksUl ? 'iconPlus': 'iconCancel'"></span>
                             </div>
-                            <ul *ngIf="quickLinksUl">
+                            <ul [ngClass]="quickLinksUl ? 'showUl': 'hideUl'">
                                 <li><a href="">Blog</a></li>
                                 <li><a href="">Engagement Model</a></li>
                                 <li><a href="">Development Model</a></li>
-
                             </ul>
                         </div>
                     </div>
@@ -227,7 +231,7 @@
     <!-- *ngIf="isLang" -->
     <div class="container lg-wrapper">
         <ul class="lg-navLinks d-flex align-self-center align-items-baseline">
-            <li class="select">Give us a call</li>
+            <li class="select">Select a Language</li>
             <li class="english"><a href="">English</a></li>
             <li class="deutsch"><a href="">Deutsch</a></li>
             <li class="china"><a href="">日本語</a></li>

@@ -21,6 +21,20 @@
                     //     font-size: 12px;
                     //     transition: all 0.3s ease;
                     // }
+                    //ScrollBAR Coding
+                    //  ::-webkit-scrollbar {
+                    //     width: 2em;
+                    //     height: 2em
+                    // }
+                    //  ::-webkit-scrollbar-button {
+                    //     background: red;
+                    // }
+                    //  ::-webkit-scrollbar-track-piece {
+                    //     background: #888
+                    // }
+                    //  ::-webkit-scrollbar-thumb {
+                    //     background: #eee
+                    // }
                     .iconPlus {
                         transform: rotate(45deg) scale(1.08);
                         font-size: 12px;
@@ -292,8 +306,8 @@
                                     width: 153px;
                                 }
                                 @media (min-width: 320px) and (max-width: 374.98px) {
-                                    position: relative;
-                                    left: -12px;
+                                    // position: relative;
+                                    // left: -12px;
                                 }
                                 .india-flag {
                                     width: 30px;
@@ -883,6 +897,12 @@
                                 flex-direction: column;
                                 color: black;
                                 float: left;
+                                @media(max-width: 767.98px) {
+                                    width: 87%;
+                                }
+                                @media(min-width: 768px) {
+                                    width: 79%;
+                                }
                             }
                             .example-container>* {
                                 width: 100%;
@@ -902,6 +922,28 @@
                                     color: white;
                                     position: relative;
                                     top: 11px;
+                                    @media (max-width: 767.98px) {
+                                        display: none;
+                                    }
+                                }
+                                .mobile-btn {
+                                    padding: 6.5px 9px;
+                                    /* font-size: 1.3rem; */
+                                    text-transform: uppercase;
+                                    /* width: 10rem; */
+                                    -webkit-appearance: none;
+                                    /* border-radius: 0; */
+                                    background: #e33434;
+                                    border-color: #e33434;
+                                    color: red;
+                                    position: relative;
+                                    top: 11px;
+                                    @media (min-width: 768px) {
+                                        display: none;
+                                    }
+                                    span {
+                                        color: white;
+                                    }
                                 }
                             }
                         }
@@ -945,6 +987,9 @@
                             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
                             border-color: rgba(0, 0, 0, 0.1);
                             z-index: 4;
+                            @media (max-width: 767.98px) {
+                                padding: 1px 0px;
+                            }
                         }
                         &.accountNotActive {
                             // background-color: green;
@@ -957,6 +1002,10 @@
                             right: 0px;
                         }
                         .login-drop {
+                            @media (max-width: 767.98px) {
+                                overflow-y: scroll;
+                                height: 100vh;
+                            }
                             .login-info-title {
                                 color: #2c2c2c;
                                 text-transform: uppercase;
@@ -964,6 +1013,9 @@
                                 font-weight: 400;
                                 font-size: 2rem;
                                 margin-bottom: 0;
+                                @media (max-width: 424.98px) {
+                                    font-size: 13px;
+                                }
                                 span {
                                     font-weight: 600;
                                 }
@@ -981,13 +1033,31 @@
                                 position: relative;
                                 height: 100%;
                                 display: flex;
+                                @media (max-width: 767.98px) {
+                                    display: block;
+                                }
                                 .achieve-block {
                                     width: 200Px;
                                     display: flex;
                                     flex-direction: column;
                                     margin-right: 35px;
+                                    @media (max-width: 767.98px) {
+                                        display: flex;
+                                        flex-direction: row;
+                                        width: 100%;
+                                    }
+                                    @media (min-width: 768px) and (max-width: 1439.98px) {
+                                        width: 20%;
+                                    }
                                     .circle-content {
                                         margin-top: 1rem;
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            border-right: solid 1px;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            border-bottom: solid 1px;
+                                        }
                                         .founded-circle {
                                             width: 94px;
                                             height: 94px;
@@ -1031,7 +1101,19 @@
                                         }
                                     }
                                     .achieve-block-content {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            display: flex;
+                                            align-items: center;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            border-bottom: solid 1px;
+                                        }
                                         .achive-bottom {
+                                            @media (max-width: 767.98px) {
+                                                display: flex;
+                                                align-items: center;
+                                                padding: 35px;
+                                            }
                                             .left {
                                                 float: left;
                                                 width: 18px;
@@ -1046,6 +1128,13 @@
                                                 float: left;
                                                 width: 79%;
                                                 text-align: center;
+                                                @media (max-width: 767.98px) {
+                                                    font-size: 1.1rem;
+                                                }
+                                                @media (min-width: 768px) and (max-width: 1439.98px) {
+                                                    font-size: 1.1rem;
+                                                    width: 71%;
+                                                }
                                                 .repeat-business {
                                                     display: block;
                                                     font-weight: 600;
@@ -1062,13 +1151,34 @@
                                         }
                                     }
                                 }
+                                //Righ working
                                 .achieve-block1 {
                                     border-left: 1px solid grey;
                                     border-right: 1px solid grey;
+                                    @media (max-width: 767.98px) {
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 0px;
+                                        border-left: none;
+                                        border-right: none;
+                                    }
+                                    @media (min-width: 768px) and (max-width: 1439.98px) {
+                                        width: 20%;
+                                    }
                                     .achieve-block-content1 {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            border-right: solid 1px;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            border-bottom: solid 1px;
+                                        }
                                         .block-data {
                                             @include block-data;
                                             border-bottom: 1px solid grey;
+                                            @media (max-width: 767.98px) {
+                                                border-bottom: none;
+                                            }
                                             .tag {
                                                 @include tag;
                                             }
@@ -1078,6 +1188,13 @@
                                         }
                                     }
                                     .achieve-block-content2 {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            // border-right: solid 1px;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            border-bottom: solid 1px;
+                                        }
                                         .block-data {
                                             @include block-data;
                                             .icon-block-cont {
@@ -1109,11 +1226,28 @@
                                     }
                                 }
                                 .achieve-block2 {
+                                    @media (max-width: 767.98px) {
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 0px;
+                                    }
+                                    @media (min-width: 768px) and (max-width: 1439.98px) {
+                                        width: 20%;
+                                    }
                                     .achieve-block-content1 {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            border-right: solid 1px;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            border-bottom: solid 1px;
+                                        }
                                         .block-data {
                                             @include block-data;
                                             border-bottom: 1px solid grey;
-                                            border-bottom: 1px solid grey;
+                                            @media (max-width: 767.98px) {
+                                                border-bottom: none;
+                                            }
                                             .tag {
                                                 @include tag;
                                             }
@@ -1123,6 +1257,13 @@
                                         }
                                     }
                                     .achieve-block-content2 {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            // border-right: solid 1px;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            border-bottom: solid 1px;
+                                        }
                                         .block-data {
                                             @include block-data;
                                             .icon-block-cont {
@@ -1155,10 +1296,29 @@
                                 .achieve-block3 {
                                     border-left: 1px solid grey;
                                     border-right: 1px solid grey;
+                                    @media (max-width: 767.98px) {
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 0px;
+                                        border: none;
+                                    }
+                                    @media (min-width: 768px) and (max-width: 1439.98px) {
+                                        width: 20%;
+                                    }
                                     .achieve-block-content1 {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            border-right: solid 1px;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            border-bottom: solid 1px;
+                                        }
                                         .block-data {
                                             @include block-data;
                                             border-bottom: 1px solid grey;
+                                            @media (max-width: 767.98px) {
+                                                border-bottom: none;
+                                            }
                                             .tag {
                                                 @include tag;
                                             }
@@ -1168,6 +1328,13 @@
                                         }
                                     }
                                     .achieve-block-content2 {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            // border-right: solid 1px;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            border-bottom: solid 1px;
+                                        }
                                         .block-data {
                                             @include block-data;
                                             .icon-block-cont {
@@ -1200,10 +1367,29 @@
                                 .achieve-block4 {
                                     // border-left: 1px solid grey;
                                     border-right: 1px solid grey;
+                                    @media (max-width: 767.98px) {
+                                        display: flex;
+                                        align-items: center;
+                                        padding: 0px;
+                                        border-right: none;
+                                    }
+                                    @media (min-width: 768px) and (max-width: 1439.98px) {
+                                        width: 20%;
+                                    }
                                     .achieve-block-content1 {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            border-right: solid 1px;
+                                            border-color: rgba(0, 0, 0, 0.2);
+                                            // border-bottom: solid 1px;
+                                        }
                                         .block-data {
                                             @include block-data;
                                             border-bottom: 1px solid grey;
+                                            @media (max-width: 767.98px) {
+                                                border-bottom: none;
+                                            }
                                             .tag {
                                                 @include tag;
                                             }
@@ -1213,6 +1399,13 @@
                                         }
                                     }
                                     .achieve-block-content2 {
+                                        @media (max-width: 767.98px) {
+                                            width: 50%;
+                                            margin-top: 0px;
+                                            // border-right: solid 1px;
+                                            // border-color: rgba(0, 0, 0, 0.2);
+                                            // border-bottom: solid 1px;
+                                        }
                                         .block-data {
                                             @include block-data;
                                             .icon-block-cont {
@@ -1253,6 +1446,9 @@
                             background: #f7a900;
                             margin-bottom: -2rem;
                             margin-top: 31px;
+                            @media (max-width: 767.98px) {
+                                display: none;
+                            }
                             .login-procudure-container {
                                 .steps1 {
                                     @include steps;
@@ -1279,11 +1475,15 @@
                                         -webkit-box-align: center;
                                         -ms-flex-align: center;
                                         align-items: center;
-                                        // background: url(https://images.neosofttech.com/sites/all/themes/neosoft2017/images/header-icon.svg) no-repeat;
-                                        //background-size: 75rem;
                                         background: url(../../../../assets/images/header/account-info/step1.png) no-repeat;
                                         height: 51px;
                                         display: inline-block;
+                                        @media (min-width: 768px) and (max-width: 1023.98px) {
+                                            width: 28%;
+                                        }
+                                        @media (min-width: 1024px) and (max-width: 1439.98px) {
+                                            //    width: 20%;
+                                        }
                                     }
                                     .steps-text {
                                         @include step-text;
@@ -1320,6 +1520,12 @@
                                         background: url(../../../../assets/images/header/account-info/step-img2.png) no-repeat;
                                         height: 51px;
                                         display: inline-block;
+                                        @media (min-width: 768px) and (max-width: 1023.98px) {
+                                            width: 33%;
+                                        }
+                                        @media (min-width: 1024px) and (max-width: 1439.98px) {
+                                            //    width: 20%;
+                                        }
                                     }
                                     .steps-text {
                                         @include step-text;
@@ -1357,6 +1563,12 @@
                                         background: url(../../../../assets/images/header/account-info/step-img3.png) no-repeat;
                                         height: 51px;
                                         display: inline-block;
+                                        @media (min-width: 768px) and (max-width: 1023.98px) {
+                                            width: 28%;
+                                        }
+                                        @media (min-width: 1024px) and (max-width: 1439.98px) {
+                                            //    width: 20%;
+                                        }
                                     }
                                     .steps-text {
                                         @include step-text;
@@ -1384,12 +1596,116 @@
                                         border-radius: 0;
                                         background: #ee2e2b;
                                         color: #fff;
+                                        @media (min-width: 768px) and (max-width: 1023.98px) {
+                                            width: 66%;
+                                            font-size: 13px;
+                                            padding: 5px 1rem;
+                                        }
                                         &:hover {
                                             top: 2px;
                                             box-shadow: 0 4px #a00b0f;
                                             transition: none;
                                         }
                                     }
+                                }
+                            }
+                        }
+                        .login-procudre-mobile {
+                            padding: 6px 0;
+                            width: 100%;
+                            // height: 82px;
+                            // -webkit-box-shadow: 2px 2px 1px #d49202;
+                            // box-shadow: 2px 2px 1px #d49202;
+                            // background: #f7a900;
+                            @media (min-width: 767px) {
+                                display: none;
+                            }
+                            .loginSteps {
+                                background: #f7a900;
+                                padding: 7px 0;
+                                ul {
+                                    list-style-type: none;
+                                    display: flex;
+                                    width: 100%;
+                                    justify-content: flex-start;
+                                    padding: 0 12px;
+                                    li {
+                                        width: 33.33%;
+                                        position: relative;
+                                        display: flex;
+                                        .steps-text {
+                                            font-size: 8px;
+                                            text-transform: uppercase;
+                                            color: #ffffff;
+                                            @media (max-width: 374.98px) {
+                                                font-size: 6px;
+                                            }
+                                            strong {
+                                                display: block;
+                                                text-transform: uppercase;
+                                                color: #ffffff;
+                                            }
+                                        }
+                                    }
+                                    .firstLi {
+                                        &:after {
+                                            content: "";
+                                            background: url(../../../../assets/images/header/account-info/right-arrow.png);
+                                            background-repeat: no-repeat;
+                                            border-right: none;
+                                            display: block;
+                                            position: absolute;
+                                            transform: none;
+                                            top: 4px;
+                                            left: auto;
+                                            right: 13px;
+                                            vertical-align: middle;
+                                            width: 9px;
+                                            height: 17px;
+                                            margin-top: 0px;
+                                            @media (max-width: 374.98px) {
+                                                top: 4px;
+                                                background-size: 6px;
+                                            }
+                                        }
+                                    }
+                                    .secondLi {
+                                        &:after {
+                                            content: "";
+                                            background: url(../../../../assets/images/header/account-info/right-arrow.png);
+                                            background-repeat: no-repeat;
+                                            border-right: none;
+                                            display: block;
+                                            position: absolute;
+                                            transform: none;
+                                            top: 4px;
+                                            left: auto;
+                                            right: 13px;
+                                            vertical-align: middle;
+                                            width: 9px;
+                                            height: 17px;
+                                            margin-top: 0px;
+                                            @media (max-width: 320px) {
+                                                top: 4px;
+                                                background-size: 6px;
+                                            }
+                                        }
+                                    }
+                                    .ThirdLi {}
+                                }
+                            }
+                            .getStarted {
+                                // background-color: #a00b0f;
+                                background-color: #ee2e2b;
+                                display: flex;
+                                justify-content: center;
+                                a {
+                                    padding: 6px 14px;
+                                    position: relative;
+                                    background: #ee2e2b;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    font-size: 11px;
                                 }
                             }
                         }
@@ -1451,6 +1767,12 @@
                                         display: inline-block;
                                         font-size: 15.6px;
                                     }
+                                    @media (min-width: 768px) and (max-width: 1023.98px) {
+                                        font-size: 14.8px;
+                                    }
+                                    @media (min-width: 1024px) and (max-width: 1439.98px) {
+                                        // font-size: 14.8px;
+                                    }
                                 }
                                 li {
                                     padding: 0px 35px;
@@ -1459,11 +1781,24 @@
                                         width: 50%;
                                         padding: 5px 0px !important;
                                     }
+                                    @media (min-width: 768px) and (max-width: 1023.98px) {
+                                        padding: 0px 6px;
+                                        margin: 0px;
+                                    }
+                                    @media (min-width: 1024px) and (max-width: 1439.98px) {
+                                        // font-size: 14.8px;
+                                    }
                                     a {
                                         font-size: 13px;
                                         color: #2d2d2d;
                                         @media (max-width: 767.98px) {
                                             font-size: 10.4px;
+                                        }
+                                        @media (min-width: 768px) and (max-width: 1024px) {
+                                            font-size: 11px;
+                                        }
+                                        @media (min-width: 1024px) and (max-width: 1439.98px) {
+                                            // font-size: 14.8px;
                                         }
                                         &:hover {
                                             color: #e23434;

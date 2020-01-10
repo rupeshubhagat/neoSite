@@ -1,4 +1,30 @@
 @import "src/assets/scss/index";
+.iconPlus {
+    transform: rotate(45deg) scale(1.08);
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.iconCancel {
+    transform: rotate(0deg) scale(1.08);
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.showUl {
+    display: inline-block !important;
+    @media (max-width: 767.98px) {
+        display: none !important;
+    }
+}
+
+.hideUl {
+    display: none !important;
+    @media (max-width: 767.98px) {
+        display: inline-block !important;
+    }
+}
+
 .footer {
     color: #ffffff;
     background-color: #2b2c2f;
@@ -53,13 +79,25 @@
                         width: 66.33%;
                         float: left;
                         .content {
-                            .page-title {
-                                @include title;
-                                font-size: 14.82px !important;
-                                // margin: 0 0 13px !important;
-                                padding: 0 0 10.4px !important;
-                                &:after {
-                                    width: 2rem !important;
+                            .heading {
+                                display: flex;
+                                justify-content: space-between;
+                                .page-title {
+                                    @include title;
+                                    font-size: 14.82px !important;
+                                    // margin: 0 0 13px !important;
+                                    padding: 0 0 10.4px !important;
+                                    &:after {
+                                        width: 2rem !important;
+                                    }
+                                }
+                                span {
+                                    display: none;
+                                    @media (max-width: 767.98px) {
+                                        display: inline-block;
+                                        position: relative;
+                                        left: -12px;
+                                    }
                                 }
                             }
                             ul {
@@ -104,13 +142,34 @@
                         width: 33.33%;
                         float: left;
                         .content-we-work-with {
-                            .page-title {
-                                @include title;
-                                font-size: 14.82px !important;
-                                // margin: 0 0 13px !important;
-                                padding: 0 0 10.4px !important;
-                                &:after {
-                                    width: 2rem !important;
+                            // .page-title {
+                            //     @include title;
+                            //     font-size: 14.82px !important;
+                            //     // margin: 0 0 13px !important;
+                            //     padding: 0 0 10.4px !important;
+                            //     &:after {
+                            //         width: 2rem !important;
+                            //     }
+                            // }
+                            .heading {
+                                display: flex;
+                                justify-content: space-between;
+                                .page-title {
+                                    @include title;
+                                    font-size: 14.82px !important;
+                                    // margin: 0 0 13px !important;
+                                    padding: 0 0 10.4px !important;
+                                    &:after {
+                                        width: 2rem !important;
+                                    }
+                                }
+                                span {
+                                    display: none;
+                                    @media (max-width: 767.98px) {
+                                        display: inline-block;
+                                        position: relative;
+                                        left: -12px;
+                                    }
                                 }
                             }
                             ul {
@@ -171,6 +230,9 @@
                         height: 1px;
                         background-color: #ffffff;
                         display: inline-block;
+                        @media (max-width: 767.98px) {
+                            display: none;
+                        }
                     }
                 }
                 .block-second-wrapper-second {
@@ -241,13 +303,34 @@
                         width: 66.33%;
                         float: left;
                         .content-technology {
-                            .page-title {
-                                @include title;
-                                font-size: 14.82px !important;
-                                // margin: 0 0 13px !important;
-                                padding: 0 0 10.4px !important;
-                                &:after {
-                                    width: 2rem !important;
+                            // .page-title {
+                            //     @include title;
+                            //     font-size: 14.82px !important;
+                            //     // margin: 0 0 13px !important;
+                            //     padding: 0 0 10.4px !important;
+                            //     &:after {
+                            //         width: 2rem !important;
+                            //     }
+                            // }
+                            .heading {
+                                display: flex;
+                                justify-content: space-between;
+                                .page-title {
+                                    @include title;
+                                    font-size: 14.82px !important;
+                                    // margin: 0 0 13px !important;
+                                    padding: 0 0 10.4px !important;
+                                    &:after {
+                                        width: 2rem !important;
+                                    }
+                                }
+                                span {
+                                    display: none;
+                                    @media (max-width: 767.98px) {
+                                        display: inline-block;
+                                        position: relative;
+                                        left: -12px;
+                                    }
                                 }
                             }
                             ul {
@@ -307,13 +390,34 @@
                         width: 33.33%;
                         float: left;
                         .content-enterprise {
-                            .page-title {
-                                @include title;
-                                font-size: 14.82px !important;
-                                // margin: 0 0 13px !important;
-                                padding: 0 0 10.4px !important;
-                                &:after {
-                                    width: 2rem !important;
+                            // .page-title {
+                            //     @include title;
+                            //     font-size: 14.82px !important;
+                            //     // margin: 0 0 13px !important;
+                            //     padding: 0 0 10.4px !important;
+                            //     &:after {
+                            //         width: 2rem !important;
+                            //     }
+                            // }
+                            .heading {
+                                display: flex;
+                                justify-content: space-between;
+                                .page-title {
+                                    @include title;
+                                    font-size: 14.82px !important;
+                                    // margin: 0 0 13px !important;
+                                    padding: 0 0 10.4px !important;
+                                    &:after {
+                                        width: 2rem !important;
+                                    }
+                                }
+                                span {
+                                    display: none;
+                                    @media (max-width: 767.98px) {
+                                        display: inline-block;
+                                        position: relative;
+                                        left: -12px;
+                                    }
                                 }
                             }
                             ul {
@@ -448,15 +552,36 @@
                         background-color: #e23434;
                         padding: 0 26px;
                         padding-top: 19.5px;
-                        .page-title {
-                            @include title;
-                            font-size: 14.82px !important;
-                            // margin: 0 0 13px !important;
-                            padding: 0 0 10.4px !important;
-                            // color: #ffffff !important;
-                            &:after {
-                                width: 2rem !important;
-                                background: #ffffff !important;
+                        // .page-title {
+                        //     @include title;
+                        //     font-size: 14.82px !important;
+                        //     // margin: 0 0 13px !important;
+                        //     padding: 0 0 10.4px !important;
+                        //     // color: #ffffff !important;
+                        //     &:after {
+                        //         width: 2rem !important;
+                        //         background: #ffffff !important;
+                        //     }
+                        // }
+                        .heading {
+                            display: flex;
+                            justify-content: space-between;
+                            .page-title {
+                                @include title;
+                                font-size: 14.82px !important;
+                                // margin: 0 0 13px !important;
+                                padding: 0 0 10.4px !important;
+                                &:after {
+                                    width: 2rem !important;
+                                }
+                            }
+                            span {
+                                display: none;
+                                @media (max-width: 767.98px) {
+                                    display: inline-block;
+                                    position: relative;
+                                    left: -12px;
+                                }
                             }
                         }
                         ul {
@@ -488,15 +613,36 @@
                     background-color: #000000;
                     padding: 19.5px 26px;
                     .content-quick-link {
-                        .page-title {
-                            @include title;
-                            font-size: 14.82px !important;
-                            // margin: 0 0 13px !important;
-                            padding: 0 0 10.4px !important;
-                            // color: #ffffff !important;
-                            &:after {
-                                width: 2rem !important;
-                                // background: #ffffff !important;
+                        // .page-title {
+                        //     @include title;
+                        //     font-size: 14.82px !important;
+                        //     // margin: 0 0 13px !important;
+                        //     padding: 0 0 10.4px !important;
+                        //     // color: #ffffff !important;
+                        //     &:after {
+                        //         width: 2rem !important;
+                        //         // background: #ffffff !important;
+                        //     }
+                        // }
+                        .heading {
+                            display: flex;
+                            justify-content: space-between;
+                            .page-title {
+                                @include title;
+                                font-size: 14.82px !important;
+                                // margin: 0 0 13px !important;
+                                padding: 0 0 10.4px !important;
+                                &:after {
+                                    width: 2rem !important;
+                                }
+                            }
+                            span {
+                                display: none;
+                                @media (max-width: 767.98px) {
+                                    display: inline-block;
+                                    position: relative;
+                                    left: -12px;
+                                }
                             }
                         }
                         ul {

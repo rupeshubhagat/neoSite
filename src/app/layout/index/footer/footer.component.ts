@@ -15,14 +15,45 @@ export class FooterComponent implements OnInit {
   isChat:boolean = false;
   isShare:boolean = false;
 
+  whatWeDoUl:boolean = true;
+  WeWorkWithUl:boolean = true;
+  technologyUl:boolean = true;
+  enterpriseSolUl:boolean = true;
+  whoWeAreUl:boolean = true;
+  quickLinksUl:boolean = true;
+
   @ViewChild('parent',{static:true}) parent:ElementRef;
   // @ViewChild('isChat',{static:true}) isChat:ElementRef;
   // @ViewChild('isShare',{static:true}) isShare:ElementRef;
   @ViewChild('child',{static:true}) child:ElementRef; 
   // @ViewChild('child',{static:true}) child:ElementRef; 
 
+
+
   constructor() { }
  
+ //Footer Heading Clicks Events
+ footerWhatWeDo(){
+  this.whatWeDoUl = !this.whatWeDoUl; 
+ }
+ footerWeWorkWith(){
+  this.WeWorkWithUl = !this.WeWorkWithUl; 
+ }
+ footerTechnology(){
+  this.technologyUl = !this.technologyUl; 
+ }
+ footerEnterpriceSol(){
+  this.enterpriseSolUl = !this.enterpriseSolUl; 
+ }
+ footerWhoWeAre(){
+  this.whoWeAreUl = !this.whoWeAreUl; 
+ }
+ footerQuickLinks(){
+  this.quickLinksUl = !this.quickLinksUl; 
+ }
+ 
+ //Footer Heading Clicks Events ends
+
   changeChatIcon(){
     this.isChat = ! this.isChat;
     this.isShare = false;

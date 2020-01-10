@@ -84,8 +84,12 @@
                 <div class="block-second-wrapper-first">
                     <div class="what-we-do-wrapper">
                         <div class="content">
-                            <h3 class="page-title">What We Do</h3>
-                            <ul>
+                            <div class="heading" (click)="footerWhatWeDo()">
+                                <h3 class="page-title">What We Do</h3>
+                                <span class="icon-cancel" [ngClass]="whatWeDoUl ? 'iconPlus': 'iconCancel'"></span>
+                            </div>
+
+                            <ul [ngClass]="whatWeDoUl ? 'showUl': 'hideUl'">
                                 <li><a href="">Mobile Application</a></li>
                                 <li><a href="">Web Development</a></li>
                                 <li><a href="">Cloud Computing</a></li>
@@ -104,8 +108,12 @@
                     </div>
                     <div class="we-work-with-wrapper">
                         <div class="content-we-work-with">
-                            <h3 class="page-title">We Work With</h3>
-                            <ul>
+                            <!-- <h3 class="page-title">We Work With</h3> -->
+                            <div class="heading" (click)="footerWeWorkWith()">
+                                <h3 class="page-title">We Work With</h3>
+                                <span class="icon-cancel" [ngClass]="WeWorkWithUl ? 'iconPlus': 'iconCancel'"></span>
+                            </div>
+                            <ul [ngClass]="WeWorkWithUl ? 'showUl': 'hideUl'">
                                 <li><a href="">Enterprise</a></li>
                                 <li><a href="">Agencies</a></li>
                                 <li><a href="">Startups</a></li>
@@ -116,7 +124,7 @@
                 </div>
                 <div class="block-second-wrapper-second">
                     <div class="content">
-                        <ul>
+                        <ul [ngClass]="whatWeDoUl ? 'showUl': 'hideUl'">
                             <li><a href="">End-To-End Product <br/>Engineering</a></li>
                             <li><a href="">Enterprise Digital <br/>Transformation</a></li>
                             <li><a href="">Hire Now</a></li>
@@ -126,8 +134,12 @@
                 <div class="block-second-wrapper-third">
                     <div class="technology">
                         <div class="content-technology">
-                            <h3 class="page-title">Technology</h3>
-                            <ul>
+                            <!-- <h3 class="page-title">Technology</h3> -->
+                            <div class="heading" (click)="footerTechnology()">
+                                <h3 class="page-title">Technology</h3>
+                                <span class="icon-cancel" [ngClass]="technologyUl ? 'iconPlus': 'iconCancel'"></span>
+                            </div>
+                            <ul [ngClass]="technologyUl ? 'showUl': 'hideUl'">
                                 <li><a href="">Microsoft</a></li>
                                 <li><a href="">Open-Source</a></li>
                                 <li><a href="">Java</a></li>
@@ -146,8 +158,11 @@
                     </div>
                     <div class="enterprise">
                         <div class="content-enterprise">
-                            <h3 class="page-title">Enterprise Solution</h3>
-                            <ul>
+                            <div class="heading" (click)="footerEnterpriceSol()">
+                                <h3 class="page-title">Enterprise Solution</h3>
+                                <span class="icon-cancel" [ngClass]="enterpriseSolUl ? 'iconPlus': 'iconCancel'"></span>
+                            </div>
+                            <ul [ngClass]="enterpriseSolUl ? 'showUl': 'hideUl'">
                                 <li><a href="">Ecommerce Solution</a></li>
                                 <li><a href="">CMS</a></li>
                                 <li><a href="">CRM</a></li>
@@ -177,8 +192,12 @@
                         </ul>
                     </div>
                     <div class="content-who-we-are" (click)="closeCancelIcon()">
-                        <h3 class="page-title">Who We Are</h3>
-                        <ul>
+                        <!-- <h3 class="page-title">Who We Are</h3> -->
+                        <div class="heading" (click)="footerWhoWeAre()">
+                            <h3 class="page-title">Who We Are</h3>
+                            <span class="icon-cancel" [ngClass]="whoWeAreUl ? 'iconPlus': 'iconCancel'"></span>
+                        </div>
+                        <ul [ngClass]="whoWeAreUl ? 'showUl': 'hideUl'">
                             <li><a href="">Overview</a></li>
                             <li><a href="">Clientele</a></li>
                             <li><a href="">Corporate Fact</a></li>
@@ -193,8 +212,12 @@
                 </div>
                 <div class="block-third-wrapper-second" (click)="closeCancelIcon()">
                     <div class="content-quick-link">
-                        <h3 class="page-title">Quick Links</h3>
-                        <ul>
+                        <!-- <h3 class="page-title">Quick Links</h3> -->
+                        <div class="heading" (click)="footerQuickLinks()">
+                            <h3 class="page-title">Quick Links</h3>
+                            <span class="icon-cancel" [ngClass]="quickLinksUl ? 'iconPlus': 'iconCancel'"></span>
+                        </div>
+                        <ul [ngClass]="quickLinksUl ? 'showUl': 'hideUl'">
                             <li><a href="">Blog</a></li>
                             <li><a href="">Engagement Model</a></li>
                             <li><a href="">Development Model</a></li>

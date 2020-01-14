@@ -1,6 +1,14 @@
 <div class="container-fluid footer">
     <div class="container footer-section-one">
         <div class="footer-wrapper">
+            <div class="footerBeforSection">
+                <div class="block-share-contact">
+                    <ul>
+                        <li><a href="javascript:void(0)" (mouseenter)="onChatHover()" (mouseleave)="onChatLeave()" (click)="changeChatIcon()"><span [ngClass]="isChat ? 'icon-cancel can-border':'icon-chat '"></span></a></li>
+                        <li><a href="javascript:void(0)" (mouseenter)="onShareHover()" (mouseleave)="onShareLeave()" (click)="changeShareIcon()"><span [ngClass]="isShare ? 'icon-cancel can-border':'icon-share'"></span></a></li>
+                    </ul>
+                </div>
+            </div>
             <div class="block-first" (click)="closeCancelIcon()">
                 <div class="content-logo">
                     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="70%" viewBox="0 0 422.334 112.604" enable-background="new 0 0 422.334 112.604" xml:space="preserve"> <g> <g> <path fill-rule="evenodd" clip-rule="evenodd" fill="#ffffff" d="M136.638,42.71c0-7.098,5.35-12.265,11.663-12.265
@@ -270,7 +278,7 @@
 
                     </li>
                     <li>
-                        <h4>Write to us</h4>
+                        <h4>Chat with us</h4>
                         <a class="icon-skype" href="callto://nishrat">nishrat</a>
 
                     </li>

@@ -327,3 +327,150 @@
 // we work with
 //span underline
 @mixin span-underline {}
+
+// Who We Are Start.
+@mixin tech-heading {
+    color: #fff;
+    font-size: 23.93px;
+    text-transform: uppercase;
+    font-weight: 500;
+    background-color: #000000;
+    padding: 15.40px 29.96px;
+    display: inline-block;
+}
+
+@mixin tech-heading-col-title {
+    color: #000000;
+    font-size: 18.59px;
+    line-height: 1.2;
+    padding-bottom: 12px;
+    display: inline-block;
+    position: relative;
+    min-height: 60px;
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: 0;
+        background-color: #212223;
+        width: 50px;
+        left: 0;
+        height: 1px;
+    }
+}
+
+@mixin tech-stack-ul {
+    list-style-type: none;
+    margin: 14px 0;
+}
+
+@mixin tech-stack__one-col-li {
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    padding-left: 18px;
+    line-height: 1.8rem;
+    font-size: 13px;
+    &:before {
+        content: "t";
+        font-family: "neofont" !important;
+        color: #e23434;
+        position: absolute;
+        left: 0px;
+        top: auto;
+        font-size: 0.8rem;
+        font-weight: 700;
+        vertical-align: middle;
+        line-height: 2rem;
+    }
+}
+
+@mixin tech-stack__two-col-li {
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    padding-left: 18px;
+    line-height: 1.8rem;
+    font-size: 13px;
+    &:before {
+        content: "t";
+        font-family: "neofont" !important;
+        color: #e23434;
+        position: absolute;
+        left: 0px;
+        top: auto;
+        font-size: 0.8rem;
+        font-weight: 700;
+        vertical-align: middle;
+        line-height: 2rem;
+    }
+}
+
+@mixin tech-stack__three-col-li {
+    float: left;
+    width: 33.33%;
+    padding-right: 10px;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    padding-left: 18px;
+    line-height: 1.8rem;
+    font-size: 13px;
+    &:before {
+        content: "t";
+        font-family: "neofont" !important;
+        color: #e23434;
+        position: absolute;
+        left: 0px;
+        top: auto;
+        font-size: 0.8rem;
+        font-weight: 700;
+        vertical-align: middle;
+        line-height: 2rem;
+    }
+}
+
+@mixin tech-stack__four-col-li {
+    float: left;
+    width: 25%;
+    padding-right: 10px;
+    margin: 0 0 0.5rem 0;
+    position: relative;
+    padding-left: 18px;
+    line-height: 1.8rem;
+    font-size: 13px;
+    &:before {
+        content: "t";
+        font-family: "neofont" !important;
+        color: #e23434;
+        position: absolute;
+        left: 0px;
+        top: auto;
+        font-size: 0.8rem;
+        font-weight: 700;
+        vertical-align: middle;
+        line-height: 2rem;
+    }
+}
+
+@mixin tech-stack-last {
+    &:after {
+        // position: absolute;
+        // content: "";
+        // background-image: url(../../../../assets/images/whowearemodule/overview/services/tech-stack/tech-stack-gear.png);
+        // width: 192px;
+        // height: 160px;
+        // right: -22px;
+        // bottom: 16px;
+        // opacity: 0.1;
+        position: absolute;
+        content: "";
+        background-image: url(../../../../assets/images/whowearemodule/overview/services/tech-stack/tech-stack-gear.png);
+        width: 13%;
+        height: 160px;
+        right: 0px;
+        bottom: 16px;
+        opacity: 0.1;
+    }
+}
+
+// Wo We Are Ends.

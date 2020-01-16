@@ -80,7 +80,7 @@ export class IndexComponent implements OnInit {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
-    dots: false,
+    dots: true,
     navSpeed: 700,
     navText: ['<span class="icon-left-open-big">', '<span class="icon-right-open-big">'],
     responsive: {

@@ -1,4 +1,4 @@
-<!-- <img src="../../../../assets/images/whowearemodule/overview/services/qa-testing/Test-Automation.png" alt=""> -->
+<!-- <img src="../../../../assets/images/whowearemodule/overview/services/internet-marketing/Online-Reputation-Management.png" alt=""> -->
 
 <!-- header section here -->
 <app-header></app-header>
@@ -6,13 +6,13 @@
 
 
 <!-- banner section start -->
-<app-banner [title]="'QA & TESTING'" [pageName]="'What We Do'" [description]="'We believe that Software Product must SOLVE problem(s).'">
+<app-banner [title]="'Internet Marketing'" [pageName]="'What We Do'" [description]="'We believe that Software Product must SOLVE problem(s).'">
 </app-banner>
 <!-- banner section ends -->
 
-<div class="container-fluid qaAanTesting">
+<div class="container-fluid internetMarketing">
 
-    <div class="container containerQaTesting">
+    <div class="container containerInternetMarketing">
         <div class="competencyWrapper">
             <ng-container *ngFor="let prod of product">
                 <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [listHeadingFirst]="prod.listHeadingFirst" [listHeadingSecond]="prod.listHeadingSecond"
@@ -27,10 +27,15 @@
         </div>
     </div>
 
-    <div class="container containerTechnologyStack">
+    <!-- <div class="container containerTechnologyStack">
         <div class="technolgyWrapper">
 
         </div>
-    </div>
+    </div> -->
 
 </div>
+
+
+<!-- Footer section start -->
+<app-footer></app-footer>
+<!-- Footer section ends -->

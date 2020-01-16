@@ -1,0 +1,77 @@
+@import "src/assets/scss/index";
+.containerNumberset {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    // background-color: red;
+    .numbersetWrapper {
+        .inner-numberset-title {
+            color: #2c2c2c;
+            text-transform: uppercase;
+            text-align: center;
+            font-weight: 400;
+            font-size: 2rem;
+            margin-bottom: 0;
+            &::after {
+                height: 2px;
+                width: 7rem;
+                content: "";
+                display: block;
+                margin: 1rem auto;
+                background: #ea501a;
+            }
+            span {
+                font-weight: 600;
+            }
+        }
+        .numberlist {
+            margin-top: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            list-style-type: none;
+            li {
+                width: 20%;
+                text-align: center;
+                border-right: solid 1px #bebfc3;
+                height: 265px;
+                position: relative;
+                padding: 28px 0;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+                h4 {
+                    color: #2c2c2c;
+                    font-size: 36.4px;
+                    text-transform: uppercase;
+                    font-family: "Lato-Black";
+                    text-align: center;
+                    margin-bottom: 7px;
+                    span {
+                        font-family: "Lato-Black";
+                        font-size: 21px;
+                        display: block;
+                    }
+                }
+                p {
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    font-size: 18.2px;
+                }
+                img {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    display: block;
+                    /* text-align: center; */
+                    bottom: 27px;
+                    margin: auto;
+                }
+                &:hover {
+                    background: #ffbc46;
+                }
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+}

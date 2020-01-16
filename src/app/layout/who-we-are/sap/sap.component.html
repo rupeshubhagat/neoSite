@@ -13,6 +13,7 @@
 <div class="container-fluid sap">
 
     <div class="container containerSap">
+
         <div class="competencyWrapper">
             <ng-container *ngFor="let prod of product">
                 <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [listTitleSecond]="prod.listTitleSecond" [listTitleFirst]="prod.listTitleFirst"
@@ -20,10 +21,41 @@
             </ng-container>
         </div>
     </div>
+
     <div class="container containerTechnologyStack">
         <div class="technolgyWrapper">
+            <div class="technology">
+                <h3 class="tech-heading">Technology Stack</h3>
+                <div class="tech-stack">
+                    <div class="tech-stack-col-first">
+                        <!-- <h4 class="tech-heading-col-title">Development <br/>Languages</h4> -->
+                        <ul class="teck-stack-ul">
+                            <li>ECC</li>
+                            <li>HANA</li>
+                            <li>NetWeaver</li>
+                            <li>Business Object</li>
+                        </ul>
+                    </div>
+                    <div class="tech-stack-col-second">
+                        <!-- <h4 class="tech-heading-col-title">Data Visualization <br/>& Insights</h4> -->
+                        <ul class="teck-stack-ul">
+                            <li>BASIS</li>
+                            <li>ABAP</li>
+                            <li>BI/BW</li>
+                        </ul>
+                    </div>
 
+                </div>
+            </div>
         </div>
     </div>
 
 </div>
+
+<!-- Industry Served Component start -->
+<app-industryserve></app-industryserve>
+<!-- Industry Served Component ends -->
+
+<!-- Footer section start -->
+<app-footer></app-footer>
+<!-- Footer section ends -->

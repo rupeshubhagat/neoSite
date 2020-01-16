@@ -22,15 +22,18 @@ import { SapComponent } from './sap/sap.component';
 import { UxUiComponent } from './ux-ui/ux-ui.component';
 import { SoftwareConsultingComponent } from './software-consulting/software-consulting.component';
 import { InternetMarketingComponent } from './internet-marketing/internet-marketing.component';
+import { OverviewNumbersetComponent } from './overview-numberset/overview-numberset.component';
+import { NeosoftServicesComponent } from './neosoft-services/neosoft-services.component';
+import { EnterpriseDigitalTransformationComponent } from './enterprise-digital-transformation/enterprise-digital-transformation.component';
 
 
 @NgModule({
-  declarations: [OverviewComponent, BannerComponent, CompetenciesComponent, IndustryserveComponent, MoreaboutneosoftComponent, CompetenciesServicesComponent, MobileAppDevelopmentComponent, WebDevelopmentComponent, CloudComputingComponent, AiandmlComponent, AnalyticsBigdataComponent, InternetOfThingsComponent, BlockchainComponent, DevOpsComponent, QaTestingComponent, SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent],
+  declarations: [OverviewComponent, BannerComponent, CompetenciesComponent, IndustryserveComponent, MoreaboutneosoftComponent, CompetenciesServicesComponent, MobileAppDevelopmentComponent, WebDevelopmentComponent, CloudComputingComponent, AiandmlComponent, AnalyticsBigdataComponent, InternetOfThingsComponent, BlockchainComponent, DevOpsComponent, QaTestingComponent, SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent, OverviewNumbersetComponent, NeosoftServicesComponent, EnterpriseDigitalTransformationComponent],
   imports: [
     CommonModule,
     IndexModule,
     WhoWeAreRoutingModule
   ],
-  exports: [OverviewComponent, BannerComponent, CompetenciesComponent,IndustryserveComponent,MoreaboutneosoftComponent,CompetenciesServicesComponent,MobileAppDevelopmentComponent,WebDevelopmentComponent,CloudComputingComponent, AiandmlComponent,AnalyticsBigdataComponent, InternetOfThingsComponent,BlockchainComponent, DevOpsComponent,QaTestingComponent,SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent]
+  exports: [OverviewComponent, BannerComponent, CompetenciesComponent,IndustryserveComponent,MoreaboutneosoftComponent,CompetenciesServicesComponent,MobileAppDevelopmentComponent,WebDevelopmentComponent,CloudComputingComponent, AiandmlComponent,AnalyticsBigdataComponent, InternetOfThingsComponent,BlockchainComponent, DevOpsComponent,QaTestingComponent,SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent,OverviewNumbersetComponent,NeosoftServicesComponent,EnterpriseDigitalTransformationComponent]
 })
 export class WhoWeAreModule { }

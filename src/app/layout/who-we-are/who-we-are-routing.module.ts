@@ -19,6 +19,9 @@ import { SapComponent } from './sap/sap.component';
 import { UxUiComponent } from './ux-ui/ux-ui.component';
 import { SoftwareConsultingComponent } from './software-consulting/software-consulting.component';
 import { InternetMarketingComponent } from './internet-marketing/internet-marketing.component';
+import { OverviewNumbersetComponent } from './overview-numberset/overview-numberset.component';
+import { NeosoftServicesComponent } from './neosoft-services/neosoft-services.component';
+import { EnterpriseDigitalTransformationComponent } from './enterprise-digital-transformation/enterprise-digital-transformation.component';
 
 
 const routes: Routes = [
@@ -97,6 +100,18 @@ const routes: Routes = [
   {
     path: 'internetmarketing',
     component: InternetMarketingComponent
+  },
+  {
+    path: 'overviewnumberset',
+    component: OverviewNumbersetComponent
+  },
+  {
+    path: 'neosoftservices',
+    component: NeosoftServicesComponent
+  },
+  {
+    path: 'enterprise-digital-transformation',
+    component: EnterpriseDigitalTransformationComponent
   }
 
 ];

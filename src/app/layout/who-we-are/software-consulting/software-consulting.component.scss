@@ -7,5 +7,44 @@
             top: -32px;
         }
     }
-    .containerTechnologyStack {}
+    .containerTechnologyStack {
+        padding: 0 0 60px;
+        .technolgyWrapper {
+            .technology {
+                .tech-heading {
+                    color: #fff;
+                    font-size: 23.93px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    background-color: #000000;
+                    padding: 15.40px 29.96px;
+                    display: inline-block;
+                }
+                .tech-stack {
+                    width: 100%;
+                    padding: 15.95px 36.96px;
+                    background-color: #f5a820;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    position: relative;
+                    overflow: hidden;
+                    @include tech-stack-last;
+                    .tech-stack-col-first {
+                        width: 100%;
+                        // border-right: 1px solid #cb8f27;
+                        padding-top: 12.9px;
+                        .tech-heading-col-title {
+                            @include tech-heading-col-title;
+                        }
+                        .teck-stack-ul {
+                            @include tech-stack-ul;
+                            li {
+                                @include tech-stack__three-col-li;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

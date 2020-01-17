@@ -1,16 +1,49 @@
+<!-- <img src="../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/architecture.png" alt=""> -->
+
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
 <div class="container-fluid enterpriseDigitalSection">
     <div class="container enterpriseContainer">
+
         <div class="enterpriseWrapper">
             <div class="prod-engg-box">
                 <div class="product-engg-box-title">
                     <h3><span>Enterprise </span> Digital Transformation</h3>
                 </div>
                 <div class="product-engg-box-description">
-                    <h3><span>Enterprise </span> Digital Transformation</h3>
+                    <p>Enterprise Digital Transformation is all about impacting Customer Experience, Business Efficiency &amp; Business Innovation - by use of Disruptive Technologies, Products / Solutions, Infrastructures / Platforms &amp; Processes. Earlier
+                        Information Technology (IT) was used as just an enabler, but now Information Technology (IT) is used to drive business. Enterprises are looking for solutions which will empower them to resolve their present issues, forecast tomorrow’s
+                        / future needs &amp; concerns.</p>
                 </div>
 
             </div>
-            <div class="digital-img-container"></div>
+            <div class="digital-img-container">
+                <img src="../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/digital-img1.png" alt="digi-img1">
+                <img src="../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/digital-img2.png" alt="digi-img2">
+                <img src="../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/digital-img3.png" alt="digi-img3">
+            </div>
         </div>
     </div>
 </div>
+<div class="container-fluid enterpriseDigitalSectionTwo">
+    <div class="container enterpriseContainerTwo">
+        <div class="competencyWrapper">
+            <ng-container *ngFor="let prod of product">
+                <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [listHeadingFirst]="prod.listHeadingFirst" [listHeadingSecond]="prod.listHeadingSecond"
+                    [listHeadingThird]="prod.listHeadingThird" [listHeadingForth]="prod.listHeadingForth" [listHeadingFifth]="prod.listHeadingFifth" [listHeadingSix]="prod.listHeadingSix" [listHeadingSeven]="prod.listHeadingSeven" [listHeadingEight]="prod.listHeadingEight"
+                    [listHeadingNine]="prod.listHeadingNine" [listTitleFirst]="prod.listTitleFirst" [listTitleSecond]="prod.listTitleSecond" [listTitleThird]="prod.listTitleThird" [listTitleForth]="prod.listTitleForth" [listTitleFifth]="prod.listTitleFifth"
+                    [listTitleSix]="prod.listTitleSix" [listTitleSeven]="prod.listTitleSeven" [listTitleEight]="prod.listTitleEight" [listTitleNine]="prod.listTitleNine" [posts]="prod.posts" [postsSecond]="prod.postsSecond" [postsThird]="prod.postsThird"
+                    [postsForth]="prod.postsForth" [postsFifth]="prod.postsFifth" [postsSix]="prod.postsSix" [postsSeven]="prod.postsSeven" [postsEight]="prod.postsEight" [postsNine]="prod.postsNine" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.isCompetencies"
+                    [moreInfoParaFirst]="prod.moreInfoParaFirst" [moreInfoParaSecond]="prod.moreInfoParaSecond" [moreInfoParaThird]="prod.moreInfoParaThird" [moreInfoParaForth]="prod.moreInfoParaForth" [moreInfoParaFifth]="prod.moreInfoParaFifth" [moreInfoParaSix]="prod.moreInfoParaSix"
+                    [moreInfoParaSeven]="prod.moreInfoParaSeven" [moreInfoParaEight]="prod.moreInfoParaEight" [moreInfoParaNine]="prod.moreInfoParaNine">
+                </app-competencies-services>
+            </ng-container>
+        </div>
+    </div>
+</div>
+
+<!-- Footer section start -->
+<app-footer></app-footer>
+<!-- Footer section ends -->

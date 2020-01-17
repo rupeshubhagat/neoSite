@@ -1,0 +1,115 @@
+@import "src/assets/scss/_index";
+.dedicatedTeam {
+    position: relative;
+    .teamWrapper {
+        position: relative;
+        .team-boxes {
+            display: flex;
+            justify-content: space-between;
+            .resource {
+                width: 48%;
+                padding: 35px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                background: #ffffff;
+                min-height: 415px;
+                h3 {
+                    text-transform: uppercase;
+                    color: #2c2c2c;
+                    font-weight: 400;
+                    line-height: 35px;
+                    margin-bottom: 21px;
+                }
+                p {
+                    font-size: 15.40px;
+                    line-height: 25.2px;
+                }
+            }
+            .whoIsIT {
+                width: 48%;
+                padding: 35px;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+                background: #db4041;
+                min-height: 415px;
+                h4 {
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-weight: 400;
+                    line-height: 35px;
+                    margin-bottom: 25.2px;
+                    font-size: 28px;
+                    &:after {
+                        content: "";
+                        width: 16%;
+                        height: 2px;
+                        background: #fff;
+                        display: block;
+                        margin-top: 4.2px
+                    }
+                }
+                .who-is-it-list {
+                    list-style-type: none;
+                    margin-bottom: 0;
+                    margin-top: 3rem;
+                    li {
+                        float: left;
+                        display: inline-block;
+                        width: 49%;
+                        color: #ffffff;
+                        position: relative;
+                        font-size: 1rem;
+                        margin-bottom: 10%;
+                        padding-left: 4rem;
+                        &:after {
+                            // content: "01";
+                            display: inline-block;
+                            position: absolute;
+                            font-size: 2.7rem;
+                            color: #bd2728;
+                            vertical-align: middle;
+                            left: 0px;
+                            line-height: 2.5rem;
+                            font-family: "HelveticaInseratLTStdRoman";
+                            font-weight: 700;
+                            text-align: right;
+                        }
+                        &:nth-child(1) {
+                            &:after {
+                                content: "01";
+                            }
+                        }
+                        &:nth-child(2) {
+                            &:after {
+                                content: "02";
+                            }
+                        }
+                        &:nth-child(3) {
+                            &:after {
+                                content: "03";
+                            }
+                        }
+                        &:nth-child(4) {
+                            &:after {
+                                content: "04";
+                            }
+                        }
+                        &:nth-child(5) {
+                            &:after {
+                                content: "05";
+                            }
+                        }
+                        &:nth-child(6) {
+                            &:after {
+                                content: "06";
+                            }
+                        }
+                        &:nth-child(7) {
+                            &:after {
+                                content: "07";
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

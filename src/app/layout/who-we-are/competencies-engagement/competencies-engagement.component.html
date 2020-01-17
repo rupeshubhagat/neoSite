@@ -1,0 +1,23 @@
+<div class="container competenciesEngagement">
+    <div class="competenciesEngWrapper">
+
+        <div class="engagementHeader" (click)="isCompetencies = !isCompetencies">
+            <div class="colFirstWrapper">
+                <div class="title">
+                    This is Title
+                </div>
+                <div class="decscription">
+                    <h2>This is Description This s DescriptionThis ionThis is DescriptionThis is Description</h2>
+                </div>
+            </div>
+            <div class="colSeocndWrapper">
+                <div class="icon">
+                    <img [src]="arrowRight" alt="" *ngIf="!isCompetencies">
+                    <img [src]="close" alt="" *ngIf="isCompetencies">
+                </div>
+            </div>
+        </div>
+
+        <div class="engagementbody"></div>
+    </div>
+</div>

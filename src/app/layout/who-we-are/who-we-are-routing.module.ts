@@ -22,6 +22,8 @@ import { InternetMarketingComponent } from './internet-marketing/internet-market
 import { OverviewNumbersetComponent } from './overview-numberset/overview-numberset.component';
 import { NeosoftServicesComponent } from './neosoft-services/neosoft-services.component';
 import { EnterpriseDigitalTransformationComponent } from './enterprise-digital-transformation/enterprise-digital-transformation.component';
+import { DedicatedTeamComponent } from './dedicated-team/dedicated-team.component';
+import { CompetenciesEngagementComponent } from './competencies-engagement/competencies-engagement.component';
 
 
 const routes: Routes = [
@@ -112,6 +114,14 @@ const routes: Routes = [
   {
     path: 'enterprise-digital-transformation',
     component: EnterpriseDigitalTransformationComponent
+  },
+  {
+    path: 'dedicated-team',
+    component: DedicatedTeamComponent
+  },
+  {
+    path: 'competencies-engagement',
+    component: CompetenciesEngagementComponent
   }
 
 ];

@@ -7,13 +7,15 @@
     background-position: center center;
     position: relative;
     .enterpriseContainer {
+        position: relative;
         .enterpriseWrapper {
+            position: relative;
             .prod-engg-box {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 background: #f7a900;
-                padding: 2rem 1.5rem;
+                padding: 28px 21px;
                 position: absolute;
                 top: 54px;
                 z-index: 1;
@@ -23,12 +25,74 @@
                 // margin: auto;
                 .product-engg-box-title {
                     width: 21%;
+                    display: flex;
+                    align-items: center;
+                    h3 {
+                        margin-bottom: 0;
+                        font-family: "Opensans-ExtaBold";
+                        text-transform: uppercase;
+                        color: #212223;
+                        line-height: 2.2rem;
+                        font-size: 28px;
+                        @media (min-width: 1024px) and (max-width: 1439.98px) {
+                            font-size: 26px;
+                        }
+                        span {
+                            font-weight: 400;
+                            font-family: $primary-font;
+                        }
+                    }
                 }
                 .product-engg-box-description {
                     width: 71%;
+                    border-left: 1px solid rgba(61, 42, 8, 0.5);
+                    padding-left: 42px;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        margin-bottom: 0;
+                        color: #3c2c0f;
+                        font-size: 18.2px;
+                        line-height: 22.40px;
+                        @media (min-width: 1024px) and (max-width: 1439.98px) {
+                            font-size: 16.2px;
+                        }
+                    }
                 }
             }
-            .digital-img-container {}
+            .digital-img-container {
+                position: relative;
+                // top: 54px;
+                top: 242px;
+                padding-top: 56px;
+                text-align: center;
+                @media (min-width: 1024px) and (max-width: 1439.98px) {
+                    text-align: left;
+                }
+                img {
+                    max-width: 100%;
+                    padding: 14px;
+                    box-sizing: border-box;
+                    vertical-align: bottom;
+                    @media (min-width: 768px) and (max-width: 1023.98px) {
+                        width: 33%;
+                    }
+                    @media (min-width: 1024px) and (max-width: 1439.98px) {
+                        max-width: 376px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.enterpriseDigitalSectionTwo {
+    background-color: #dcdcdc;
+    padding-bottom: 26px;
+    .enterpriseContainerTwo {
+        .competencyWrapper {
+            position: relative;
+            top: -44px;
         }
     }
 }

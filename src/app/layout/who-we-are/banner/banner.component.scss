@@ -141,6 +141,13 @@
     }
 }
 
+.teamAugumentation {
+    background-image: url(../../../../assets/images/whowearemodule/banner/hire-team-bg.jpg);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/hireteam-bottom-bg.png);
+    }
+}
+
 .bannerSection {
     // background-image: url(../../../../assets/images/whowearemodule/banner/overview-bg.png);
     background-repeat: no-repeat;

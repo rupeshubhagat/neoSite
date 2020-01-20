@@ -1,10 +1,10 @@
 <div class="container competencies">
     <div class="competenciesWrapper">
-        <div class="competenciesHeader" (click)="isCompetencies = !isCompetencies">
+        <!-- <div class="competenciesHeader" (click)="isCompetencies = !isCompetencies">
             <div class="row">
                 <div class="col-lg-5 colFirst">
                     <div class="title">
-                        {{title}}
+                       {{title}}
                     </div>
                 </div>
                 <div class="col-lg-6 colSecond">
@@ -16,25 +16,39 @@
                 </div>
                 <div class="col-lg-1 colThird">
                     <div class="icon">
-                        <!-- <span [ngClass]="{'icon-right-open-big':!isCompetencies, 'icon-cancel': isCompetencies}"></span> -->
-                        <!-- <img [src]="'right-arrow-sign': !  isCompetencies, 'close-sign':isCompetencies" /> -->
                         <img [src]="arrowRight" alt="" *ngIf="!isCompetencies">
                         <img [src]="close" alt="" *ngIf="isCompetencies">
                     </div>
                 </div>
             </div>
 
+        </div> -->
+        <div class="engagementHeader" (click)="isCompetencies = !isCompetencies">
+            <div class="colFirstWrapper">
+                <div class="title">
+                    {{title}}
+                </div>
+                <div class="decscription">
+                    <h2> {{description}}</h2>
+                </div>
+            </div>
+            <div class="colSeocndWrapper">
+                <div class="icon">
+                    <img [src]="arrowRight" alt="" *ngIf="!isCompetencies">
+                    <img [src]="close" alt="" *ngIf="isCompetencies">
+                </div>
+            </div>
         </div>
+
         <div class="competenciesBody" *ngIf="isCompetencies">
             <div class="row">
-                <div class="col-lg-4 left-col">
+                <div class="col-sm-4 col-lg-4 left-col">
                     <div class="img-box">
                         <img [src]="imgUrl" alt="microsoft">
-                        <!-- <img src="../../../../assets/images/whowearemodule/competencies/database.jpg" alt=""> -->
                     </div>
 
                 </div>
-                <div class="col-lg-8 right-col">
+                <div class="col-sm-8 col-lg-8 right-col">
                     <div class="lists">
                         <ul>
                             <ng-container *ngFor="let post of posts">

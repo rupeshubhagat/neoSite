@@ -1,23 +1,185 @@
 <div class="container competenciesEngagement">
     <div class="competenciesEngWrapper">
-
-        <div class="engagementHeader" (click)="isCompetencies = !isCompetencies">
-            <div class="colFirstWrapper">
-                <div class="title">
-                    This is Title
+        <div class="engagementHeading">
+            <h3>Engagement Models</h3>
+        </div>
+        <div class="resourceAsService">
+            <div class="engagementHeader" (click)="isCompetencies = !isCompetencies">
+                <div class="colFirstWrapper">
+                    <div class="title">
+                        resource as service
+                    </div>
+                    <div class="decscription">
+                        <h2>Offshore, Onsite & Hybrid</h2>
+                    </div>
                 </div>
-                <div class="decscription">
-                    <h2>This is Description This s DescriptionThis ionThis is DescriptionThis is Description</h2>
+                <div class="colSeocndWrapper">
+                    <div class="icon">
+                        <img [src]="arrowRight" alt="" *ngIf="!isCompetencies">
+                        <img [src]="close" alt="" *ngIf="isCompetencies">
+                    </div>
                 </div>
             </div>
-            <div class="colSeocndWrapper">
-                <div class="icon">
-                    <img [src]="arrowRight" alt="" *ngIf="!isCompetencies">
-                    <img [src]="close" alt="" *ngIf="isCompetencies">
+            <div class="engagementbody" *ngIf="isCompetencies">
+                <!-- *ngIf="isCompetencies" -->
+                <div class="row">
+                    <div class="col-sm-2 col-lg-2 left-col">
+                        <div class="img-box">
+                            <img src="../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/engamentmodel/Offshore.png" alt="team Engagement">
+                        </div>
+
+                    </div>
+                    <div class="col-sm-10 col-lg-10 right-col">
+
+                        <div class="description-title">
+                            <p class="para-first">At NeoSOFT, our talented & motivated team of professionals across different disciplines possess the optimum mix of Knowledge, Technological Expertise & Exposure to become your preferred choice for Offshore / Onsite Development
+                                Partner. For ensuring the success of your outsourcing endeavor, we have developed our own proprietary processes, procedures & practices.</p>
+                            <p class="para-second">Resource as a Service is fully customized to work on,</p>
+                        </div>
+
+                        <div class="listFirst">
+                            <ul>
+                                <li><strong>Offshore</strong>- Hourly, Part Time & Full Time</li>
+                                <li><strong>Onsite</strong>- Hire at your location</li>
+                                <li><strong>Hybrid </strong>-Combination of Offshore & Onsite Team</li>
+                            </ul>
+                        </div>
+
+                        <div class="paragraphDesc">
+                            <p class="para">Offshore Engagement allow you to hire resource Hourly / Part Time / Full Time as follow:</p>
+                        </div>
+
+                        <div class="source-service-table">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="title1">PARAMETER</td>
+                                            <td class="text-center title2">Hourly</td>
+                                            <td class="text-center title3 borderMedium">Part-Time</td>
+                                            <td class="text-center title4">Full-Time</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Duration</td>
+                                            <td class="light-red text-center">Hour Basis</td>
+                                            <td class="medium-red text-center borderMedium">5 Hours</td>
+                                            <td class="dark-red text-center">9 Hours</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Communication</td>
+                                            <td colspan="3" class="text-center td-center">Phone,Chat,Skype,Mail</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Hiring Period(Min)</td>
+                                            <td class="light-red text-center">25 Hours</td>
+                                            <td class="medium-red text-center borderMedium">1 Month</td>
+                                            <td class="dark-red text-center">1 Month</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="">Project Trackers</td>
+                                            <td colspan="3" class="text-center td-center">Daily Reports, Basecamp, Jira,Redmine etc.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Methodology</td>
+                                            <td class="light-red text-center">Agile</td>
+                                            <td class="medium-red text-center borderMedium">Agile</td>
+                                            <td class="dark-red text-center">Agile</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+
+                        <div class="paragraphDesc">
+                            <p class="para">Advantages of “Resource as a Service”</p>
+                        </div>
+
+                        <div class="listSecond">
+                            <ul>
+                                <li><strong>Low Cost</strong>- Save almost 70% compared to traditional in-house staffing</li>
+                                <li>No need to create or maintain Offices / Infrastructure</li>
+                                <li>No need to buy any Hardware or Software</li>
+
+                                <li><strong>Scalable </strong>- Flexibility to scale up OR down based on your business needs without any overheads</li>
+                                <li>No need to worry about Recruitment or Attrition</li>
+
+                                <li><strong>Flexibility  </strong>- Hire full time, part time OR hourly as per your business needs</li>
+                                <li>No need to worry about Days Off OR Sick Leaves</li>
+                                <li>No need to pay for Vacations</li>
+
+                                <li><strong>No Hidden Cost </strong>- Then service is simple; a hourly resource fee without any overheads</li>
+                                <li><strong>On Demand</strong>- Hire resources as and when required as per your business needs</li>
+
+                            </ul>
+                        </div>
+
+
+
+
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="engagementbody"></div>
+        <div class="odcService">
+            <div class="engagementHeader" (click)="isCompetenciesSecond = !isCompetenciesSecond">
+                <div class="colFirstWrapper">
+                    <div class="title">
+                        ODC / BOT
+                    </div>
+                    <div class="decscription">
+                        <h2>Dedicated, On-Demand, Secure & Customized – which follow your Practices, Processes, Methodologies & Culture</h2>
+                    </div>
+                </div>
+                <div class="colSeocndWrapper">
+                    <div class="icon">
+                        <img [src]="arrowRight" alt="" *ngIf="!isCompetenciesSecond">
+                        <img [src]="close" alt="" *ngIf="isCompetenciesSecond">
+                    </div>
+                </div>
+            </div>
+            <div class="engagementbody" *ngIf="isCompetenciesSecond">
+                <!-- *ngIf="isCompetencies" -->
+                <div class="row">
+                    <div class="col-lg-2 left-col">
+                        <div class="img-box">
+                            <img src="../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/engamentmodel/ODC.png" alt="team Engagement">
+                        </div>
+
+                    </div>
+                    <div class="col-lg-10 right-col">
+
+                        <div class="description-title">
+                            <p class="para-first">Offshore Development Center (ODC) is preferred approach for Enterprises, SMEs & Startups all over the globe to systematically implement, maintain & enhance software products for their business. ODC acts like an arm of their
+                                organization which leverages the rich & proven reserves of IT Human Capital & Low-Cost advantage of India. We help them set up Dedicated, On-Demand, Secure & Customized software offshore development centers in India for
+                                Enterprises, SMEs & Startups - which follow their Practices, Processes, Methodologies & Culture. A budget is pre-defined by the client which is strictly followed by us while hiring resources, building ODC.</p>
+
+                        </div>
+
+                        <div class="listFirst">
+                            <p class="list-Title"><strong>There are 3 main components of ODC:</strong></p>
+                            <ul>
+                                <li><strong>Build</strong>- Hire Resources, Setup Infrastructure & Development Environments, Establish Practices / Processes / Methodologies / Culture</li>
+                                <li><strong>Operate</strong>- Training & Development, Measure Efficiency, Knowledge & Intellectual Property (IP) Protection, Regulation & Compliance</li>
+                                <li><strong>Transfer (if required)</strong>-Entire operational company to client based on pre-defined T&C and milestones achievement.</li>
+                            </ul>
+                        </div>
+                        <div class="listSecond">
+                            <p class="list-Title"><strong>Advantages of ODC</strong></p>
+                            <ul>
+                                <li>300% Lower Cost</li>
+                                <li>100% Transparent Operation</li>
+                                <li>Multi Technology Team</li>
+                                <li>Intellectual Property Protection</li>
+                                <li>Ramp Up & Ramp Down as per need</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </div>

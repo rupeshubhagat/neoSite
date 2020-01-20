@@ -260,4 +260,50 @@
 //     height: auto!important;
 // }
 // *********** Who WE Are Module *******************
+// ----hire Page 
+.box-heading {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 19.5px !important;
+}
+
+.techUl {
+    list-style-type: none;
+    padding: 0;
+    margin: 14px 0px;
+    max-height: 235px !important;
+    overflow-y: scroll;
+    li {
+        margin: 0 0 7px 0 !important;
+        position: relative;
+        padding-left: 18px !important;
+        line-height: 25.2px;
+        &:before {
+            content: "t";
+            font-family: "neofont" !important;
+            color: #e23434;
+            position: absolute;
+            left: 0px;
+            top: auto;
+            font-size: 0.8rem;
+            font-weight: 700;
+            vertical-align: middle;
+            line-height: 2rem;
+        }
+    }
+}
+
+.techUl::-webkit-scrollbar {
+    width: 3px;
+    // background-color: #F5F5F5;
+}
+
+.techUl::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #e23434;
+}
+
+//-----hire page ends
 // *********** Who We are Module Ends **************

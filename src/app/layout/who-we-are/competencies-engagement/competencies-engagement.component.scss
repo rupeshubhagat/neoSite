@@ -6,53 +6,436 @@
 //     background-image: url(../../../../assets/images/whowearemodule/accordian/accordion-close.png);
 // }
 .competenciesEngagement {
-    background-color: #fff;
+    // background-color: #fff;
     margin-bottom: 8px;
     .competenciesEngWrapper {
-        .engagementHeader {
-            width: 100%;
-            display: flex;
-            border: 1px solid red;
-            // background-color: grey;
-            .colFirstWrapper {
-                width: 90%;
-                display: flex;
-                align-items: center;
-                height: auto;
-                padding: 22.23px 27.82px;
-                background-color: #ffffff;
-                .title {
-                    width: 35%;
-                    text-transform: uppercase;
-                    font-size: 20.02px;
-                    color: #2f3030;
-                }
-                .decscription {
-                    width: 65%;
-                    h2 {
-                        font-size: 1.14rem;
-                        font-weight: 400;
-                        margin-bottom: 0;
-                        color: #2f3030;
-                    }
-                }
-            }
-            .colSeocndWrapper {
-                width: 10%;
-                display: flex;
-                justify-content: center;
-                height: auto;
-                padding: 22.23px 27.82px;
-                background-color: #ffbc46;
-                .icon {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    color: white;
-                    font-size: 26px;
+        .engagementHeading {
+            h3 {
+                color: #2c2c2c;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 28px;
+                margin-bottom: 0;
+                &:after {
+                    height: 2px;
+                    width: 7rem;
+                    content: "";
+                    display: block;
+                    margin: 1rem auto;
+                    background: #ea501a;
                 }
             }
         }
-        .engagementbody {}
+        .resourceAsService {
+            padding-bottom: 7px;
+            .engagementHeader {
+                width: 100%;
+                display: flex;
+                // border: 1px solid red;
+                // background-color: grey;
+                .colFirstWrapper {
+                    width: 90%;
+                    display: flex;
+                    align-items: center;
+                    height: auto;
+                    padding: 22.23px 27.82px;
+                    background-color: #ffffff;
+                    @media (max-width: 767.98px) {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+                    }
+                    .title {
+                        width: 35%;
+                        text-transform: uppercase;
+                        font-size: 20.02px;
+                        color: #2f3030;
+                        @media (max-width: 767.98px) {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
+                        }
+                    }
+                    .decscription {
+                        width: 65%;
+                        padding: 0 40px;
+                        @media (max-width: 767.98px) {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
+                            padding: 0 0px;
+                        }
+                        h2 {
+                            font-size: 1.14rem;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                            color: #2f3030;
+                        }
+                    }
+                }
+                .colSeocndWrapper {
+                    width: 10%;
+                    display: flex;
+                    justify-content: center;
+                    height: auto;
+                    padding: 22.23px 27.82px;
+                    background-color: #ffbc46;
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 26px;
+                    }
+                }
+            }
+            .engagementbody {
+                background-color: #ffffff;
+                .row {
+                    padding: 20px 20px;
+                    border-top: 1px solid #d3d3d3;
+                    margin-right: 0px !important;
+                    margin-left: 0px !important;
+                    .left-col {
+                        .img-box {
+                            padding-right: 40px;
+                            img {
+                                max-width: 98px;
+                                max-height: 98px;
+                            }
+                        }
+                    }
+                    .right-col {
+                        padding-left: 0px;
+                        .description-title {
+                            P {
+                                margin-top: 13px;
+                                font-size: 16.83px;
+                                color: #414140;
+                                line-height: 1.8rem;
+                            }
+                        }
+                        .listFirst {
+                            padding-top: 13px;
+                            ul {
+                                display: inline-block;
+                                width: 100%;
+                                list-style-type: none;
+                                position: relative;
+                                li {
+                                    width: 100%;
+                                    // float: left;
+                                    position: relative;
+                                    padding-left: 20px;
+                                    line-height: 28px;
+                                    font-size: 16.83px;
+                                    &::before {
+                                        content: "t";
+                                        font-family: "neofont" !important;
+                                        color: #e23434;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: auto;
+                                        font-size: 0.8rem;
+                                        font-weight: 700;
+                                        vertical-align: middle;
+                                        line-height: 28px;
+                                    }
+                                }
+                            }
+                        }
+                        .listSecond {
+                            padding-top: 13px;
+                            ul {
+                                display: inline-block;
+                                width: 100%;
+                                list-style-type: none;
+                                position: relative;
+                                li {
+                                    width: 50%;
+                                    float: left;
+                                    position: relative;
+                                    padding-left: 20px;
+                                    line-height: 28px;
+                                    font-size: 16.83px;
+                                    &::before {
+                                        content: "t";
+                                        font-family: "neofont" !important;
+                                        color: #e23434;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: auto;
+                                        font-size: 0.8rem;
+                                        font-weight: 700;
+                                        vertical-align: middle;
+                                        line-height: 28px;
+                                    }
+                                }
+                            }
+                        }
+                        .paragraphDesc {
+                            P {
+                                margin-top: 13px;
+                                margin-bottom: 13px;
+                                font-size: 16.83px;
+                                color: #414140;
+                                line-height: 1.8rem;
+                            }
+                        }
+                        .source-service-table {
+                            .table-responsive {
+                                table {
+                                    td {
+                                        border-top: none !important;
+                                        font-size: 14.82px;
+                                        color: #ffffff;
+                                        padding: 12px;
+                                    }
+                                    td:nth-child(1) {
+                                        background-color: #5c5b61;
+                                        text-align: left;
+                                        color: #fff !important;
+                                    }
+                                    .title1 {
+                                        background-color: #37363b !important;
+                                        text-align: left;
+                                        color: #fff !important;
+                                    }
+                                    .title2 {
+                                        background-color: #8c342a;
+                                        color: #fff !important;
+                                        &:before {
+                                            content: "";
+                                            width: 34px;
+                                            height: 34px;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            margin-right: 10px;
+                                            background-image: url(../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/engamentmodel/table/t-hourly.png);
+                                        }
+                                    }
+                                    .title3 {
+                                        background-color: #8c342a;
+                                        color: #fff !important;
+                                        &:before {
+                                            content: "";
+                                            width: 34px;
+                                            height: 34px;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            margin-right: 10px;
+                                            background-image: url(../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/engamentmodel/table/t-hourly.png);
+                                        }
+                                    }
+                                    .title4 {
+                                        background-color: #8c342a;
+                                        color: #fff !important;
+                                        &:before {
+                                            content: "";
+                                            width: 34px;
+                                            height: 34px;
+                                            display: inline-block;
+                                            vertical-align: middle;
+                                            margin-right: 10px;
+                                            background-image: url(../../../../assets/images/whowearemodule/overview/services/enterpriseDigitalTransformation/engamentmodel/table/t-hourly.png);
+                                        }
+                                    }
+                                    .light-red {
+                                        background-color: #e95642;
+                                        color: #fff !important;
+                                    }
+                                    .medium-red {
+                                        background-color: #e54545;
+                                        color: #fff !important;
+                                    }
+                                    .dark-red {
+                                        background-color: #da3434;
+                                        color: #fff !important;
+                                    }
+                                    .td-center {
+                                        color: #414140;
+                                    }
+                                    .borderMedium {
+                                        border-left: 2px solid #fff;
+                                        border-right: 2px solid #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .odcService {
+            .engagementHeader {
+                width: 100%;
+                display: flex;
+                // border: 1px solid red;
+                // background-color: grey;
+                .colFirstWrapper {
+                    width: 90%;
+                    display: flex;
+                    align-items: center;
+                    height: auto;
+                    padding: 22.23px 27.82px;
+                    background-color: #ffffff;
+                    @media (max-width: 767.98px) {
+                        width: 100%;
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-wrap: wrap;
+                    }
+                    .title {
+                        width: 35%;
+                        text-transform: uppercase;
+                        font-size: 20.02px;
+                        color: #2f3030;
+                        @media (max-width: 767.98px) {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
+                        }
+                    }
+                    .decscription {
+                        width: 65%;
+                        padding: 0 40px;
+                        @media (max-width: 767.98px) {
+                            width: 100%;
+                            display: flex;
+                            justify-content: flex-start;
+                            flex-wrap: wrap;
+                            padding: 0 0px;
+                        }
+                        h2 {
+                            font-size: 1.14rem;
+                            font-weight: 400;
+                            margin-bottom: 0;
+                            color: #2f3030;
+                        }
+                    }
+                }
+                .colSeocndWrapper {
+                    width: 10%;
+                    display: flex;
+                    justify-content: center;
+                    height: auto;
+                    padding: 22.23px 27.82px;
+                    background-color: #ffbc46;
+                    .icon {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 26px;
+                    }
+                }
+            }
+            .engagementbody {
+                background-color: #ffffff;
+                .row {
+                    padding: 20px 20px;
+                    border-top: 1px solid #d3d3d3;
+                    margin-right: 0px !important;
+                    margin-left: 0px !important;
+                    .left-col {
+                        .img-box {
+                            padding-right: 40px;
+                            img {
+                                max-width: 98px;
+                                max-height: 98px;
+                            }
+                        }
+                    }
+                    .right-col {
+                        padding-left: 0px;
+                        .description-title {
+                            P {
+                                margin-top: 13px;
+                                font-size: 16.83px;
+                                color: #414140;
+                                line-height: 1.8rem;
+                            }
+                        }
+                        .listFirst {
+                            padding-top: 13px;
+                            .list-Title {
+                                margin-top: 13px;
+                                margin-bottom: 13px;
+                                color: #414140;
+                                font-size: 16px;
+                            }
+                            ul {
+                                display: inline-block;
+                                width: 100%;
+                                list-style-type: none;
+                                position: relative;
+                                li {
+                                    width: 100%;
+                                    // float: left;
+                                    position: relative;
+                                    padding-left: 20px;
+                                    line-height: 28px;
+                                    font-size: 16.83px;
+                                    margin-bottom: 4px;
+                                    &::before {
+                                        content: "t";
+                                        font-family: "neofont" !important;
+                                        color: #e23434;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: auto;
+                                        font-size: 0.8rem;
+                                        font-weight: 700;
+                                        vertical-align: middle;
+                                        line-height: 28px;
+                                    }
+                                }
+                            }
+                        }
+                        .listSecond {
+                            padding-top: 13px;
+                            .list-Title {
+                                margin-top: 13px;
+                                margin-bottom: 13px;
+                                color: #414140;
+                                font-size: 16px;
+                            }
+                            ul {
+                                display: inline-block;
+                                width: 100%;
+                                list-style-type: none;
+                                position: relative;
+                                li {
+                                    width: 100%;
+                                    // float: left;
+                                    position: relative;
+                                    padding-left: 20px;
+                                    line-height: 28px;
+                                    font-size: 16.83px;
+                                    margin-bottom: 4px;
+                                    &::before {
+                                        content: "t";
+                                        font-family: "neofont" !important;
+                                        color: #e23434;
+                                        position: absolute;
+                                        left: 0px;
+                                        top: auto;
+                                        font-size: 0.8rem;
+                                        font-weight: 700;
+                                        vertical-align: middle;
+                                        line-height: 28px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

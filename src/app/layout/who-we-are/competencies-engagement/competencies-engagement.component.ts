@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CompetenciesEngagementComponent implements OnInit {
 
   isCompetencies:boolean = false;
+  isCompetenciesSecond:boolean = false;
   arrowRight:string = "../../../../assets/images/whowearemodule/accordian/accordion-arrow.png";
   close:string = "../../../../assets/images/whowearemodule/accordian/accordion-close.png";
   constructor() { }

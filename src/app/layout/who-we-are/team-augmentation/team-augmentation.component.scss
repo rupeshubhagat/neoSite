@@ -1,0 +1,40 @@
+@import "src/assets/scss/index";
+.teamAugmentationsections {
+    background-color: #dcdcdc;
+    .teamModel {
+        padding-bottom: 35px;
+        margin-top: -42px;
+    }
+    .engagementModel {
+        padding-bottom: 35px;
+    }
+    .containerCompetencies {
+        padding-top: 20px;
+        .overveiewContainerCompetencies {
+            .inner-numberset-title {
+                color: #2c2c2c;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 2rem;
+                margin-bottom: 0;
+                &::after {
+                    height: 2px;
+                    width: 7rem;
+                    content: "";
+                    display: block;
+                    margin: 1rem auto;
+                    background: #ea501a;
+                }
+            }
+            .para-desc {
+                margin: 0 0 28px 0;
+                line-height: 19.59px;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+    .neoServices {}
+    .overviewNumberSet {}
+}

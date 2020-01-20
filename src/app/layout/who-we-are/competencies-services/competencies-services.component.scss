@@ -10,55 +10,101 @@
 .competencies {
     background-color: #fff;
     margin-bottom: 8px;
+    padding: 0;
     .competenciesWrapper {
-        .competenciesHeader {
+        // .competenciesHeader {
+        //     width: 100%;
+        //     display: inline-block;
+        //     .row {
+        //         background-color: #fff;
+        //         // border: 1px solid black;
+        //         .colFirst {
+        //             display: flex;
+        //             align-items: center;
+        //             height: auto;
+        //             padding: 22.23px 27.82px;
+        //             .title {
+        //                 text-transform: uppercase;
+        //                 font-size: 20.02px;
+        //                 display: flex;
+        //                 align-items: center;
+        //                 height: auto;
+        //                 color: #2f3030;
+        //                 // padding: 22.23px 0 22.23px 0;
+        //             }
+        //         }
+        //         .colSecond {
+        //             display: flex;
+        //             align-items: center;
+        //             height: auto;
+        //             padding: 22.23px 27.82px;
+        //             .decscription {
+        //                 h2 {
+        //                     font-size: 1.14rem;
+        //                     font-weight: 400;
+        //                     margin-bottom: 0;
+        //                     color: #2f3030;
+        //                 }
+        //             }
+        //         }
+        //         .colThird {
+        //             padding: 22.23px 27.82px;
+        //             display: flex;
+        //             /* align-items: center; */
+        //             justify-content: center;
+        //             background-color: #ffbc46;
+        //             .icon {
+        //                 display: flex;
+        //                 align-items: center;
+        //                 justify-content: center;
+        //                 color: white;
+        //                 font-size: 26px;
+        //             }
+        //         }
+        //     }
+        // }
+        .engagementHeader {
             width: 100%;
-            display: inline-block;
-            .row {
-                background-color: #fff;
-                // border: 1px solid black;
-                .colFirst {
-                    display: flex;
-                    align-items: center;
-                    height: auto;
-                    padding: 22.23px 27.82px;
-                    .title {
-                        text-transform: uppercase;
-                        font-size: 20.02px;
-                        display: flex;
-                        align-items: center;
-                        height: auto;
+            display: flex;
+            // border: 1px solid red;
+            // background-color: grey;
+            .colFirstWrapper {
+                width: 90%;
+                display: flex;
+                align-items: center;
+                height: auto;
+                padding: 22.23px 27.82px;
+                background-color: #ffffff;
+                .title {
+                    width: 35%;
+                    text-transform: uppercase;
+                    font-size: 20.02px;
+                    color: #2f3030;
+                }
+                .decscription {
+                    width: 65%;
+                    padding: 0 40px;
+                    h2 {
+                        font-size: 1.14rem;
+                        font-weight: 400;
+                        margin-bottom: 0;
                         color: #2f3030;
-                        // padding: 22.23px 0 22.23px 0;
                     }
                 }
-                .colSecond {
+            }
+            .colSeocndWrapper {
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                height: auto;
+                padding: 22.23px 27.82px;
+                background-color: #ffbc46;
+                .icon {
                     display: flex;
                     align-items: center;
-                    height: auto;
-                    padding: 22.23px 27.82px;
-                    .decscription {
-                        h2 {
-                            font-size: 1.14rem;
-                            font-weight: 400;
-                            margin-bottom: 0;
-                            color: #2f3030;
-                        }
-                    }
-                }
-                .colThird {
-                    padding: 22.23px 27.82px;
-                    display: flex;
-                    /* align-items: center; */
                     justify-content: center;
-                    background-color: #ffbc46;
-                    .icon {
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        color: white;
-                        font-size: 26px;
-                    }
+                    color: white;
+                    font-size: 26px;
                 }
             }
         }

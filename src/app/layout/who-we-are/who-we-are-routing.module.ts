@@ -24,6 +24,8 @@ import { NeosoftServicesComponent } from './neosoft-services/neosoft-services.co
 import { EnterpriseDigitalTransformationComponent } from './enterprise-digital-transformation/enterprise-digital-transformation.component';
 import { DedicatedTeamComponent } from './dedicated-team/dedicated-team.component';
 import { CompetenciesEngagementComponent } from './competencies-engagement/competencies-engagement.component';
+import { TeamAugmentationComponent } from './team-augmentation/team-augmentation.component';
+import { HireComponent } from './hire/hire.component';
 
 
 const routes: Routes = [
@@ -122,7 +124,16 @@ const routes: Routes = [
   {
     path: 'competencies-engagement',
     component: CompetenciesEngagementComponent
+  },
+  {
+    path: 'team-augmentaion',
+    component: TeamAugmentationComponent
+  },
+  {
+    path: 'hire',
+    component: HireComponent
   }
+
 
 ];
 

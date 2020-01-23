@@ -8,6 +8,50 @@ fonts:
 2018-2019  Aug sep oct nov
 '''''''''''''''''''''''''''''''''
 
+//Responsive Query
+=====*****Mobile*****===========
+
+  @media(max-width: 374.98px)
+  {
+      //For mobile Small                             
+  }
+ ---------------
+  @media (min-width: 375px) and (max-width: 424.98px)
+  {
+      //For mobile Medium                                
+  }
+ --------------------
+  @media (min-width: 425px) and (max-width: 767.98px) 
+  {
+      //For mobile Large
+  }
+=====*****Mobile Ends*****===========
+
+
+=====*****Tablet*****===========
+  @media (min-width: 768px) and (max-width: 1023.98px) 
+  {
+      //For Tablet
+  }
+ 
+=====*****Tablets Ends*****===========
+
+
+=====*****Laptops*****===========
+
+  @media (min-width: 1024px) and (max-width: 1439.98px) 
+  {
+      //For laptops 1024
+  }
+---------------------
+ @media (min-width: 1440px) and (max-width: 2559.98px) 
+  {
+      //For laptop Large 1440px-2560
+  }
+ 
+=====*****Laptops Ends*****===========
+//Ends Responsive
+
 Home Page:
 
 Fonts
@@ -18,7 +62,21 @@ Images
 ScrollBar:
 https://codepen.io/devstreak/pen/dMYgeO
 
+jquery:
+--------------
+npm install jquery --save
+../node_modules/jquery/dist/jquery.min.js
+-----------------------
+Owl-carououls: (Sync Two Slider.......)
+https://codepen.io/hee-sook-nam/pen/povapPK
 
+
+Fonts Weight:
+-------
+Normal : 400
+Medium : 500
+semiBold: 600
+bold: 700
 
 
 

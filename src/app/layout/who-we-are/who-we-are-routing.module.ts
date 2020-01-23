@@ -26,6 +26,8 @@ import { DedicatedTeamComponent } from './dedicated-team/dedicated-team.componen
 import { CompetenciesEngagementComponent } from './competencies-engagement/competencies-engagement.component';
 import { TeamAugmentationComponent } from './team-augmentation/team-augmentation.component';
 import { HireComponent } from './hire/hire.component';
+import { DemoOwlComponent } from './demo-owl/demo-owl.component';
+import { EndToEndProEnggComponent } from './end-to-end-pro-engg/end-to-end-pro-engg.component';
 
 
 const routes: Routes = [
@@ -132,6 +134,14 @@ const routes: Routes = [
   {
     path: 'hire',
     component: HireComponent
+  },
+  {
+    path: 'demo',
+    component: DemoOwlComponent
+  },
+  {
+    path: 'end-to-end-product-engineering',
+    component: EndToEndProEnggComponent
   }
 
 

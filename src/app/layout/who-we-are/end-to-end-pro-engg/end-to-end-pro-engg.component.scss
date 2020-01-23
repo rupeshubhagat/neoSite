@@ -1,0 +1,296 @@
+@import "src/assets/scss/index";
+.endToEndSection {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    .sliderSectionFirst {
+        // background-color: orange;
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+        #sync1 {
+            .item {
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                min-height: 650px;
+                height: 830px;
+                position: relative;
+            }
+            .itemFirst {
+                background-image: url(../../../../assets/images/whowearemodule/overview/services/endToEndProductEngg/product-ideation.png);
+            }
+            .itemSecond {
+                background-image: url(../../../../assets/images/whowearemodule/overview/services/endToEndProductEngg/product-development.png);
+            }
+            .itemThird {
+                background-image: url(../../../../assets/images/whowearemodule/overview/services/endToEndProductEngg/product-assurance.png);
+            }
+            .itemFour {
+                background-image: url(../../../../assets/images/whowearemodule/overview/services/endToEndProductEngg/product-service.png);
+            }
+            .itemFive {
+                background-image: url(../../../../assets/images/whowearemodule/overview/services/endToEndProductEngg/product-sustenance.png);
+            }
+        }
+    }
+    .contentPart {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        margin: auto;
+        left: 0;
+        right: 0;
+        .endToEndContentWrapper {
+            position: relative;
+            .contentPartFirst {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                background: #f7a900;
+                padding: 28px 21px;
+                position: relative;
+                // top: 54px;
+                // z-index: 1;
+                color: #ffffff;
+                left: 0;
+                right: 0;
+                // margin: auto;
+                margin-top: 54px;
+                margin-bottom: 30px;
+                .product-engg-box-title {
+                    width: 21%;
+                    display: flex;
+                    align-items: center;
+                    h3 {
+                        margin-bottom: 0;
+                        font-family: "Opensans-ExtaBold";
+                        text-transform: uppercase;
+                        color: #212223;
+                        line-height: 2.2rem;
+                        font-size: 28px;
+                        @media (min-width: 1024px) and (max-width: 1439.98px) {
+                            font-size: 26px;
+                        }
+                        span {
+                            font-weight: 400;
+                            font-family: $primary-font;
+                            display: block;
+                        }
+                    }
+                }
+                .product-engg-box-description {
+                    width: 71%;
+                    border-left: 1px solid rgba(61, 42, 8, 0.5);
+                    padding-left: 42px;
+                    display: flex;
+                    align-items: center;
+                    p {
+                        margin-bottom: 0;
+                        color: #3c2c0f;
+                        font-size: 18.2px;
+                        line-height: 22.40px;
+                        @media (min-width: 1024px) and (max-width: 1439.98px) {
+                            font-size: 16.2px;
+                        }
+                    }
+                }
+            }
+            .contentPartSecond {
+                position: relative;
+                .produtEnggHeading {
+                    font-size: 1.5rem;
+                    line-height: 2rem;
+                    margin-bottom: 2rem;
+                    color: #f0f0f0;
+                    text-align: center;
+                    font-weight: 400;
+                    position: relative;
+                    &:after {
+                        height: 2px;
+                        width: 70px;
+                        content: "";
+                        display: block;
+                        margin: 14px auto;
+                        background: #e23434;
+                    }
+                }
+                .enggExcellence {
+                    color: #f0f0f0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 19.25px;
+                    .enggExcellenceOne {
+                        width: 33.33%;
+                        h4 {
+                            @include excelleceHeading;
+                            &:before {
+                                content: "1" !important;
+                            }
+                        }
+                        .enggExcelleList {
+                            @include excellenceUlList;
+                        }
+                    }
+                    .enggExcellenceTwo {
+                        width: 33.33%;
+                        h4 {
+                            @include excelleceHeading;
+                            &:before {
+                                content: "2" !important;
+                            }
+                        }
+                        .enggExcelleListSecond {
+                            @include excellenceUlList;
+                        }
+                    }
+                    .enggExcellenceThree {
+                        width: 33.33%;
+                        h4 {
+                            @include excelleceHeading;
+                            &:before {
+                                content: "3" !important;
+                            }
+                        }
+                        .enggExcelleListThird {
+                            @include excellenceUlList;
+                        }
+                    }
+                }
+                .category-title {
+                    color: #f0f0f0;
+                    text-align: center;
+                    z-index: 1;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    margin-top: 5px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.sliderSectionTwo {
+    background-color: #dcdcdc;
+    #sync2 {
+        .item {
+            width: 100%;
+            padding: 20px 30px;
+            position: relative;
+            background-color: #fff;
+            display: inline-block;
+            min-height: 276px;
+            @media (min-width: 1024px) and (max-width: 1439.98px) {
+                min-height: 299px;
+            }
+        }
+        .itemCommon {
+            p {
+                margin: 0 0 1rem 0;
+                line-height: 1.4rem;
+                font-size: 1rem;
+            }
+            .itemUlList {
+                list-style-type: none;
+                margin-top: 26px;
+                // display: inline-block;
+                li {
+                    margin-right: 2rem;
+                    margin-bottom: 0.9rem;
+                    position: relative;
+                    font-size: 1rem;
+                    padding-left: 1.9rem;
+                    width: 47%;
+                    float: left;
+                    @media (min-width: 1024px) and (max-width: 1439.98px) {
+                        width: 45%;
+                    }
+                    &:before {
+                        content: "";
+                        background: url(../../../../assets/images/whowearemodule/overview/services/endToEndProductEngg/list-mark.png);
+                        background-repeat: no-repeat;
+                        width: 18px;
+                        height: 14px;
+                        vertical-align: middle;
+                        position: absolute;
+                        left: 0px;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+        .itemThird {}
+        .itemFour {}
+        .itemFive {}
+        // .current .item {
+        //     background: #0c83e7;
+        // }
+    }
+    .mobileSection {}
+    .lifeCylceSection {
+        position: relative;
+        .lifeCycleWrapper {
+            margin: 65px 0px;
+            width: 100%;
+            position: relative;
+        }
+    }
+    .customerGrid {
+        .customerWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding-bottom: 54px;
+            // .customerTypes{
+            //     width: 33.2%;
+            // }
+            // .customerScenario{
+            //     width: 33.2%;
+            // }
+            // .customerMethodology{
+            //     width: 33.2%;
+            // }
+            .customerSubGrid {
+                width: 33.2%;
+                h4 {
+                    background-color: #000000;
+                    color: #fff;
+                    font-size: 1.375rem;
+                    margin-bottom: 0;
+                    padding: 15px;
+                    font-weight: 700;
+                    text-align: center;
+                    height: 53px;
+                }
+                ul {
+                    list-style-type: none;
+                    background: #f3a72f;
+                    margin-top: 0.1rem;
+                    padding: 12px;
+                    margin-bottom: 0;
+                    min-height: 239px;
+                    padding-left: 23px;
+                    li {
+                        position: relative;
+                        color: #2d2d2d;
+                        font-size: 1.1rem;
+                        margin-bottom: 0.5rem;
+                        &:after {
+                            position: absolute;
+                            left: -12px;
+                            top: 8px;
+                            content: "";
+                            display: inline-block;
+                            font-size: 1.3rem;
+                            vertical-align: middle;
+                            list-style-type: disc;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 100%;
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -473,4 +473,57 @@
     }
 }
 
+// End to End Prod.Engg. page
+@mixin excelleceHeading {
+    font-size: 19.25px;
+    font-weight: 400;
+    padding-left: 45px;
+    position: relative;
+    margin: 0 0 19.4px;
+    &:before {
+        content: "1";
+        display: inline-block;
+        position: absolute;
+        font-size: 35px;
+        color: #fff;
+        vertical-align: middle;
+        text-align: center;
+        left: 0px;
+        line-height: 44px;
+        background: #555555;
+        height: 40px;
+        font-family: "HelveticaInseratLTStdRoman";
+        font-weight: 700;
+        width: 32px;
+        text-align: right;
+    }
+}
+
+@mixin excellenceUlList {
+    margin: 1.5rem 0 0 !important;
+    padding-left: 45px;
+    display: block !important;
+    width: 100% !important;
+    list-style-type: none;
+    li {
+        color: #d7d7d7 !important;
+        margin-bottom: 0.9rem;
+        position: relative;
+        padding-left: 1.9rem;
+        font-size: 1.1rem !important;
+        &:before {
+            content: "";
+            background: url(https://images.neosofttech.com/sites/all/themes/neosoft2017/images/product-engineering/list-mark.png);
+            background-repeat: no-repeat;
+            width: 18px;
+            height: 14px;
+            vertical-align: middle;
+            position: absolute;
+            left: 0px;
+            top: 3px;
+        }
+    }
+}
+
+// End To End Prod.Engg.ends
 // Wo We Are Ends.

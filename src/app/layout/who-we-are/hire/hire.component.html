@@ -1,3 +1,7 @@
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
 <!-- banner section start -->
 <div class="container-fluid bannerSection overview-bottom-bg bottom-gradient-bg">
     <div class="container bannerContainer">
@@ -48,9 +52,9 @@
             </div>
             <div class="techBoxSecond">
                 <div class="imgIcon">
-                    <img src="../../../../assets/images/whowearemodule/hire/zendframework_1.png" alt="sharepoint">
+                    <img src="../../../../assets/images/whowearemodule/hire/ios.png" alt="sharepoint">
                 </div>
-                <h5 class="text-center">Hire Dedicated<br>Zend Developers</h5>
+                <h5 class="text-center">Hire Dedicated<br>IOS Developers</h5>
                 <p>Hire a dedicated team of any size (either offshore OR onsite OR hybrid as per your needs) for creating new applications, maintaining OR upgrading existing applications.</p>
                 <ul class="techUlBoxSecond">
                     <li>Low Cost</li>
@@ -58,8 +62,52 @@
                     <li>Scalable</li>
                     <li>On Demand</li>
                     <li>Flexibility</li>
-                    <li><a href="javascript:void(0)">More</a></li>
+                    <li><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModalCenter">More</a></li>
                 </ul>
+                <div class="modalInfo">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="ModelWrapper">
+                                    <a href="javascript:void(0)" data-dismiss="modal">x</a>
+                                    <div class="topSection">
+                                        <div class="hire-dedicated-team">
+                                            <img alt="" class="hire-dedicated-img" src="../../../../assets/images/whowearemodule/hire/hire-dedicated.png">
+                                            <h2>HIRE <span>DEDICATED</span> TEAM</h2>
+                                            <h3>ADVANTAGES</h3>
+                                        </div>
+                                        <div class="three-circle">
+                                            <span class="hybrid"><span>Hybrid</span></span>
+                                            <span class="onsite"><span>Onsite</span></span>
+                                            <span class="offshore"><span>offshore</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="advantageSection">
+                                        <div class="left">
+                                            <ul>
+                                                <li><strong>Low Cost</strong><br>Save almost 70% compared to traditional in-house staffin</li>
+                                                <li><strong>Scalable</strong><br>Flexibility to scale up OR down based on your business needs without any overheads</li>
+                                                <li><strong>Flexibility</strong><br>Hire full time, part time OR hourly as per your business needs</li>
+                                                <li><strong>No Hidden Cost</strong><br>Then service is simple; a hourly resource fee without any overheads</li>
+                                                <li><strong>On Demand</strong><br>Hire resources as and when required as per your business needs</li>
+                                            </ul>
+                                        </div>
+                                        <div class="right">
+                                            <ul class="rightUl">
+                                                <li>No need to create or maintain offices / infrastructure</li>
+                                                <li>No need to buy any hardware or software</li>
+                                                <li>No need to worry about recruitment or attrition</li>
+                                                <li>No need to worry about days off OR sick leaves</li>
+                                                <li>No need to pay for vacations</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 
@@ -85,33 +133,111 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="container engagementModel">
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
-           Launch demo modal
-        </button>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
+    <div class="engagementModel">
+        <app-competencies-engagement></app-competencies-engagement>
+    </div>
+    <div class="dedicatedTeam">
+        <app-dedicated-team></app-dedicated-team>
+    </div>
+    <div class="container hireCarousel">
+        <div class="heading-tittle">
+            <h4>OUR GLOBAL CUSTOMERS ARE THE KEY OF OUR SUCCESS</h4>
+        </div>
+        <div class="carouselSlider">
+            <owl-carousel-o [options]="customOptionsHire">
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/ddecor.png" alt="ddecor">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/mahindra.png" alt="mahindra">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/bcg.png" alt="bcg">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/sharekhan.png" alt="sharekhan">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/sbi-mutual-fund.png" alt="sbi-mutual-fund">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/icici.png" alt="icici">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/EY.png" alt="EY">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/GEP.png" alt="GEP">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/australian-olympic.png" alt="australian-olympic">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/etisalat.png" alt="etisalat">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/virgin-mobile.png" alt="virgin-mobile">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/b2x.png" alt="b2x">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/ebay.png" alt="ebay">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/vodafone.png" alt="vodafone">
+                    </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                    <div class="slideDiv">
+                        <img class="imgSlide" src="../../../../assets/images/index/client/JTI.png" alt="JTI">
+                    </div>
+                </ng-template>
+            </owl-carousel-o>
+        </div>
+
+        <!-- <div>Some tags after</div> -->
+    </div>
+    <div class="numbersetSection">
+        <app-overview-numberset></app-overview-numberset>
+    </div>
+
 </div>
+
+<!-- Industry Served Component start -->
+<app-industryserve></app-industryserve>
+<!-- Industry Served Component ends -->
+
+<!-- Footet section start -->
+<app-footer></app-footer>
+<!-- Footet section ends -->

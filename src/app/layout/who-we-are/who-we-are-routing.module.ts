@@ -28,6 +28,8 @@ import { TeamAugmentationComponent } from './team-augmentation/team-augmentation
 import { HireComponent } from './hire/hire.component';
 import { DemoOwlComponent } from './demo-owl/demo-owl.component';
 import { EndToEndProEnggComponent } from './end-to-end-pro-engg/end-to-end-pro-engg.component';
+import { ClienteleListComponent } from './clientele-list/clientele-list.component';
+import { CertificationComponent } from './certification/certification.component';
 
 
 const routes: Routes = [
@@ -142,6 +144,14 @@ const routes: Routes = [
   {
     path: 'end-to-end-product-engineering',
     component: EndToEndProEnggComponent
+  },
+  {
+    path: 'clientele-list',
+    component: ClienteleListComponent
+  },
+  {
+    path: 'certification',
+    component: CertificationComponent
   }
 
 
@@ -152,3 +162,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class WhoWeAreRoutingModule { }
+  

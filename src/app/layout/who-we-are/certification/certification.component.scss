@@ -1,0 +1,86 @@
+@import "src/assets/scss/index";
+.certification {
+    background-color: #dcdcdc;
+    padding: 49px 0;
+    .certificationContainer {
+        .certificationWrapper {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .certificationImg {
+                width: 48%;
+                @media (max-width: 767.98px) {
+                    width: 100%;
+                    margin-bottom: 19px;
+                }
+                // height: 300px;
+                img {
+                    width: 100%;
+                }
+            }
+            .certificationListContent {
+                width: 48%;
+                @media (max-width: 767.98px) {
+                    width: 100%;
+                }
+                // background-color: white;
+                ul {
+                    list-style-type: none;
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    li {
+                        width: 47%;
+                        color: #373737;
+                        margin-bottom: 5%;
+                        position: relative;
+                        padding: 0 28px;
+                        box-sizing: border-box;
+                        background: #ffffff;
+                        height: 216px;
+                        @media (max-width: 767.98px) {
+                            width: 100%;
+                        }
+                        h3 {
+                            text-transform: uppercase;
+                            font-size: 42px;
+                            margin-bottom: 0;
+                            font-weight: 500;
+                            margin-top: 35px;
+                        }
+                        span {
+                            font-size: 21px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                        }
+                        h4 {
+                            font-size: 18.2px;
+                            margin-top: 21px;
+                            margin-bottom: 0;
+                        }
+                        img {
+                            position: absolute;
+                            right: 25px;
+                            top: 0;
+                            z-index: 1;
+                        }
+                        &:after {
+                            content: "";
+                            position: absolute;
+                            border: solid 1px #dedede;
+                            height: calc(100% - 14px);
+                            width: calc(100% - 14px);
+                            top: 6px;
+                            right: 6px;
+                            left: 6px;
+                            bottom: 6px;
+                            z-index: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

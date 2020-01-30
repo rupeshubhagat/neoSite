@@ -6,7 +6,24 @@ https://github.com/alvarotrigo/fullPage.js/#fullpagejs
 
 https://stackblitz.com/edit/angular-nqsqwk?file=src%2Fapp%2Fapp.component.ts 
 
+QueryParam:
+https://alligator.io/angular/query-parameters/
 
+
+============**********==============
+
+* Server-Side Rendering in angular
+https://www.youtube.com/watch?v=4tTxrQ2YiFA
+https://angular.io/guide/universal
+
+1. ng add @nguniversal/express-engine --clientProject project_name
+2. npm run build:project_name
+3. npm run serve:project_name
+
+...........
+http:serve::
+npm install angular-http-server -g  
+=========
 
 
 madhav:

@@ -30,6 +30,14 @@ import { DemoOwlComponent } from './demo-owl/demo-owl.component';
 import { EndToEndProEnggComponent } from './end-to-end-pro-engg/end-to-end-pro-engg.component';
 import { ClienteleListComponent } from './clientele-list/clientele-list.component';
 import { CertificationComponent } from './certification/certification.component';
+import { InfrastructureComponent } from './infrastructure/infrastructure.component';
+import { PartnersComponent } from './partners/partners.component';
+import { CorporateFactComponent } from './corporate-fact/corporate-fact.component';
+import { GlobalPresenceComponent } from './global-presence/global-presence.component';
+import { OurCsrInitiativesComponent } from './our-csr-initiatives/our-csr-initiatives.component';
+import { OurVisionMissionComponent } from './our-vision-mission/our-vision-mission.component';
+import { OurCultureComponent } from './our-culture/our-culture.component';
+import { OurDnaComponent } from './our-dna/our-dna.component';
 
 
 const routes: Routes = [
@@ -152,8 +160,39 @@ const routes: Routes = [
   {
     path: 'certification',
     component: CertificationComponent
+  },
+  {
+    path: 'infrastructure',
+    component: InfrastructureComponent
+  },
+  {
+    path: 'partners',
+    component: PartnersComponent
+  },
+  {
+    path: 'corporate-fact',
+    component: CorporateFactComponent
+  },
+  {
+    path: 'global-presence',
+    component: GlobalPresenceComponent
+  },
+  {
+    path: 'our-csr-initiatives',
+    component: OurCsrInitiativesComponent
+  },
+  {
+    path: 'our-vision-mission',
+    component: OurVisionMissionComponent
+  },
+  {
+    path: 'our-culture',
+    component: OurCultureComponent
+  },
+  {
+    path: 'our-dna',
+    component: OurDnaComponent
   }
-
 
 ];
 

@@ -34,16 +34,24 @@ import { DemoOwlComponent } from './demo-owl/demo-owl.component';
 import { EndToEndProEnggComponent } from './end-to-end-pro-engg/end-to-end-pro-engg.component';
 import { ClienteleListComponent } from './clientele-list/clientele-list.component';
 import { CertificationComponent } from './certification/certification.component';
+import { PartnersComponent } from './partners/partners.component';
+import { InfrastructureComponent } from './infrastructure/infrastructure.component';
+import { CorporateFactComponent } from './corporate-fact/corporate-fact.component';
+import { GlobalPresenceComponent } from './global-presence/global-presence.component';
+import { OurCsrInitiativesComponent } from './our-csr-initiatives/our-csr-initiatives.component';
+import { OurVisionMissionComponent } from './our-vision-mission/our-vision-mission.component';
+import { OurCultureComponent } from './our-culture/our-culture.component';
+import { OurDnaComponent } from './our-dna/our-dna.component';
 
 
 @NgModule({
-  declarations: [OverviewComponent, BannerComponent, CompetenciesComponent, IndustryserveComponent, MoreaboutneosoftComponent, CompetenciesServicesComponent, MobileAppDevelopmentComponent, WebDevelopmentComponent, CloudComputingComponent, AiandmlComponent, AnalyticsBigdataComponent, InternetOfThingsComponent, BlockchainComponent, DevOpsComponent, QaTestingComponent, SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent, OverviewNumbersetComponent, NeosoftServicesComponent, EnterpriseDigitalTransformationComponent, DedicatedTeamComponent, CompetenciesEngagementComponent, TeamAugmentationComponent, HireComponent, DemoOwlComponent, EndToEndProEnggComponent, ClienteleListComponent, CertificationComponent],
+  declarations: [OverviewComponent, BannerComponent, CompetenciesComponent, IndustryserveComponent, MoreaboutneosoftComponent, CompetenciesServicesComponent, MobileAppDevelopmentComponent, WebDevelopmentComponent, CloudComputingComponent, AiandmlComponent, AnalyticsBigdataComponent, InternetOfThingsComponent, BlockchainComponent, DevOpsComponent, QaTestingComponent, SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent, OverviewNumbersetComponent, NeosoftServicesComponent, EnterpriseDigitalTransformationComponent, DedicatedTeamComponent, CompetenciesEngagementComponent, TeamAugmentationComponent, HireComponent, DemoOwlComponent, EndToEndProEnggComponent, ClienteleListComponent, CertificationComponent, PartnersComponent, InfrastructureComponent, CorporateFactComponent, GlobalPresenceComponent, OurCsrInitiativesComponent, OurVisionMissionComponent, OurCultureComponent, OurDnaComponent],
   imports: [
     CommonModule,
     IndexModule,
     CarouselModule,
     WhoWeAreRoutingModule
   ],
-  exports: [OverviewComponent, BannerComponent, CompetenciesComponent,IndustryserveComponent,MoreaboutneosoftComponent,CompetenciesServicesComponent,MobileAppDevelopmentComponent,WebDevelopmentComponent,CloudComputingComponent, AiandmlComponent,AnalyticsBigdataComponent, InternetOfThingsComponent,BlockchainComponent, DevOpsComponent,QaTestingComponent,SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent,OverviewNumbersetComponent,NeosoftServicesComponent,EnterpriseDigitalTransformationComponent,DedicatedTeamComponent,CompetenciesEngagementComponent,TeamAugmentationComponent,HireComponent,DemoOwlComponent,EndToEndProEnggComponent,ClienteleListComponent,CertificationComponent]
+  exports: [OverviewComponent, BannerComponent, CompetenciesComponent,IndustryserveComponent,MoreaboutneosoftComponent,CompetenciesServicesComponent,MobileAppDevelopmentComponent,WebDevelopmentComponent,CloudComputingComponent, AiandmlComponent,AnalyticsBigdataComponent, InternetOfThingsComponent,BlockchainComponent, DevOpsComponent,QaTestingComponent,SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent,OverviewNumbersetComponent,NeosoftServicesComponent,EnterpriseDigitalTransformationComponent,DedicatedTeamComponent,CompetenciesEngagementComponent,TeamAugmentationComponent,HireComponent,DemoOwlComponent,EndToEndProEnggComponent,ClienteleListComponent,CertificationComponent, PartnersComponent, InfrastructureComponent,CorporateFactComponent,GlobalPresenceComponent,OurCsrInitiativesComponent,OurVisionMissionComponent,OurCultureComponent, OurDnaComponent],
 })
 export class WhoWeAreModule { }

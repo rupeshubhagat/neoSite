@@ -10,6 +10,7 @@ export class EndToEndProEnggComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
     $(document).ready(function() {
 
       var sync1 = $("#sync1");

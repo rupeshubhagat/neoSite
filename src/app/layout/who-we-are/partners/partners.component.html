@@ -1,0 +1,35 @@
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
+
+<!-- banner section start -->
+<app-banner [title]="'partners'" [pageName]="'Company'" [description]="'We recommend and work with third-party organizations that enhance or complement the value of our offerings to our clients.'">
+</app-banner>
+<!-- banner section ends -->
+
+<div class="container-fluid clientList">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <!-- <h3 class="clientele-title"> <span class="primary">OVER 1500 CLIENTS</span> IN 20 COUNTRIES</h3> -->
+            <p>Partnerships are a critical part of our go-to-market strategy; thus, we take great care in selecting partners. These are best-of-breed firms that share our enthusiasm for meeting and exceeding our client expectations and complement our core
+                competencies. Our current partners include:</p>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of clienteleArray">
+                    <li>
+                        <!-- <img src="../../../../assets/images/whowearemodule/partners/googlecloud.png" alt=""> -->
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+                <!-- <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footet section start -->
+<app-footer></app-footer>
+<!-- Footet section ends -->

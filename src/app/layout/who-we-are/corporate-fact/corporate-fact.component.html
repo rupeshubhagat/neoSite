@@ -1,0 +1,76 @@
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
+
+<!-- banner section start -->
+<app-banner [title]="'corporate fact'" [pageName]="'Company'" [description]="'Discover NeoSOFT At Glance'">
+</app-banner>
+<!-- banner section ends -->
+
+<div class="container-fluid corporateFact">
+    <div class="container infrastructureContainer">
+        <div class="infrastructureWrapper">
+
+
+            <div class="tabHeader">
+                <ul>
+                    <li><a class="anchFirst" href="javascript:void(0)" (click)="tabFirstOpen()" [ngClass]="{'active':isTabFirst}">FACT SHEET</a></li>
+                    <li><a class="anchSecond" href="javascript:void(0)" (click)="tabSecondOpen()" [ngClass]="{'active':isTabSecond}">TIME lINE</a></li>
+                </ul>
+
+            </div>
+            <div class="tabData">
+                <div class="tabDataFirst" *ngIf="isTabFirst">
+                    <h3 class="inner-section-title">Who We Are</h3>
+                    <ul class="factsheetContent">
+                        <li><span>Since </span> 1996<br>(24+ years in business)</li>
+                        <li><span>Team Size </span> 2000+ Passionate Professionals</li>
+                        <li><span>Infrastructure </span> 1,00,000+ SQ. FT.</li>
+                        <li><span>Presence in </span> Mumbai (India) - Headquarter, Pune (India), New York (USA), Sydney (Australia), London (UK), Rome (Italy)</li>
+                        <li><span>Reliability &amp; Efficiency </span> CMMi Level 5</li>
+                        <li><span>Quality Management </span> ISO 9001:2008</li>
+                        <li><span>IT Management </span> ISO 20000-1:2011</li>
+                        <li><span>Business Continuity </span> ISO 22301:2012</li>
+                        <li><span>Information Security Management</span> ISO 27001:2013</li>
+                        <li><span>Clientele </span> Over 5500+ clients in 50+ countries</li>
+                        <li><span>Proud Of </span> 85% Client Retention / Business comes from existing clients</li>
+                        <li><span>Websites Designed &amp; Developed </span> 5500+</li>
+                        <li><span>Development Hours </span> 20+ Million</li>
+                        <li><span>Mobile Apps Published </span>850+</li>
+                        <li><span>Proven Track Record </span> Working with the top players in various industry verticals</li>
+                        <li><span>Extensive in-house Training programs </span> To nurture talent with the latest technologies</li>
+                        <li><span>Exceptional Personnel Retention Rate </span> Ensuring stability and highest quality of services</li>
+                        <li><span>Dedicated Quality Assurance Team </span> Manual &amp; Automated testing</li>
+                    </ul>
+
+                </div>
+                <div class="tabDataSecond" *ngIf="isTabSecond">
+                    <div class="humanCapitalSection">
+                        <h3 class="inner-section-title">Human Capital</h3>
+                        <div class="graphImg">
+                            <img src="../../../../assets/images/whowearemodule/corporatefact/graph1.jpg" alt="graph1">
+                        </div>
+                    </div>
+                    <div class="infraStructureSection">
+                        <h3 class="inner-section-title">Infrastructure</h3>
+                        <div class="graphImg">
+                            <img src="../../../../assets/images/whowearemodule/corporatefact/graph2.jpg" alt="graph2">
+                        </div>
+                    </div>
+                    <div class="clienteleSection">
+                        <h3 class="inner-section-title">Clientele</h3>
+                        <div class="graphImg">
+                            <img src="../../../../assets/images/whowearemodule/corporatefact/graph3.jpg" alt="graph3">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footet section start -->
+<app-footer></app-footer>
+<!-- Footet section ends -->

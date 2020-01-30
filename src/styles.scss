@@ -550,4 +550,132 @@ button:focus {
 }
 
 //-----hire page ends
+//CSR initiatives Slider Start.....
+#sync11 {
+    .owl-dots {
+        // position: relative;
+        // bottom: 47px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 20px auto 60px;
+        text-align: center;
+        @media (min-width: 768px) and (max-width: 1023.98px) {
+            text-align: left;
+        }
+        .owl-dot {
+            //this one button
+            position: relative;
+            width: 84px;
+            height: 84px;
+            border: 2px solid transparent;
+            border-radius: 100%;
+            display: inline-block;
+            box-sizing: border-box;
+            margin: 0 12px;
+            cursor: pointer;
+            position: relative;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            outline: 0 auto -webkit-focus-ring-color;
+            @media (min-width: 768px) and (max-width: 1023.98px) {
+                width: 76px;
+            }
+            &.active span {
+                filter: grayscale(0);
+                border: 2px solid #f31600;
+            }
+            span {
+                position: relative;
+                width: 80px;
+                height: 80px;
+                border-radius: 100%;
+                box-sizing: border-box;
+                display: block;
+                filter: grayscale(1);
+                -webkit-transition: 0.5s;
+                // transition: 0.5s;
+                //background: url(https://images.neosofttech.com/sites/all/themes/neosoft2017/images/CSR/child_education-circle.png);
+                &::before {
+                    //content: "Child Education";
+                    color: #2c2c2c;
+                    position: absolute;
+                    bottom: -46px;
+                    text-align: center;
+                    left: 0;
+                    right: 0;
+                    margin: 0px auto;
+                }
+            }
+            &:nth-child(1) span {
+                background: url(./assets/images/whowearemodule/csr/thumbnails/child_education-circle.png);
+                &:before {
+                    content: "Child Education";
+                }
+            }
+            &:nth-child(2) span {
+                background: url(./assets/images/whowearemodule/csr/thumbnails/employment-circle.png);
+                &:before {
+                    content: "Employability";
+                }
+            }
+            &:nth-child(3) span {
+                background: url(./assets/images/whowearemodule/csr/thumbnails/medical_assistance-circle.png);
+                &:before {
+                    content: "Medical Assistance";
+                }
+            }
+            &:nth-child(4) span {
+                background: url(./assets/images/whowearemodule/csr/thumbnails/plant-circle.png);
+                &:before {
+                    content: "Environment Protection";
+                }
+            }
+            &:nth-child(5) span {
+                background: url(./assets/images/whowearemodule/csr/thumbnails/disaster-circle.png);
+                &:before {
+                    content: "Disaster Relife";
+                }
+            }
+            &:nth-child(6) span {
+                background: url(./assets/images/whowearemodule/csr/thumbnails/women_empowerment-circle.png);
+                &:before {
+                    content: "Woman Empowerment";
+                }
+            }
+        }
+    }
+    // navigation arrow hide
+    .owl-nav {
+        // margin-top: 10px;
+        display: none;
+    }
+    // navigation arrow hide
+}
+
+#sync22 {
+    .owl-nav {
+        display: none;
+    }
+    .owl-dots {
+        position: absolute;
+        right: -38px;
+        top: 51%;
+        transform: translateY(-70%);
+        left: auto;
+        display: flex;
+        flex-direction: column;
+        .owl-dot {
+            outline: 0 auto -webkit-focus-ring-color;
+            span {
+                background: #767677;
+            }
+            &.active span {
+                background: #ec1e27;
+            }
+        }
+    }
+}
+
+// CSR Initiatives slider Ends.....
 // *********** Who We are Module Ends **************

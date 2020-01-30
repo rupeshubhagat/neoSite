@@ -1,0 +1,138 @@
+@import "src/assets/scss/index";
+.corporateFact {
+    background-color: #dcdcdc;
+    padding: 49px 0;
+    .infrastructureContainer {
+        .infrastructureWrapper {
+            .tabHeader {
+                position: relative;
+                ul {
+                    list-style-type: none;
+                    text-align: center;
+                    list-style-type: none;
+                    width: 100%;
+                    position: absolute;
+                    top: -84px;
+                    left: 0px;
+                    li {
+                        margin: 0 14px;
+                        text-transform: uppercase;
+                        display: inline-block;
+                        position: relative;
+                        .anchFirst {
+                            color: black;
+                            font-weight: 800;
+                            &.active {
+                                &:after {
+                                    width: 0;
+                                    height: 0;
+                                    content: "";
+                                    border-top: 10px solid Black;
+                                    border-bottom: 10px solid transparent;
+                                    border-left: 10px solid transparent;
+                                    border-right: 10px solid transparent;
+                                    left: 0;
+                                    bottom: 0;
+                                    display: block;
+                                    margin: 14px auto;
+                                }
+                            }
+                        }
+                        .anchSecond {
+                            color: black;
+                            font-weight: 800;
+                            &.active {
+                                &:after {
+                                    width: 0;
+                                    height: 0;
+                                    content: "";
+                                    border-top: 10px solid Black;
+                                    border-bottom: 10px solid transparent;
+                                    border-left: 10px solid transparent;
+                                    border-right: 10px solid transparent;
+                                    left: 0;
+                                    bottom: 0;
+                                    display: block;
+                                    margin: 14px auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .tabData {
+                .tabDataFirst {
+                    .inner-section-title {
+                        @include corporate-heading;
+                    }
+                    .factsheetContent {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-top: 2rem;
+                        list-style-type: none;
+                        justify-content: space-between;
+                        li {
+                            width: 32.9%;
+                            // height: 300px;
+                            min-height: auto;
+                            background-color: #ffffff;
+                            margin-bottom: 14px;
+                            font-size: 1.1rem;
+                            line-height: 1.7rem;
+                            border-bottom: solid 1px #e23434;
+                            padding: 1.5rem;
+                            @media (max-width: 767.98px) {
+                                width: 100%;
+                            }
+                            span {
+                                font-size: 1.3rem;
+                                color: #e23434;
+                                font-weight: 600;
+                                margin-bottom: 1rem;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .tabDataSecond {
+                    .humanCapitalSection {
+                        .inner-section-title {
+                            @include corporate-heading;
+                        }
+                        .graphImg {
+                            margin-top: 2rem;
+                            margin-bottom: 3.5rem;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .infraStructureSection {
+                        .inner-section-title {
+                            @include corporate-heading;
+                        }
+                        .graphImg {
+                            margin-top: 2rem;
+                            margin-bottom: 3.5rem;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    .clienteleSection {
+                        .inner-section-title {
+                            @include corporate-heading;
+                        }
+                        .graphImg {
+                            margin-top: 2rem;
+                            margin-bottom: 3.5rem;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

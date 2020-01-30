@@ -526,4 +526,29 @@
 }
 
 // End To End Prod.Engg.ends
+//Corporate Facts..
+@mixin corporate-heading {
+    color: #2c2c2c;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 0;
+    &:after {
+        height: 2px;
+        width: 7rem;
+        content: "";
+        display: block;
+        margin: 1rem auto;
+        background: #ea501a;
+    }
+}
+
+// Corporate Facts ends..
 // Wo We Are Ends.
+//Function 
+@function px-to-rem ($target, $context: $base-font-size) {
+    @return ($target / $context) * 1rem;
+}
+
+//Function ends...

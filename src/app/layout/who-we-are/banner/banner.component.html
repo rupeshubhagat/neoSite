@@ -1,10 +1,10 @@
 <div class="container-fluid bannerSection overview-bottom-bg bottom-gradient-bg" [ngClass]="{'overview':title == 'overview',
 'clientele':title == 'clientele',
-'corporatefact':title =='corporatefact',
+'corporatefact':title =='corporate fact',
 'certification':title=='certification',
-'patner':title == 'patner',
-'infrastructur':title == 'infrastructur',
-'csr':title == 'csr',
+'partner':title == 'partners',
+'infrastructure':title == 'infrastructure',
+'csr':title == 'our csr initiatives',
 'enterpriseMobility':title =='enterprsie mobility',
 'webDevelopment':title =='web development',
 'cloudComputing':title =='cloud computing',
@@ -39,7 +39,7 @@
                         <a href="javascript:void(0)"><span class="icon-home"></span></a>
                     </li>
                     <li class="company" *ngIf="pageName"><a href="javascript:void(0);">{{ pageName}}</a></li>
-                    <li><strong>{{title | titlecase}}</strong></li>
+                    <li><strong>{{ title | titlecase }}</strong></li>
                 </ul>
 
             </div>
@@ -49,4 +49,10 @@
             </div>
         </div>
     </div>
+</div>
+
+<div class="">
+
+
+
 </div>

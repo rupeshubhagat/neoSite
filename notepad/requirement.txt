@@ -70,7 +70,8 @@ npm install jquery --save
 Owl-carououls: (Sync Two Slider.......)
 https://codepen.io/hee-sook-nam/pen/povapPK
 
-
+animation :Radiation out:
+https://stackoverflow.com/questions/44783546/radiateout-with-css-animation
 
 Fonts Weight:
 -------

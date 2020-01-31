@@ -17,16 +17,16 @@ export class OverviewComponent implements OnInit {
       posts: [
         {
           name: "Hire ASP.NET Developers",
-          path: '/'
+          path: '/hire'
           // path:'/index/'
         },
         {
           name: "Hire DotNetNuke Developers",
-          path: '/'
+          path: '/hire'
         },
         {
           name: "Hire AspDotNetStorefront Developers",
-          path: '/'
+          path: '/hire'
         },
         {
           name: "Hire nopCommerce Developers",

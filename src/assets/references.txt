@@ -10,7 +10,7 @@ QueryParam:
 https://alligator.io/angular/query-parameters/
 
 
-============**********==============
+=======*******==============
 
 * Server-Side Rendering in angular
 https://www.youtube.com/watch?v=4tTxrQ2YiFA
@@ -24,6 +24,10 @@ https://angular.io/guide/universal
 http:serve::
 npm install angular-http-server -g  
 =========
+
+========**scrolling position fro app.component***===
+https://stackoverflow.com/questions/39601026/angular-2-scroll-to-top-on-route-change
+=======*****=======
 
 
 madhav:

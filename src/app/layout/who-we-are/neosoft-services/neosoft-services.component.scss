@@ -36,6 +36,9 @@
                 width: 33.33%;
                 display: inline-block;
                 margin-bottom: 11px;
+                &:focus {
+                    outline: none;
+                }
                 .img-block {
                     display: inline-block;
                     float: left;

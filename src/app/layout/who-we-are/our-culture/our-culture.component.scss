@@ -1,0 +1,188 @@
+.cultureTaglineSection {
+    background: #ececec;
+    padding: 28px 0;
+    box-sizing: border-box;
+    text-align: center;
+    .culturetaglineContainer {
+        position: relative;
+        .cultureWrapper {
+            p {
+                color: #7a7a7a;
+                font-size: 1.1rem;
+                line-height: 1.5rem;
+                text-align: center;
+                max-width: 750px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.cultureNeoSoftSection {
+    background: url(../../../../assets/images/whowearemodule/ourCulture/core-values-new-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-Position: center center;
+    padding: 70px 0;
+    box-sizing: border-box;
+    .cultureContainer {
+        .cultureContentWrapper {
+            h3 {
+                text-align: center;
+                font-size: 1.4rem;
+                color: #fff;
+                margin-bottom: 3rem;
+                text-transform: capitalize;
+                font-weight: 400;
+            }
+            .keyFeatureTable {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                .keyFeatureWays {
+                    width: 80%;
+                    margin-top: 25px;
+                    .mainHeading {
+                        list-style-type: none;
+                        display: flex;
+                        li {
+                            width: 50%;
+                            position: relative;
+                            color: #d9d9d9;
+                            font-size: 1.1rem;
+                            padding: 10px 0;
+                            box-sizing: border-box;
+                            font-weight: 600;
+                            text-align: center;
+                            &:first-child {
+                                background: #178fa1;
+                                border-radius: 6px 0 0 6px;
+                            }
+                            &:last-child {
+                                background: #505aa8;
+                                border-radius: 0 6px 6px 0;
+                            }
+                            &:first-child {
+                                &:before {
+                                    border-top-color: #178fa1;
+                                }
+                            }
+                            &:last-child {
+                                &:before {
+                                    border-top-color: #505aa8;
+                                }
+                            }
+                            &:before {
+                                top: 100%;
+                                left: 50%;
+                                border: solid transparent;
+                                content: " ";
+                                height: 0;
+                                width: 0;
+                                position: absolute;
+                                pointer-events: none;
+                                border-width: 11px;
+                                border-color: rgba(194, 225, 245, 0);
+                                border-width: 11px;
+                                margin-left: -11px;
+                            }
+                        }
+                    }
+                    h5 {
+                        margin-bottom: 15px;
+                        color: #fff;
+                        font-size: 1.2rem;
+                        font-weight: 600;
+                        text-align: center;
+                    }
+                    .sub-points {
+                        list-style-type: none;
+                        display: flex;
+                        li {
+                            width: 50%;
+                            position: relative;
+                            text-align: center;
+                            color: #000;
+                            font-size: 14px;
+                            padding: 20px 10px;
+                            box-sizing: border-box;
+                            &:first-child {
+                                background: #c1dee2;
+                                border-radius: 6px 0 0 6px;
+                                border-right: 1px solid #686868;
+                            }
+                            &:last-child {
+                                background: #a1a5c8;
+                                border-radius: 0 6px 6px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.moreAboutNeosoftSection {
+    .moreAboutNeo {
+        padding: 45px 0px;
+        .containerWrapper {
+            .inner-section-title {
+                color: #2c2c2c;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 28px;
+                margin-bottom: 0;
+                &:after {
+                    height: 2px;
+                    width: 98px;
+                    content: "";
+                    display: block;
+                    margin: 1rem auto;
+                    background: #ea501a;
+                }
+            }
+            .rowWrapper {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+                .colFirst {
+                    padding-right: 7px;
+                }
+                .colSecond {
+                    padding: 0px 10px;
+                }
+                .colThird {
+                    padding-left: 7px;
+                }
+                .colWrapper {
+                    .contentWrraper {
+                        .img-holder {
+                            width: 100%;
+                            box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.21);
+                            a {
+                                color: #454545;
+                                text-decoration: none;
+                                img {
+                                    max-width: 100%;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        h4 {
+                            color: #454545;
+                            font-size: 14px;
+                            font-weight: 400;
+                            text-align: center;
+                            text-transform: uppercase;
+                            padding: 14px;
+                            box-sizing: border-box;
+                            margin-bottom: 0;
+                            a {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

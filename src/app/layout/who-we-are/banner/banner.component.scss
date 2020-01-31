@@ -148,6 +148,20 @@
     }
 }
 
+.ourDna {
+    background-image: url(../../../../assets/images/whowearemodule/banner/dna-banner-bg.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/dna-banner-gradient-bg.png);
+    }
+}
+
+.ourCulture {
+    background-image: url(../../../../assets/images/whowearemodule/banner/dna-banner-bg.png);
+    &:before {
+        background-image: url(../../../../assets/images/whowearemodule/banner/dna-banner-gradient-bg.png);
+    }
+}
+
 .bannerSection {
     // background-image: url(../../../../assets/images/whowearemodule/banner/overview-bg.png);
     background-repeat: no-repeat;

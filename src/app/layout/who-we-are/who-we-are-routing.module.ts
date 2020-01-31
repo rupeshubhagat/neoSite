@@ -38,6 +38,7 @@ import { OurCsrInitiativesComponent } from './our-csr-initiatives/our-csr-initia
 import { OurVisionMissionComponent } from './our-vision-mission/our-vision-mission.component';
 import { OurCultureComponent } from './our-culture/our-culture.component';
 import { OurDnaComponent } from './our-dna/our-dna.component';
+import { DevelopmentModelComponent } from './development-model/development-model.component';
 
 
 const routes: Routes = [
@@ -192,6 +193,10 @@ const routes: Routes = [
   {
     path: 'our-dna',
     component: OurDnaComponent
+  },
+  {
+    path: 'development-model',
+    component: DevelopmentModelComponent
   }
 
 ];

@@ -118,21 +118,21 @@
                             <span class="icon-cancel" [ngClass]="whatWeDoUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
                         <ul [ngClass]="whatWeDoUl ? 'showUl': 'hideUl'">
-                            <li><a href="javascript:void(0)">Mobile Application</a></li>
-                            <li><a href="javascript:void(0)">Web Development</a></li>
-                            <li><a href="javascript:void(0)">Cloud Computing</a></li>
-                            <li><a href="javascript:void(0)">AI & ML</a></li>
-                            <li><a href="javascript:void(0)">Analytics and Big Data</a></li>
-                            <li><a href="javascript:void(0)">Internet of Things</a></li>
-                            <li><a href="javascript:void(0)">Blockchain</a></li>
-                            <li><a href="javascript:void(0)">DevOps</a></li>
-                            <li><a href="javascript:void(0)">QA & Testing</a></li>
-                            <li><a href="javascript:void(0)">SAP</a></li>
-                            <li><a href="javascript:void(0)">UX/UI Design</a></li>
-                            <li><a href="javascript:void(0)">Software Consulting</a></li>
-                            <li><a href="javascript:void(0)">Internet Marketing</a></li>
-                            <li><a href="javascript:void(0)">End-To-End Product Enggineering</a></li>
-                            <li><a href="javascript:void(0)">Enterprise Digital Transformation</a></li>
+                            <li><a routerLink="/mobileappdevelopment">Mobile Application</a></li>
+                            <li><a routerLink="/webdevelopment">Web Development</a></li>
+                            <li><a routerLink="/cloudcomputing">Cloud Computing</a></li>
+                            <li><a routerLink="/aiandml">AI & ML</a></li>
+                            <li><a routerLink="/analyticsbigdata">Analytics and Big Data</a></li>
+                            <li><a routerLink="/iot">Internet of Things</a></li>
+                            <li><a routerLink="/blockchain">Blockchain</a></li>
+                            <li><a routerLink="/devops">DevOps</a></li>
+                            <li><a routerLink="/qa-and-testing">QA & Testing</a></li>
+                            <li><a routerLink="/sap">SAP</a></li>
+                            <li><a routerLink="/ux-ui">UX/UI Design</a></li>
+                            <li><a routerLink="/softwareconsulting">Software Consulting</a></li>
+                            <li><a routerLink="/internetmarketing">Internet Marketing</a></li>
+                            <li><a routerLink="/end-to-end-product-engineering">End-To-End Product Enggineering</a></li>
+                            <li><a routerLink="/enterprise-digital-transformation">Enterprise Digital Transformation</a></li>
                             <li><a href="javascript:void(0)">Hire Now</a></li>
                         </ul>
                     </div>
@@ -142,9 +142,9 @@
                             <span class="icon-cancel" [ngClass]="WeWorkWithUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
                         <ul [ngClass]="WeWorkWithUl ? 'showUl': 'hideUl'">
-                            <li><a href="">Enterprise</a></li>
-                            <li><a href="">Agencies</a></li>
-                            <li><a href="">Startups</a></li>
+                            <li><a href="javascript:void(0)">Enterprise</a></li>
+                            <li><a href="javascript:void(0)">Agencies</a></li>
+                            <li><a href="javascript:void(0)">Startups</a></li>
                         </ul>
                     </div>
                     <div class="technologyContent">
@@ -153,7 +153,7 @@
                             <span class="icon-cancel" [ngClass]="technologyUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
                         <ul [ngClass]="technologyUl ? 'showUl': 'hideUl'">
-                            <li><a href="">Microsoft</a></li>
+                            <li><a routerLink="/technologies">Microsoft</a></li>
                             <li><a href="">Open-Source</a></li>
                             <li><a href="">Java</a></li>
                             <li><a href="">Mobile</a></li>
@@ -404,13 +404,13 @@
 
                 <ul class="comapny-submenu">
                     <li routerLink="/overview" class="draw meet"><span class="Icon"><img class="img-first" src="../../../../assets/images/header/mainheader/who-we-are/overview-icon.png" alt=""></span><a href="#">Overview</a></li>
-                    <li routerLink="." class="draw meet"><span class="Icon"><img class="img-second" src="../../../../assets/images/header/mainheader/who-we-are/clientele-icon.png" alt=""></span><a href="#">Clientle</a></li>
-                    <li routerLink="." class="draw meet"><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/who-we-are/corporate-icon.png" alt=""></span><a href="#">Corporate Fact</a></li>
-                    <li routerLink="." class="draw meet"><span class="Icon"><img class="img-forth" src="../../../../assets/images/header/mainheader/who-we-are/certification-icon.png" alt=""></span><a href="#">Certification</a></li>
-                    <li routerLink="." class="draw meet"><span class="Icon"><img class="img-fifth" src="../../../../assets/images/header/mainheader/who-we-are/partner-icon-top.png" alt=""></span><a href="#">Partners</a></li>
-                    <li routerLink="." class="draw meet"><span class="Icon"><img class="img-six" src="../../../../assets/images/header/mainheader/who-we-are/infrastructure-icon.png" alt=""></span><a href="#">Infrastructure</a></li>
-                    <li routerLink="." class="draw meet"><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/who-we-are/global-icon.png" alt=""></span><a href="#">Global Presence</a></li>
-                    <li routerLink="." class="draw meet"><span class="Icon"><img class="img-eight" src="../../../../assets/images/header/mainheader/who-we-are/CRS.png" alt=""></span><a href="#">CSR</a></li>
+                    <li routerLink="/clientele-list" class="draw meet"><span class="Icon"><img class="img-second" src="../../../../assets/images/header/mainheader/who-we-are/clientele-icon.png" alt=""></span><a href="#">Clientle</a></li>
+                    <li routerLink="/corporate-fact" class="draw meet"><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/who-we-are/corporate-icon.png" alt=""></span><a href="#">Corporate Fact</a></li>
+                    <li routerLink="/certification" class="draw meet"><span class="Icon"><img class="img-forth" src="../../../../assets/images/header/mainheader/who-we-are/certification-icon.png" alt=""></span><a href="#">Certification</a></li>
+                    <li routerLink="/partners" class="draw meet"><span class="Icon"><img class="img-fifth" src="../../../../assets/images/header/mainheader/who-we-are/partner-icon-top.png" alt=""></span><a href="#">Partners</a></li>
+                    <li routerLink="/infrastructure" class="draw meet"><span class="Icon"><img class="img-six" src="../../../../assets/images/header/mainheader/who-we-are/infrastructure-icon.png" alt=""></span><a href="#">Infrastructure</a></li>
+                    <li routerLink="/global-presence" class="draw meet"><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/who-we-are/global-icon.png" alt=""></span><a href="#">Global Presence</a></li>
+                    <li routerLink="/our-csr-initiatives" class="draw meet"><span class="Icon"><img class="img-eight" src="../../../../assets/images/header/mainheader/who-we-are/CRS.png" alt=""></span><a href="#">CSR</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 secondCol">
@@ -424,7 +424,7 @@
                     <li>20+ Million Development Hours</li>
                     <li>1,00,000+ SQ. FT.<br/> Development Centers</li>
                 </ul>
-                <p><a class="vision-mission-btn" routerLink="footer">Vision &amp; Mission</a></p>
+                <p><a class="vision-mission-btn" routerLink="/our-vision-mission">Vision &amp; Mission</a></p>
             </div>
             <div class="col-lg-3 thirdCol">
                 <h3 class="company-title">WE ARE HIRING</h3>
@@ -443,7 +443,7 @@
             <ul>
                 <li><a href="">Blogs</a></li>
                 <li><a href="">Engagement Models</a></li>
-                <li><a href="">Development Models</a></li>
+                <li><a routerLink="/development-model">Development Models</a></li>
             </ul>
         </div>
     </div>
@@ -460,32 +460,32 @@
             <div class="leftInfo">
                 <div class="leftInfoDiv1">
                     <h3><span>END-TO-END </span> <br> PRODUCT <br> ENGINEERING</h3>
-                    <a class="more-arrow" href="https://www.neosofttech.com/end-to-end-product-engineering">
+                    <a class="more-arrow" routerLink="/end-to-end-product-engineering">
                         <i class="fa fa-angle-right icon"></i>
                     </a>
                 </div>
                 <div class="leftInfoDiv2">
                     <h3><span>ENTERPRISE </span> <br> DIGITAL <br> TRANSFORMATION</h3>
-                    <a class="more-arrow" href="https://www.neosofttech.com/end-to-end-product-engineering">
+                    <a class="more-arrow" routerLink="/enterprise-digital-transformation">
                         <i class="fa fa-angle-right icon"></i>
                     </a>
                 </div>
             </div>
             <div class="rightInfo">
                 <ul class="comapny-submenu">
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-first" src="../../../../assets/images/header/mainheader/what-we-do/what-we-mobile-app-top-icon.png" alt=""></span><a href="#">Mobile Application</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-second" src="../../../../assets/images/header/mainheader/what-we-do/what-we-web-top-icon.png" alt=""></span><a href="#">Web Development</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/what-we-do/what-we-cloud-top-icon.png" alt=""></span><a href="#">Cloud Computing</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-forth" src="../../../../assets/images/header/mainheader/what-we-do/ai-ml_0.png" alt=""></span><a href="#">AI & ML</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-fifth" src="../../../../assets/images/header/mainheader/what-we-do/what-we-bigdata-top-icon.png" alt=""></span><a href="#">Analytics and Big Data</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-six" src="../../../../assets/images/header/mainheader/what-we-do/what-we-iot-top-icon.png" alt=""></span><a href="#">Internet of Things(IOT)</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/what-we-do/what-we-menuchain-top-icon.png" alt=""></span><a href="#">Blockchain</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-eight" src="../../../../assets/images/header/mainheader/what-we-do/devops-icon.png" alt=""></span><a href="#">DevOps</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-nine" src="../../../../assets/images/header/mainheader/what-we-do/what-we-qa-top-icon.png" alt=""></span><a href="#">QA & Testing</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-ten" src="../../../../assets/images/header/mainheader/what-we-do/sap1_0.png" alt=""></span><a href="#">SAP</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-eleven" src="../../../../assets/images/header/mainheader/what-we-do/what-we-uxui-top-icon.png" alt=""></span><a href="#">UX/UI Design</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-twelve" src="../../../../assets/images/header/mainheader/what-we-do/menu-software-consulting_1_0.png" alt=""></span><a href="#">Software Consulting</a></li>
-                    <li class="draw meet" routerLink="."><span class="Icon"><img class="img-thirteen" src="../../../../assets/images/header/mainheader/what-we-do/what-we-internet-top-icon.png" alt=""></span><a href="#">Internet Marketing</a></li>
+                    <li class="draw meet" routerLink="/mobileappdevelopment"><span class="Icon"><img class="img-first" src="../../../../assets/images/header/mainheader/what-we-do/what-we-mobile-app-top-icon.png" alt="Mobile Application"></span><a>Mobile Application</a></li>
+                    <li class="draw meet" routerLink="/webdevelopment"><span class="Icon"><img class="img-second" src="../../../../assets/images/header/mainheader/what-we-do/what-we-web-top-icon.png" alt="web Dev"></span><a>Web Development</a></li>
+                    <li class="draw meet" routerLink="/cloudcomputing"><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/what-we-do/what-we-cloud-top-icon.png" alt="cloud Computing"></span><a>Cloud Computing</a></li>
+                    <li class="draw meet" routerLink="/aiandml"><span class="Icon"><img class="img-forth" src="../../../../assets/images/header/mainheader/what-we-do/ai-ml_0.png" alt="AI and ML"></span><a>AI & ML</a></li>
+                    <li class="draw meet" routerLink="/analyticsbigdata"><span class="Icon"><img class="img-fifth" src="../../../../assets/images/header/mainheader/what-we-do/what-we-bigdata-top-icon.png" alt="analyticsbigdata"></span><a>Analytics and Big Data</a></li>
+                    <li class="draw meet" routerLink="/iot"><span class="Icon"><img class="img-six" src="../../../../assets/images/header/mainheader/what-we-do/what-we-iot-top-icon.png" alt="iot"></span><a>Internet of Things(IOT)</a></li>
+                    <li class="draw meet" routerLink="/blockchain"><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/what-we-do/what-we-menuchain-top-icon.png" alt="blockchain"></span><a>Blockchain</a></li>
+                    <li class="draw meet" routerLink="/devops"><span class="Icon"><img class="img-eight" src="../../../../assets/images/header/mainheader/what-we-do/devops-icon.png" alt="Devops"></span><a>DevOps</a></li>
+                    <li class="draw meet" routerLink="/qa-and-testing"><span class="Icon"><img class="img-nine" src="../../../../assets/images/header/mainheader/what-we-do/what-we-qa-top-icon.png" alt="QA and Testing"></span><a>QA & Testing</a></li>
+                    <li class="draw meet" routerLink="/sap"><span class="Icon"><img class="img-ten" src="../../../../assets/images/header/mainheader/what-we-do/sap1_0.png" alt="sap"></span><a>SAP</a></li>
+                    <li class="draw meet" routerLink="/ux-ui"><span class="Icon"><img class="img-eleven" src="../../../../assets/images/header/mainheader/what-we-do/what-we-uxui-top-icon.png" alt="ux and ui"></span><a>UX/UI Design</a></li>
+                    <li class="draw meet" routerLink="/softwareconsulting"><span class="Icon"><img class="img-twelve" src="../../../../assets/images/header/mainheader/what-we-do/menu-software-consulting_1_0.png" alt="Software Consulting"></span><a>Software Consulting</a></li>
+                    <li class="draw meet" routerLink="/internetmarketing"><span class="Icon"><img class="img-thirteen" src="../../../../assets/images/header/mainheader/what-we-do/what-we-internet-top-icon.png" alt="Internet Marketing"></span><a>Internet Marketing</a></li>
                 </ul>
 
             </div>
@@ -500,13 +500,13 @@
             <h3>Team Augmentation</h3>
             <p>Great work needs great talent &amp; skills. We help save time and money.</p>
             <ul class="team-links">
-                <li><a href="#"><i class="icon"></i> <span>Resource as a Service (<h2>Offshore, Onsite &amp; Hybrid</h2>)</span></a></li>
-                <li><a href="#"><i class="icon"></i> <span>ODC / BOT </span></a></li>
+                <li><a href="javascript:void(0);"><i class="icon"></i> <span>Resource as a Service (<h2>Offshore, Onsite &amp; Hybrid</h2>)</span></a></li>
+                <li><a href="javascript:void(0);"><i class="icon"></i> <span>ODC / BOT </span></a></li>
             </ul>
 
         </div>
         <div class="hire">
-            <a href="#" routerLink=".">Hire Now</a>
+            <a href="javascript:void(0);" routerLink=".">Hire Now</a>
         </div>
     </div>
 </div>
@@ -547,8 +547,8 @@
     <div class="container techContainer">
         <h3 class="dropdown-title">Technolgies</h3>
         <ul class="comapny-submenu">
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/ms-top-icon.png" alt=""></span><a href="#">Microsoft</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/os-top-icon.png" alt=""></span><a href="#">Open-Source</a></li>
+            <li class="draw meet" routerLink="/technologies"><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/ms-top-icon.png" alt="Microsoft"></span><a>Microsoft</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/os-top-icon.png" alt="Open-Source"></span><a href="javascript:void(0);">Open-Source</a></li>
             <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/java-top-icon.png" alt=""></span><a href="#">Java</a></li>
             <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/mobile-icon.png" alt=""></span><a href="#">Mobile</a></li>
             <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/frontend-top-icon.png" alt=""></span><a href="#">Frontend</a></li>

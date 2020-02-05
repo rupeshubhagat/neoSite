@@ -53,6 +53,12 @@ export class HeaderComponent implements OnInit {
   whoWeAreUl:boolean = true;
   quickLinksUl:boolean = true;
 
+  
+  
+
+  
+  
+
   constructor() { 
     //private eRef: ElementRef
   }
@@ -219,6 +225,7 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit() {
-    
+   
+   
   }
 }

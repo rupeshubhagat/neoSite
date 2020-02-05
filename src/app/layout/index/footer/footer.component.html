@@ -98,23 +98,23 @@
                             </div>
 
                             <ul [ngClass]="whatWeDoUl ? 'showUl': 'hideUl'">
-                                <li><a href="">Mobile Application</a></li>
-                                <li><a href="">Web Development</a></li>
-                                <li><a href="">Cloud Computing</a></li>
-                                <li><a href="">AI & ML</a></li>
-                                <li><a href="">Analytics and Big Data</a></li>
-                                <li><a href="">Internet of Things</a></li>
-                                <li><a href="">Blockchain</a></li>
-                                <li><a href="">DevOps</a></li>
-                                <li><a href="">QA & Testing</a></li>
-                                <li><a href="">SAP</a></li>
-                                <li><a href="">UX/UI Design</a></li>
-                                <li><a href="">Software Consulting</a></li>
-                                <li><a href="">Internet Marketing</a></li>
+                                <li><a routerLink="/mobileappdevelopment">Mobile Application</a></li>
+                                <li><a routerLink="/webdevelopment">Web Development</a></li>
+                                <li><a routerLink="/cloudcomputing">Cloud Computing</a></li>
+                                <li><a routerLink="/aiandml">AI & ML</a></li>
+                                <li><a routerLink="/analyticsbigdata">Analytics and Big Data</a></li>
+                                <li><a routerLink="/iot">Internet of Things</a></li>
+                                <li><a routerLink="/blockchain">Blockchain</a></li>
+                                <li><a routerLink="/devops">DevOps</a></li>
+                                <li><a routerLink="/qa-and-testing">QA & Testing</a></li>
+                                <li><a routerLink="/sap">SAP</a></li>
+                                <li><a routerLink="/ux-ui">UX/UI Design</a></li>
+                                <li><a routerLink="/softwareconsulting">Software Consulting</a></li>
+                                <li><a routerLink="/internetmarketing">Internet Marketing</a></li>
 
-                                <li><a href="">End-To-End Product <br/>Engineering</a></li>
-                                <li><a href="">Enterprise Digital <br/>Transformation</a></li>
-                                <li><a href="">Hire Now</a></li>
+                                <li><a routerLink="/end-to-end-product-engineering">End-To-End Product <br/>Engineering</a></li>
+                                <li><a routerLink="/enterprise-digital-transformation">Enterprise Digital <br/>Transformation</a></li>
+                                <li><a href="javascript:void(0);">Hire Now</a></li>
                             </ul>
                         </div>
                     </div>
@@ -152,7 +152,7 @@
                                 <span class="icon-cancel" [ngClass]="technologyUl ? 'iconPlus': 'iconCancel'"></span>
                             </div>
                             <ul [ngClass]="technologyUl ? 'showUl': 'hideUl'">
-                                <li><a href="">Microsoft</a></li>
+                                <li><a routerLink="/technologies">Microsoft</a></li>
                                 <li><a href="">Open-Source</a></li>
                                 <li><a href="">Java</a></li>
                                 <li><a href="">Mobile</a></li>
@@ -210,14 +210,14 @@
                             <span class="icon-cancel" [ngClass]="whoWeAreUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
                         <ul [ngClass]="whoWeAreUl ? 'showUl': 'hideUl'">
-                            <li><a href="">Overview</a></li>
-                            <li><a href="">Clientele</a></li>
-                            <li><a href="">Corporate Fact</a></li>
-                            <li><a href="">Certification</a></li>
-                            <li><a href="">Partners</a></li>
-                            <li><a href="">Infrastructure</a></li>
-                            <li><a href="">Global Presence</a></li>
-                            <li><a href="">CSR</a></li>
+                            <li><a routerLink="/overview">Overview</a></li>
+                            <li><a routerLink="/clientele-list">Clientele</a></li>
+                            <li><a routerLink="/corporate-fact">Corporate Fact</a></li>
+                            <li><a routerLink="/certification">Certification</a></li>
+                            <li><a routerLink="/partners">Partners</a></li>
+                            <li><a routerLink="/infrastructure">Infrastructure</a></li>
+                            <li><a routerLink="/global-presence">Global Presence</a></li>
+                            <li><a routerLink="/our-csr-initiatives">CSR</a></li>
                         </ul>
                     </div>
 
@@ -230,9 +230,9 @@
                             <span class="icon-cancel" [ngClass]="quickLinksUl ? 'iconPlus': 'iconCancel'"></span>
                         </div>
                         <ul [ngClass]="quickLinksUl ? 'showUl': 'hideUl'">
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Engagement Model</a></li>
-                            <li><a href="">Development Model</a></li>
+                            <li><a href="javascript:void(0);">Blog</a></li>
+                            <li><a href="javascript:void(0);">Engagement Model</a></li>
+                            <li><a routerLink="/development-model">Development Model</a></li>
                         </ul>
                     </div>
                 </div>
@@ -241,11 +241,11 @@
         <div class="footer-wrapper-second" (click)="closeCancelIcon()">
             <!-- <div class="content-copyright"> -->
             <div class="copyright">
-                <div class="copy-left">Copyright ©2019 NeoSOFT Technologies.</div>
+                <div class="copy-left">Copyright ©{{ year }} NeoSOFT Technologies.</div>
                 <div class="copy-right">
                     <ul>
-                        <li class="first-li"><a href="">Disclaimer</a></li>
-                        <li><a class="anc-border" href="">Privacy Policy</a></li>
+                        <li class="first-li"><a href="javascript:void(0)">Disclaimer</a></li>
+                        <li><a class="anc-border" href="javascript:void(0)">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>

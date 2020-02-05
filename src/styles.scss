@@ -679,3 +679,70 @@ button:focus {
 
 // CSR Initiatives slider Ends.....
 // *********** Who We are Module Ends **************
+.tooltip-inner {
+    background-color: #e23434 !important;
+    padding: 5px !important;
+    color: #fff !important;
+    text-align: center !important;
+    // width: 100px !important;
+}
+
+// .tooltip.bs-tooltip-right .arrow:before {
+//     border-right-color: #00cc00 !important;
+// }
+// .tooltip.bs-tooltip-left .arrow:before {
+//     border-right-color: #00cc00 !important;
+// }
+// .tooltip.bs-tooltip-bottom .arrow:before {
+//     border-right-color: #00cc00 !important;
+// }
+// .tooltip.bs-tooltip-top .arrow:before {
+//     border-right-color: #00cc00 !important;
+// }
+.bs-tooltip-top .arrow::before {
+    border-top-color: #e23434 !important;
+}
+
+//Technology Carousel....
+.technologyCarouselMobile {
+    .owl-nav {
+        margin-top: 10px;
+        position: absolute;
+        left: -20px;
+        top: 38%;
+        button:focus {
+            outline: none;
+            outline: 0 auto -webkit-focus-ring-color;
+        }
+        .owl-next {
+            @media(max-width: 374.98px) {
+                position: relative;
+                left: 207px;
+            }
+            @media(min-width: 375px) and (max-width: 424.98px) {
+                position: relative;
+                left: 251px;
+            }
+            @media(min-width: 425px) and (max-width: 767.98px) {
+                position: relative;
+                left: 292px;
+            }
+        }
+    }
+}
+
+.technologyCarouselMobile .owl-nav [class*=owl-]:hover {
+    background: none !important;
+    color: #FFF !important;
+    text-decoration: none !important;
+    font-size: 25px !important;
+}
+
+.technologyCarouselMobile .owl-nav [class*=owl-] {
+    background: none !important;
+    color: #FFF !important;
+    text-decoration: none !important;
+    font-size: 25px !important;
+}
+
+//Technology Carousel Ends

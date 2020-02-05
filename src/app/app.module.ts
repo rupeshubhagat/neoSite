@@ -8,6 +8,7 @@ import { MaterialModule } from './shared/material/material.module';
 import { ClickOutsideModule } from 'ng-click-outside';
 import { IndexModule } from './layout/index/index.module';
 import { WhoWeAreModule } from './layout/who-we-are/who-we-are.module';
+import { TechnologyModule } from './layout/technology/technology.module';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { WhoWeAreModule } from './layout/who-we-are/who-we-are.module';
     BrowserModule,
     IndexModule,
     WhoWeAreModule,
+    TechnologyModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,

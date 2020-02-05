@@ -27,8 +27,7 @@ export class FooterComponent implements OnInit {
   // @ViewChild('isShare',{static:true}) isShare:ElementRef;
   @ViewChild('child',{static:true}) child:ElementRef; 
   // @ViewChild('child',{static:true}) child:ElementRef; 
-
-
+  year = new Date().getFullYear();
 
   constructor() { }
  

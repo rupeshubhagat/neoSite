@@ -41,7 +41,7 @@
             margin: 0px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: flex-start;
+            justify-content: space-between;
             // margin-left: -14px;
             li {
                 //border: 1px solid grey;   
@@ -75,6 +75,12 @@
                     width: 14.83% !important;
                     height: 111px !important;
                     padding: 4px 13px;
+                }
+                &:nth-child(6) {
+                    margin-right: 0px;
+                }
+                &:nth-child(12) {
+                    margin-right: 0px;
                 }
                 a {
                     font-family: $primary-font;

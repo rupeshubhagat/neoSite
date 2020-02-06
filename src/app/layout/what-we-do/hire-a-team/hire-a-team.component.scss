@@ -1,0 +1,46 @@
+@import "src/assets/scss/index";
+.hireATeamSections {
+    background-color: #dcdcdc;
+    .teamTwoBoxes {
+        .teamTwoBoxesWrapper {
+            padding-bottom: 5px;
+            position: relative;
+            top: -40px;
+        }
+    }
+    .engagementModel {
+        .engagementModelWrapper {
+            padding-bottom: 20px;
+        }
+    }
+    .containerCompetencies {
+        padding-top: 20px;
+        .overveiewContainerCompetencies {
+            .inner-numberset-title {
+                color: #2c2c2c;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 400;
+                font-size: 2rem;
+                margin-bottom: 0;
+                &::after {
+                    height: 2px;
+                    width: 7rem;
+                    content: "";
+                    display: block;
+                    margin: 1rem auto;
+                    background: #ea501a;
+                }
+            }
+            .tittle-desc {
+                text-align: center;
+                margin: 0 0 14px 0;
+                line-height: 19.59px;
+                font-size: 14px;
+            }
+        }
+    }
+    .neosoftNumberset {
+        .neosoftNumbersetWrapper {}
+    }
+}

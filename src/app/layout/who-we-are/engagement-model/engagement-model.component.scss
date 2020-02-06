@@ -1,0 +1,11 @@
+@import "src/assets/scss/index";
+.engModelSections {
+    background-color: #dcdcdc;
+    padding-bottom: 67px;
+    .engModelContainer {
+        .engModelWrapper {
+            position: relative;
+            top: -34px;
+        }
+    }
+}

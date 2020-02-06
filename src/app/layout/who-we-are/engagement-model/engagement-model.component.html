@@ -1,0 +1,30 @@
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+<!-- banner section start -->
+<app-banner [title]="'Engagement Models'" [pageName]="'Ouick Links'" [description]="'Tailored to meet varied needs of our global clients which could be one-time OR continuous'">
+</app-banner>
+<!-- banner section-->
+
+
+<div class="continer-fluid engModelSections">
+    <div class="engModelContainer">
+        <div class="engModelWrapper">
+            <ng-container *ngFor="let prod of product">
+                <app-competencies-services [title]="prod.title" [description]="prod.description" [paraDescriptionFirst]="prod.paraDescriptionFirst" [paraDescriptionSecond]="prod.paraDescriptionSecond" [listHeadingFirst]="prod.listHeadingFirst" [listHeadingSecond]="prod.listHeadingSecond"
+                    [listHeadingThird]="prod.listHeadingThird" [listHeadingForth]="prod.listHeadingForth" [listHeadingFifth]="prod.listHeadingFifth" [listHeadingSix]="prod.listHeadingSix" [listHeadingSeven]="prod.listHeadingSeven" [listHeadingEight]="prod.listHeadingEight"
+                    [listHeadingNine]="prod.listHeadingNine" [listTitleFirst]="prod.listTitleFirst" [listTitleSecond]="prod.listTitleSecond" [listTitleThird]="prod.listTitleThird" [listTitleForth]="prod.listTitleForth" [listTitleFifth]="prod.listTitleFifth"
+                    [listTitleSix]="prod.listTitleSix" [listTitleSeven]="prod.listTitleSeven" [listTitleEight]="prod.listTitleEight" [listTitleNine]="prod.listTitleNine" [posts]="prod.posts" [postsSecond]="prod.postsSecond" [postsThird]="prod.postsThird"
+                    [postsForth]="prod.postsForth" [postsFifth]="prod.postsFifth" [postsSix]="prod.postsSix" [postsSeven]="prod.postsSeven" [postsEight]="prod.postsEight" [postsNine]="prod.postsNine" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.isCompetencies"
+                    [moreInfoParaFirst]="prod.moreInfoParaFirst" [moreInfoParaSecond]="prod.moreInfoParaSecond" [moreInfoParaThird]="prod.moreInfoParaThird" [moreInfoParaForth]="prod.moreInfoParaForth" [moreInfoParaFifth]="prod.moreInfoParaFifth" [moreInfoParaSix]="prod.moreInfoParaSix"
+                    [moreInfoParaSeven]="prod.moreInfoParaSeven" [moreInfoParaEight]="prod.moreInfoParaEight" [moreInfoParaNine]="prod.moreInfoParaNine">
+                </app-competencies-services>
+            </ng-container>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer section start -->
+<app-footer></app-footer>
+<!-- Footer section ends -->

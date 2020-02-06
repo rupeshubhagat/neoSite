@@ -25,6 +25,9 @@ http:serve::
 npm install angular-http-server -g  
 =========
 
+Bootstrap 4 Modal BackDrop:
+https://stackoverflow.com/questions/16152073/prevent-bootstrap-modal-from-disappearing-when-clicking-outside-or-pressing-esca
+
 ========**scrolling position fro app.component***===
 https://stackoverflow.com/questions/39601026/angular-2-scroll-to-top-on-route-change
 =======*****=======

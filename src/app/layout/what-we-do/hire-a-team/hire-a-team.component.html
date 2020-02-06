@@ -1,0 +1,54 @@
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+<!-- banner section start -->
+<app-banner [title]="'Get your dedicated team'" [pageName]="''" [description]="'Skills, Processes & Commitment - which you need'">
+</app-banner>
+<!-- banner section ends Get your dedicated team -->
+<div class="continer-fluid hireATeamSections">
+
+    <div class="teamTwoBoxes">
+        <div class="teamTwoBoxesWrapper">
+            <app-dedicated-team></app-dedicated-team>
+        </div>
+    </div>
+
+
+    <div class="engagementModel">
+        <div class="engagementModelWrapper">
+            <app-competencies-engagement></app-competencies-engagement>
+        </div>
+    </div>
+
+    <div class="container containerCompetencies">
+        <div class="overveiewContainerCompetencies">
+            <h3 class="inner-numberset-title">
+                Our competencies are
+            </h3>
+            <p class="tittle-desc">Hire a dedicated team of any size (either Offshore OR Onsite OR Hybrid as per your needs) for creating new applications, maintaining OR upgrading existing applications</p>
+            <ng-container *ngFor="let prod of products">
+                <app-competencies [title]="prod.title" [description]="prod.description" [posts]="prod.posts" [imgUrl]="prod.imgUrl" [isCompetencies]="prod.open"></app-competencies>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="nesoftServices">
+        <div class="neosoftServicesWrapper">
+            <app-neosoft-services></app-neosoft-services>
+        </div>
+    </div>
+
+    <div class="neosoftNumberset">
+        <div class="neosoftNumbersetWrapper">
+            <app-overview-numberset></app-overview-numberset>
+        </div>
+    </div>
+</div>
+
+<!-- Industry Served Component start -->
+<app-industryserve></app-industryserve>
+<!-- Industry Served Component ends -->
+
+<!-- Footer section start -->
+<app-footer></app-footer>
+<!-- Footer section ends -->

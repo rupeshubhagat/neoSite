@@ -39,6 +39,8 @@ import { OurVisionMissionComponent } from './our-vision-mission/our-vision-missi
 import { OurCultureComponent } from './our-culture/our-culture.component';
 import { OurDnaComponent } from './our-dna/our-dna.component';
 import { DevelopmentModelComponent } from './development-model/development-model.component';
+import { EngagementModelComponent } from './engagement-model/engagement-model.component';
+import { CareerComponent } from './career/career.component';
 
 
 const routes: Routes = [
@@ -197,6 +199,14 @@ const routes: Routes = [
   {
     path: 'development-model',
     component: DevelopmentModelComponent
+  },
+  {
+    path: 'engagement-model',
+    component: EngagementModelComponent
+  },
+  {
+    path: 'career',
+    component: CareerComponent
   }
 
 ];

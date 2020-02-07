@@ -16,7 +16,7 @@ export class TechnologiesComponent implements OnInit {
 
   ngOnInit() {
 
-    console.log("Width",window.innerWidth);
+  console.log("Width",window.innerWidth);
   if(window.innerWidth > 566){
      this.isOwl = false;
   }

@@ -746,3 +746,26 @@ button:focus {
 }
 
 //Technology Carousel Ends
+// Career page Emp Benifit Carosousels
+.careerCarosuelModule {
+    .owl-dots {
+        bottom: 0 !important;
+        left: 50% !important;
+        /* margin-top: 10px; */
+        margin: 0 0 !important;
+        position: absolute !important;
+        transform: translateX(-50%) !important;
+        .owl-dot {
+            span {
+                background-color: #f0f1f4 !important;
+            }
+            &.active {
+                span {
+                    background-color: #f0f1f4 !important;
+                }
+            }
+        }
+    }
+}
+
+// Career page Emp Carosouels Ends.

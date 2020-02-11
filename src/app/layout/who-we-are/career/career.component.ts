@@ -29,7 +29,10 @@ export class CareerComponent implements OnInit {
         margin: 10,
         nav: false, 
         dots: true,
-        responsive: {
+        autoplay:true,
+        autoplayTimeout:2000,
+        autoplayHoverPause:true,
+        responsive: { 
           0: {
             items: 1
           },
@@ -49,12 +52,12 @@ export class CareerComponent implements OnInit {
 
     if (event.target.innerWidth > 566) {
       this.isOwl = false;
-      window.location.reload();
-      console.log("owl resize false")
+      // window.location.reload();
+      // console.log("owl resize false")
     } else {
-      window.location.reload();
+      // window.location.reload();
       this.isOwl = true;
-      console.log("owl resize true")
+      // console.log("owl resize true")
     };
   }
   //

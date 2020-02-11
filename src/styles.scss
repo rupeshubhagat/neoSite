@@ -755,6 +755,7 @@ button:focus {
         margin: 0 0 !important;
         position: absolute !important;
         transform: translateX(-50%) !important;
+        display: flex !important;
         .owl-dot {
             span {
                 background-color: #f0f1f4 !important;

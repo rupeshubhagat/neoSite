@@ -35,6 +35,11 @@ https://stackoverflow.com/questions/39601026/angular-2-scroll-to-top-on-route-ch
 // set Background Color To text:
 https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip
 background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat;
+
+// Animation: 
+animation name: Ripple:(career)
+https://codepen.io/chrisunderdown/pen/JeXNoz
+
 madhav:
   // &:nth-of-type(1) {
                                 //     border-bottom: 2px solid #fbaa0a;
@@ -46,3 +51,4 @@ madhav:
                                 // &:nth-of-type(2) {
                                 //     border-bottom: 2px solid #e62837;
                                 // }
+                                

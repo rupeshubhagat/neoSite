@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="alertButton">
                                             <a class="btnCancel" data-dismiss="modal" href="javascript:void(0);">Cancel</a>
-                                            <a class="btnOk" (click)="goToLink('www.google.com')">Ok</a>
+                                            <a class="btnOk" (click)="goToLink('https://careers.neosofttech.com/')">Ok</a>
                                         </div>
                                     </div>
 
@@ -426,4 +426,77 @@
         </div>
     </div>
 </div>
-<!-- Softeare Career End-->
+<!-- Software Career End-->
+
+
+<!-- We are Hiring -->
+<div class="container-fluid weAreHiring">
+    <div class="container weAreHiringContainer">
+        <div class="weAreHiringWrapper">
+            <h2 class="weAreHiringTitle">We Are Hiring</h2>
+            <ul class="comapny-submenu">
+                <li class="draw meet" routerLink="/mobileappdevelopment"><span class="Icon"><img class="img-first" src="../../../../assets/images/header/mainheader/what-we-do/what-we-mobile-app-top-icon.png" alt="Mobile Application"></span><a>Mobile Application</a></li>
+                <li class="draw meet" routerLink="/webdevelopment"><span class="Icon"><img class="img-second" src="../../../../assets/images/header/mainheader/what-we-do/what-we-web-top-icon.png" alt="web Dev"></span><a>Web Development</a></li>
+                <li class="draw meet" routerLink="/cloudcomputing"><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/what-we-do/what-we-cloud-top-icon.png" alt="cloud Computing"></span><a>Cloud Computing</a></li>
+                <li class="draw meet" routerLink="/aiandml"><span class="Icon"><img class="img-forth" src="../../../../assets/images/header/mainheader/what-we-do/ai-ml_0.png" alt="AI and ML"></span><a>AI & ML</a></li>
+                <li class="draw meet" routerLink="/analyticsbigdata"><span class="Icon"><img class="img-fifth" src="../../../../assets/images/header/mainheader/what-we-do/what-we-bigdata-top-icon.png" alt="analyticsbigdata"></span><a>Analytics and Big Data</a></li>
+                <li class="draw meet" routerLink="/iot"><span class="Icon"><img class="img-six" src="../../../../assets/images/header/mainheader/what-we-do/what-we-iot-top-icon.png" alt="iot"></span><a>Internet of Things(IOT)</a></li>
+                <li class="draw meet" routerLink="/blockchain"><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/what-we-do/what-we-menuchain-top-icon.png" alt="blockchain"></span><a>Blockchain</a></li>
+                <li class="draw meet" routerLink="/devops"><span class="Icon"><img class="img-eight" src="../../../../assets/images/header/mainheader/what-we-do/devops-icon.png" alt="Devops"></span><a>DevOps</a></li>
+                <li class="draw meet" routerLink="/qa-and-testing"><span class="Icon"><img class="img-nine" src="../../../../assets/images/header/mainheader/what-we-do/what-we-qa-top-icon.png" alt="QA and Testing"></span><a>QA & Testing</a></li>
+                <li class="draw meet" routerLink="/sap"><span class="Icon"><img class="img-ten" src="../../../../assets/images/header/mainheader/what-we-do/sap1_0.png" alt="sap"></span><a>SAP</a></li>
+                <li class="draw meet" routerLink="/ux-ui"><span class="Icon"><img class="img-eleven" src="../../../../assets/images/header/mainheader/what-we-do/what-we-uxui-top-icon.png" alt="ux and ui"></span><a>UX/UI Design</a></li>
+                <li class="draw meet" routerLink="/softwareconsulting"><span class="Icon"><img class="img-twelve" src="../../../../assets/images/header/mainheader/what-we-do/menu-software-consulting_1_0.png" alt="Software Consulting"></span><a>Software Consulting</a></li>
+                <li class="draw meet" routerLink="/internetmarketing"><span class="Icon"><img class="img-thirteen" src="../../../../assets/images/header/mainheader/what-we-do/what-we-internet-top-icon.png" alt="Internet Marketing"></span><a>Internet Marketing</a></li>
+            </ul>
+            <!-- <a class="btn btn-fill browseJobs">See all jobs</a> -->
+            <div class="browsButton text-center">
+                <a class="browsJob" href="javascript:void(0);" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">See all jobs</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- We are Hiring -->
+
+
+
+<!-- Neosoft University -->
+<div class="contianr-fluid neosoftUniversitySection">
+    <div class="container neosoftUniversityContainer">
+        <div class="neosoftUniversityWrapper">
+            <div class="leftUniversity">
+                <img alt="University" src="https://images.neosofttech.com/sites/all/themes/neosoft2017/images/career-images/university.png">
+            </div>
+            <div class="rightUniversity">
+                <h2 class="section-main-title">NeoSOFT<br>University</h2>
+                <p>NeoSOFT University looks for the best and the brightest that our fine education system offers. Fresh talent gets an opportunity to learn trending technologies and work on live projects. Explore opportunities with us.</p>
+                <p class="email-info">Register your Profile on <a class="browseJobs" data-toggle="modal" data-target="#myModal" data-backdrop="static" data-keyboard="false">careers.neosofttech.com</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Neosoft University ends -->
+
+
+<!-- Employee Perk -->
+<div class="container-fluid employeePerkSection">
+    <div class="container employeePerkContainer">
+        <div class="employeePerkWrapper">
+            <h2 class="empPerkTitle">Employee Perks (India)</h2>
+            <ul>
+                <ng-container *ngFor="let emp of empPerkImages">
+                    <li>
+                        <img class="mx-auto d-block" [src]="emp.empPerImg" [alt]="emp.empPerImgAlt">
+                        <h4>{{ emp.title }}</h4>
+                    </li>
+                </ng-container>
+            </ul>
+
+        </div>
+    </div>
+</div>
+<!-- Employee Perk ends-->
+
+<!-- Footer Component -->
+<app-footer></app-footer>
+<!-- Footer Component ends -->

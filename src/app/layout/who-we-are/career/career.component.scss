@@ -1457,6 +1457,294 @@
     }
 }
 
+.weAreHiring {
+    padding: 52px 0;
+    background: url(https://images.neosofttech.com/sites/all/themes/neosoft2017/images/career-images/hiring-background.jpg) center top no-repeat;
+    background-size: cover;
+    .weAreHiringContainer {
+        .weAreHiringWrapper {
+            .weAreHiringTitle {
+                @include career-section-title;
+                color: #ffffff !important;
+                font-weight: 700 !important;
+                &:after {
+                    background-color: #ffffff !important;
+                }
+            }
+            .comapny-submenu {
+                @include common-submenu-ul;
+                justify-content: center !important;
+                margin-top: 6px;
+                li {
+                    background: none;
+                    border: 0;
+                    box-sizing: border-box;
+                    // margin: 1em;
+                    padding: 1em 2em;
+                    box-shadow: inset 0 0 0 1px grey;
+                    font-size: inherit;
+                    // font-weight: 700;
+                    position: relative;
+                    vertical-align: middle;
+                    @include common-submenu-li;
+                    width: 25% !important;
+                    margin-bottom: 14px !important;
+                    margin-right: 14px !important;
+                    height: 72px !important;
+                    @media (max-width: 767.98px) {
+                        width: 100% !important;
+                        margin-right: 0px !important;
+                    }
+                    // @media (min-width: 992px) and (max-width: 1199.98px) {
+                    //     width: 22% !important;
+                    // }
+                    .Icon {
+                        min-width: 50px;
+                        .img-first {
+                            height: 35px !important;
+                        }
+                        .img-second {
+                            height: 26.25px !important;
+                        }
+                        .img-third {
+                            height: 26.25px !important;
+                        }
+                        .img-forth {
+                            height: 31.5px !important;
+                        }
+                        .img-fifth {
+                            height: 29.11px !important;
+                        }
+                        .img-six {
+                            height: 30px !important;
+                        }
+                        .img-seven {
+                            height: 30px !important;
+                        }
+                        .img-eight {
+                            height: 30px !important;
+                        }
+                        .img-eight {
+                            height: 30px !important;
+                        }
+                        .img-nine {
+                            height: 30.91px !important;
+                        }
+                        .img-ten {
+                            height: 28.28px !important;
+                        }
+                        .img-eleven {
+                            height: 28.41px !important;
+                        }
+                        .img-twelve {
+                            height: 31.5px !important;
+                        }
+                        .img-thirteen {
+                            height: 26.83px !important;
+                        }
+                    }
+                }
+                li:hover a {
+                    color: #e23434;
+                    transition: all .5s;
+                }
+                li::before,
+                li::after {
+                    box-sizing: inherit;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+                .draw {
+                    transition: color 0.25s;
+                }
+                .draw::before,
+                .draw::after {
+                    border: 2px solid transparent;
+                    width: 0;
+                    height: 0;
+                }
+                .draw::before {
+                    top: 0;
+                    left: 0;
+                }
+                .draw::after {
+                    bottom: 0;
+                    right: 0;
+                }
+                .draw:hover {
+                    color: #60daaa;
+                }
+                .draw:hover::before,
+                .draw:hover::after {
+                    width: 100%;
+                    height: 100%;
+                }
+                .draw:hover::before {
+                    border-top-color: #60daaa;
+                    border-right-color: #60daaa;
+                    transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+                }
+                .draw:hover::after {
+                    border-bottom-color: #60daaa;
+                    border-left-color: #60daaa;
+                    transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+                }
+                .meet:hover {
+                    color: #e23434;
+                }
+                .meet::after {
+                    top: 0;
+                    left: 0;
+                }
+                .meet:hover::before {
+                    border-top-color: #e23434;
+                    border-right-color: #e23434;
+                }
+                .meet:hover::after {
+                    border-bottom-color: #e23434;
+                    border-left-color: #e23434;
+                    transition: height 0.25s ease-out, width 0.25s ease-out 0.25s;
+                }
+            }
+            .browsJob {
+                background: #f2f2f2;
+                color: #333;
+                border: 1px solid #f2f2f2;
+                display: inline-block;
+                border-radius: 20px;
+                padding: 6px 20px;
+                text-decoration: none;
+                transition: 0.5s;
+                margin-top: 26px;
+                &:hover {
+                    background: #e23434;
+                    border-color: #e23434;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.neosoftUniversitySection {
+    padding: 52px 0;
+    // background-color: #f1f1f1;
+    .neosoftUniversityContainer {
+        .neosoftUniversityWrapper {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .leftUniversity {
+                width: 40%;
+                @media (max-width: 767.98px) {
+                    width: 100%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .rightUniversity {
+                width: 60%;
+                padding: 40px 84px;
+                @media (max-width: 767.98px) {
+                    width: 100%;
+                    padding: 26px 39px;
+                }
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    padding: 13px 39px;
+                }
+                @media (min-width: 992px) and (max-width: 1199.98px) {
+                    padding: 26px 66px;
+                }
+                .section-main-title {
+                    text-transform: uppercase;
+                    font-size: 35px;
+                    margin-bottom: 14px;
+                    font-weight: 700;
+                    color: #000;
+                }
+                p {
+                    color: #000;
+                    width: 80%;
+                    margin: 0 0 14px 0;
+                    line-height: 19.59px;
+                    font-size: 14px;
+                }
+                .email-info {
+                    color: #000;
+                    width: 80%;
+                    margin: 42px 0 14px 0;
+                    line-height: 19.59px;
+                    font-size: 14px;
+                    @media (min-width: 768px) and (max-width: 991.98px) {
+                        width: 100%;
+                    }
+                    .browseJobs {
+                        padding: 9.36px 14px;
+                        background: rgba(51, 51, 51, 0.1);
+                        color: #333;
+                        border-radius: 30px;
+                        margin-left: 8px;
+                        text-decoration: none;
+                        outline: none;
+                        @media (max-width: 767.98px) {
+                            display: block;
+                            margin-left: 0px;
+                            margin-top: 7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.employeePerkSection {
+    padding: 56px 0;
+    background-color: #efefef;
+    .employeePerkContainer {
+        .employeePerkWrapper {
+            .empPerkTitle {
+                @include career-section-title;
+            }
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-wrap: wrap;
+                li {
+                    width: 20%;
+                    padding: 2rem;
+                    box-sizing: border-box;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    @media (max-width: 767.98px) {
+                        width: 100%;
+                        padding: 14px;
+                    }
+                    img {
+                        max-height: 45px;
+                    }
+                    h4 {
+                        font-size: 1rem;
+                        width: 50%;
+                        display: flex;
+                        align-self: center;
+                        text-align: center;
+                        margin-top: 0.5rem;
+                        margin-bottom: 1rem;
+                        @media (max-width: 767.98px) {
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // @keyframes radiate {
 //     to {
 //         transform: scale(1.5);

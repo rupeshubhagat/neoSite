@@ -41,6 +41,7 @@ import { OurDnaComponent } from './our-dna/our-dna.component';
 import { DevelopmentModelComponent } from './development-model/development-model.component';
 import { EngagementModelComponent } from './engagement-model/engagement-model.component';
 import { CareerComponent } from './career/career.component';
+import { DirectoriesComponent } from './directories/directories.component';
 
 
 const routes: Routes = [
@@ -207,6 +208,10 @@ const routes: Routes = [
   {
     path: 'career',
     component: CareerComponent
+  },
+  {
+    path: 'directories',
+    component: DirectoriesComponent
   }
 
 ];

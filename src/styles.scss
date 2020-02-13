@@ -770,3 +770,103 @@ button:focus {
 }
 
 // Career page Emp Carosouels Ends.
+// Directories/Blog page Pagination start
+.paginationDirectories {
+    .ngx-pagination {
+        li {
+            display: inline-block;
+            background: rgba(82, 82, 85, 0.2) !important;
+            border-radius: 100% !important;
+            width: 30px !important;
+            height: 30px !important;
+            margin: 0 5px !important;
+            @media (max-width: 767.98px) {
+                margin: 3px !important;
+            }
+            &:hover {
+                background: #e23434 !important;
+            }
+            a {
+                &:hover {
+                    background: none;
+                    color: #fff;
+                }
+            }
+            &.pagination-previous {
+                display: inline-block;
+                background: #e23434 !important;
+                border-radius: 0% !important;
+                width: auto !important;
+                height: 30px !important;
+                a {
+                    color: #ffffff !important;
+                    text-transform: uppercase !important;
+                }
+                &:hover,
+                 :active {
+                    outline: 0px !important;
+                    border: none !important;
+                    a {
+                        outline: 0px !important;
+                        border: none !important;
+                    }
+                }
+            }
+            &.pagination-next {
+                display: inline-block;
+                background: #e23434 !important;
+                border-radius: 0% !important;
+                width: auto !important;
+                height: 30px !important;
+                a {
+                    color: #ffffff !important;
+                    text-transform: uppercase !important;
+                }
+                &:hover,
+                 :active {
+                    outline: 0px !important;
+                    border: none !important;
+                    a {
+                        outline: 0px !important;
+                        border: none !important;
+                    }
+                }
+            }
+            &.small-screen {
+                display: inline-block;
+                background: #e23434 !important;
+                color: #ffffff !important;
+                border-radius: 0% !important;
+                width: 64px !important;
+                height: 30px !important;
+                padding: 4px !important;
+                text-align: center !important;
+                vertical-align: middle !important;
+                @media (max-width: 767.98px) {
+                    display: none !important;
+                }
+            }
+            &.disabled {
+                padding: 0.1875rem 0.625rem !important;
+                color: #cacaca !important;
+                cursor: default !important;
+                background: none !important;
+                text-transform: uppercase !important;
+            }
+            &.current {
+                background: #e23434 !important;
+            }
+            &:focus,
+             :active {
+                outline: 0px !important;
+                border: none !important;
+                a {
+                    outline: 0px !important;
+                    border: none !important;
+                }
+            }
+        }
+    }
+}
+
+// Directories/Blog pagination ends

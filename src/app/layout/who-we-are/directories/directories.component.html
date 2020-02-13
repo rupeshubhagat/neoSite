@@ -1,0 +1,65 @@
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
+<div class="container-fluid directoriesSection">
+    <div class="conatiner directoriesHeading">
+        <div class="directoriesHeadingWrapper">
+            <h2 class="directories-title">Blogs</h2>
+        </div>
+    </div>
+    <div class="container blogs">
+        <div class="blogsWrapper">
+
+            <ng-container *ngFor="let blog of blogs | paginate: { itemsPerPage: 10, currentPage: p }">
+                <!-- //col-lg-4 col-sm-12 col-md-4 col-12 -->
+                <div class="blogsGrid3">
+                    <div class="blogData">
+                        <div class="blogImage">
+                            <img [src]="blog.blogImage" [alt]="blog.blogImageAlt">
+                        </div>
+                        <p class="blogDate"><span>{{ blog.blogDate }}</span></p>
+                        <div class="blogTitle">
+                            <h3 class="groupHeading"><a href="javascript:void(0)">{{ blog.blogTitle}}</a></h3>
+                        </div>
+                    </div>
+                    <p class="blog-description">{{ blog.blogDescription }}</p>
+                    <a href="javascript:void(0)" class="blog-view-details"><i class="icon-right-open-big"></i></a>
+                </div>
+            </ng-container>
+            <div class="paginationDirectories">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+            </div>
+
+            <!-- <div class="blogsGrid3">
+                <div class="blogData">
+                    <div class="blogImage">
+                        <img typeof="foaf:Image" src="../../../../assets/images/whowearemodule/blogs/Tech-Startups-thumbnail.png" alt="">
+                    </div>
+                    <p class="blogDate"><span>01 april 2019</span></p>
+                </div>
+                <p class="blog-description">Vulnerability Assessment and Penetration Testing (VAPT) is a security testing method which identifies the security bugs in a software program, a computer network, a server or a system infrastructure. Since both tests serve a different
+                    purpose, they are often misunderstood as 2 different test....</p>
+                <a href="javascript:void(0)" class="blog-view-details"><i class="icon-right-open-big"></i></a>
+            </div>
+
+            <div class="blogsGrid3">
+                <div class="blogData">
+                    <div class="blogImage">
+                        <img typeof="foaf:Image" src="../../../../assets/images/whowearemodule/blogs/salesforce-thumbnail.png" alt="">
+                    </div>
+                    <p class="blogDate"><span>01 april 2019</span></p>
+                </div>
+                <p class="blog-description">Vulnerability Assessment and Penetration Testing (VAPT) is a security testing method which identifies the security bugs in a software program, a computer network, a server or a system infrastructure. Since both tests serve a different
+                    purpose, they are often misunderstood as 2 different test....</p>
+                <a href="javascript:void(0)" class="blog-view-details"><i class="icon-right-open-big"></i></a>
+            </div> -->
+
+        </div>
+    </div>
+</div>
+
+
+<!-- Footet section start -->
+<app-footer></app-footer>
+<!-- Footet section ends -->

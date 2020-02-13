@@ -1,0 +1,125 @@
+@import "src/assets/scss/index";
+.directoriesSection {
+    background-color: #dcdcdc;
+    // height: 100vh;
+    .directoriesHeading {
+        .directoriesHeadingWrapper {
+            text-align: center;
+            padding: 56px 0 30.80px;
+            .directories-title {
+                @include career-section-title;
+                padding-bottom: 16px !important;
+                &:after {
+                    background-color: #e23434 !important;
+                    width: 66px !important;
+                }
+            }
+        }
+    }
+    .blogs {
+        .blogsWrapper {
+            display: flex;
+            flex-wrap: wrap;
+            .blogsGrid3 {
+                width: 31.3%;
+                // padding-left: 0px !important;
+                // padding-right: 0px !important;
+                margin-bottom: 35px;
+                margin-right: 3%;
+                background: #fff;
+                position: relative;
+                @media(max-width: 767.98px) {
+                    width: 100%;
+                    margin-right: 0%;
+                }
+                .blogData {
+                    .blogImage {
+                        img {
+                            width: 100%;
+                            height: 312px;
+                        }
+                    }
+                    .blogDate {
+                        position: absolute;
+                        top: 0;
+                        background: #4666be;
+                        line-height: 42px;
+                        height: 42px;
+                        color: #fff;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        padding: 0 12px;
+                        margin-bottom: 0;
+                    }
+                    .blogTitle {
+                        position: absolute;
+                        top: 42px;
+                        background: rgba(36, 40, 78, 0.75);
+                        color: #fff;
+                        display: inline-block;
+                        width: 90%;
+                        padding: 8px 12px;
+                        .groupHeading {
+                            display: inline-block;
+                            margin-bottom: 0;
+                            font-size: 26px;
+                            text-transform: uppercase;
+                            line-height: 35px;
+                            font-weight: 700;
+                            a {
+                                color: #fff;
+                                display: inline-block;
+                                font-weight: 400;
+                            }
+                        }
+                    }
+                }
+                &:nth-child(3n+3) {
+                    margin-right: 0%;
+                }
+                .blog-description {
+                    padding: 30px;
+                    font-size: 13px;
+                    color: #5a5c5e;
+                    font-weight: 600;
+                    margin: 0 0 14px 0;
+                    line-height: 19.59px;
+                }
+                .blog-view-details {
+                    border-radius: 100%;
+                    cursor: pointer;
+                    background: #e1e2e2;
+                    width: 29px;
+                    height: 29px;
+                    display: flex;
+                    position: absolute;
+                    right: 18.2px;
+                    z-index: 0;
+                    bottom: 18.2px;
+                    color: #fff;
+                    font-size: 12.6px;
+                    line-height: 32px;
+                    justify-content: center;
+                    vertical-align: middle;
+                    transition: 0.5s;
+                    text-decoration: none;
+                    outline: 0;
+                    max-width: 100%;
+                    &:hover {
+                        background: #4666be;
+                    }
+                }
+            }
+            .paginationDirectories {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin: 39px 0 32px;
+                @media (max-width: 767.98px) {
+                    margin: 0 0 39px 0px;
+                }
+            }
+        }
+    }
+}

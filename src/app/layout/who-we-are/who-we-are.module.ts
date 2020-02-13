@@ -45,16 +45,20 @@ import { OurDnaComponent } from './our-dna/our-dna.component';
 import { DevelopmentModelComponent } from './development-model/development-model.component';
 import { EngagementModelComponent } from './engagement-model/engagement-model.component';
 import { CareerComponent } from './career/career.component';
+import { DirectoriesComponent } from './directories/directories.component';
+//pagination Module:
+import {NgxPaginationModule} from 'ngx-pagination'; 
 
 
 @NgModule({
-  declarations: [OverviewComponent, BannerComponent, CompetenciesComponent, IndustryserveComponent, MoreaboutneosoftComponent, CompetenciesServicesComponent, MobileAppDevelopmentComponent, WebDevelopmentComponent, CloudComputingComponent, AiandmlComponent, AnalyticsBigdataComponent, InternetOfThingsComponent, BlockchainComponent, DevOpsComponent, QaTestingComponent, SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent, OverviewNumbersetComponent, NeosoftServicesComponent, EnterpriseDigitalTransformationComponent, DedicatedTeamComponent, CompetenciesEngagementComponent, TeamAugmentationComponent, HireComponent, DemoOwlComponent, EndToEndProEnggComponent, ClienteleListComponent, CertificationComponent, PartnersComponent, InfrastructureComponent, CorporateFactComponent, GlobalPresenceComponent, OurCsrInitiativesComponent, OurVisionMissionComponent, OurCultureComponent, OurDnaComponent, DevelopmentModelComponent, EngagementModelComponent, CareerComponent],
+  declarations: [OverviewComponent, BannerComponent, CompetenciesComponent, IndustryserveComponent, MoreaboutneosoftComponent, CompetenciesServicesComponent, MobileAppDevelopmentComponent, WebDevelopmentComponent, CloudComputingComponent, AiandmlComponent, AnalyticsBigdataComponent, InternetOfThingsComponent, BlockchainComponent, DevOpsComponent, QaTestingComponent, SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent, OverviewNumbersetComponent, NeosoftServicesComponent, EnterpriseDigitalTransformationComponent, DedicatedTeamComponent, CompetenciesEngagementComponent, TeamAugmentationComponent, HireComponent, DemoOwlComponent, EndToEndProEnggComponent, ClienteleListComponent, CertificationComponent, PartnersComponent, InfrastructureComponent, CorporateFactComponent, GlobalPresenceComponent, OurCsrInitiativesComponent, OurVisionMissionComponent, OurCultureComponent, OurDnaComponent, DevelopmentModelComponent, EngagementModelComponent, CareerComponent, DirectoriesComponent],
   imports: [
     CommonModule,
     IndexModule,
     CarouselModule,
-    WhoWeAreRoutingModule
+    WhoWeAreRoutingModule,
+    NgxPaginationModule
   ],
-  exports: [OverviewComponent, BannerComponent, CompetenciesComponent,IndustryserveComponent,MoreaboutneosoftComponent,CompetenciesServicesComponent,MobileAppDevelopmentComponent,WebDevelopmentComponent,CloudComputingComponent, AiandmlComponent,AnalyticsBigdataComponent, InternetOfThingsComponent,BlockchainComponent, DevOpsComponent,QaTestingComponent,SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent,OverviewNumbersetComponent,NeosoftServicesComponent,EnterpriseDigitalTransformationComponent,DedicatedTeamComponent,CompetenciesEngagementComponent,TeamAugmentationComponent,HireComponent,DemoOwlComponent,EndToEndProEnggComponent,ClienteleListComponent,CertificationComponent, PartnersComponent, InfrastructureComponent,CorporateFactComponent,GlobalPresenceComponent,OurCsrInitiativesComponent,OurVisionMissionComponent,OurCultureComponent, OurDnaComponent,DevelopmentModelComponent,EngagementModelComponent,CareerComponent],
+  exports: [OverviewComponent, BannerComponent, CompetenciesComponent,IndustryserveComponent,MoreaboutneosoftComponent,CompetenciesServicesComponent,MobileAppDevelopmentComponent,WebDevelopmentComponent,CloudComputingComponent, AiandmlComponent,AnalyticsBigdataComponent, InternetOfThingsComponent,BlockchainComponent, DevOpsComponent,QaTestingComponent,SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent,OverviewNumbersetComponent,NeosoftServicesComponent,EnterpriseDigitalTransformationComponent,DedicatedTeamComponent,CompetenciesEngagementComponent,TeamAugmentationComponent,HireComponent,DemoOwlComponent,EndToEndProEnggComponent,ClienteleListComponent,CertificationComponent, PartnersComponent, InfrastructureComponent,CorporateFactComponent,GlobalPresenceComponent,OurCsrInitiativesComponent,OurVisionMissionComponent,OurCultureComponent, OurDnaComponent,DevelopmentModelComponent,EngagementModelComponent,CareerComponent,DirectoriesComponent],
 })
 export class WhoWeAreModule { }

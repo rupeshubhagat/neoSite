@@ -40,6 +40,23 @@ background: url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top re
 animation name: Ripple:(career)
 https://codepen.io/chrisunderdown/pen/JeXNoz
 
+****************
+CSS (3n+3)
+Using a formula (an + b). Description: a represents a cycle size, n is a counter (starts at 0), and b is an offset value.
+
+Here, we specify a background color for all p elements whose index is a multiple of 3:
+
+p:nth-child(3n+0) {
+  background: red;
+}
+****************
+
+*******
+ngx-pagination:
+https://www.npmjs.com/package/ngx-pagination#angular-version
+npm install ngx-pagination --save
+*******
+
 madhav:
   // &:nth-of-type(1) {
                                 //     border-bottom: 2px solid #fbaa0a;

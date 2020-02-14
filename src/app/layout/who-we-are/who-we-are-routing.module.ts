@@ -42,6 +42,7 @@ import { DevelopmentModelComponent } from './development-model/development-model
 import { EngagementModelComponent } from './engagement-model/engagement-model.component';
 import { CareerComponent } from './career/career.component';
 import { DirectoriesComponent } from './directories/directories.component';
+import { SharedDetailDirectoriesComponent } from './shared-detail-directories/shared-detail-directories.component';
 
 
 const routes: Routes = [
@@ -212,6 +213,10 @@ const routes: Routes = [
   {
     path: 'directories',
     component: DirectoriesComponent
+  },
+  {
+    path: 'shared-detail-derectories',
+    component: SharedDetailDirectoriesComponent
   }
 
 ];

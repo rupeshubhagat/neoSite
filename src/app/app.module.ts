@@ -10,6 +10,7 @@ import { IndexModule } from './layout/index/index.module';
 import { WhoWeAreModule } from './layout/who-we-are/who-we-are.module';
 import { TechnologyModule } from './layout/technology/technology.module';
 import { WhatWeDoModule } from './layout/what-we-do/what-we-do.module';
+import { WeWorkWithModule } from './layout/we-work-with/we-work-with.module';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { WhatWeDoModule } from './layout/what-we-do/what-we-do.module';
     WhoWeAreModule,
     TechnologyModule,
     WhatWeDoModule,
+    WeWorkWithModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,

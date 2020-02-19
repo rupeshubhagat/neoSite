@@ -1,0 +1,314 @@
+<!-- header section here -->
+<app-header></app-header>
+<!-- header section here -->
+
+<!-- Industry serve Component -->
+<app-industryserve></app-industryserve>
+<!-- Industry serve Component -->
+
+<!-- banking -->
+<div class="container-fluid clientList" id="banking">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/banking-and-finance.png" alt="bankingandfinance">
+                </div>
+                <h3>Banking and Finance</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of clienteleArray | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- ecommerce -->
+<div class="container-fluid clientList" id="ecommerce">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/ecommerce-and-retail.png" alt="ecommerce">
+                </div>
+                <h3>ECOMMERCE & RETAIL</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryEcommerce | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- education -->
+<div class="container-fluid clientList" id="education">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/education-and-elearning.png" alt="education">
+                </div>
+                <h3>Education & Elearning</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryEducation | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- government -->
+<div class="container-fluid clientList" id="government">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/government.png" alt="government">
+                </div>
+                <h3>GOVERNMENT / SEMI GOVERNMENT</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryGovandSemigov | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- HEALTHCARE -->
+<div class="container-fluid clientList" id="healthcare">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/healthcare.png" alt="HEALTHCARE">
+                </div>
+                <h3>HEALTHCARE</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryHealthcare | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Insurance -->
+<div class="container-fluid clientList" id="insurance">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/insurance.png" alt="insurance">
+                </div>
+                <h3>Insurance</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryInsurance | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- IT AND CONSULTING -->
+<div class="container-fluid clientList" id="it">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/it.png" alt="it">
+                </div>
+                <h3>IT AND CONSULTING</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- manufacturing -->
+<div class="container-fluid clientList" id="manufacturing">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/manufacturing.png" alt="manufacturing">
+                </div>
+                <h3>manufacturing</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- media-and-entertainment -->
+<div class="container-fluid clientList" id="media">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/media-and-entertainment.png" alt="media-and-entertainment">
+                </div>
+                <h3>media & entertainment</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- NEWS & PUBLICATION -->
+<div class="container-fluid clientList" id="news">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/news-and-publication.png" alt="news">
+                </div>
+                <h3>NEWS & PUBLICATION</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- STARTUPS -->
+<div class="container-fluid clientList" id="startups">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/products.png" alt="STARTUPS">
+                </div>
+                <h3>startups</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- telecom -->
+<div class="container-fluid clientList" id="telecom">
+    <div class="container clientListContainer">
+        <div class="clientListWrapper">
+            <div class="industriesTitle">
+                <div class="imgContainer">
+                    <img src="../../../../assets/images/weworkwith/telecom.png" alt="telecom">
+                </div>
+                <h3>telecom</h3>
+            </div>
+            <ul class="clienteleUlList">
+                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                    <li>
+                        <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
+                    </li>
+                </ng-container>
+
+                <li class="more-client">
+                    <a href="javascript:void(0)">+ More</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

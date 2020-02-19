@@ -57,6 +57,11 @@ https://www.npmjs.com/package/ngx-pagination#angular-version
 npm install ngx-pagination --save
 *******
 
+*******
+Plugin: ngx-scroll-to
+
+*******
+
 madhav:
   // &:nth-of-type(1) {
                                 //     border-bottom: 2px solid #fbaa0a;

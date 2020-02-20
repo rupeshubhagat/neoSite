@@ -23,7 +23,7 @@
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -48,7 +48,7 @@
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -73,7 +73,7 @@
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -98,7 +98,7 @@
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -123,7 +123,7 @@
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -148,7 +148,7 @@
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -173,7 +173,7 @@
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -193,13 +193,13 @@
                 <h3>manufacturing</h3>
             </div>
             <ul class="clienteleUlList">
-                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                <ng-container *ngFor="let clientele of categeoryManufacturing | slice:0:9;">
                     <li>
                         <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -220,13 +220,13 @@
                 <h3>media & entertainment</h3>
             </div>
             <ul class="clienteleUlList">
-                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                <ng-container *ngFor="let clientele of categeoryMedia | slice:0:9;">
                     <li>
                         <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -246,19 +246,20 @@
                 <h3>NEWS & PUBLICATION</h3>
             </div>
             <ul class="clienteleUlList">
-                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                <ng-container *ngFor="let clientele of categeoryNews | slice:0:9;">
                     <li>
                         <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+
 
 
 <!-- STARTUPS -->
@@ -272,13 +273,13 @@
                 <h3>startups</h3>
             </div>
             <ul class="clienteleUlList">
-                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                <ng-container *ngFor="let clientele of categeoryStartups | slice:0:9;">
                     <li>
                         <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
@@ -299,16 +300,20 @@
                 <h3>telecom</h3>
             </div>
             <ul class="clienteleUlList">
-                <ng-container *ngFor="let clientele of categeoryItandConsulting | slice:0:9;">
+                <ng-container *ngFor="let clientele of categeoryTelecom | slice:0:9;">
                     <li>
                         <img [src]="clientele.imgUrl" [alt]="clientele.imgAlt">
                     </li>
                 </ng-container>
 
-                <li class="more-client">
+                <li class="more-client" (click)="goToLink('http://www.neosofttech.com/clientele/')">
                     <a href="javascript:void(0)">+ More</a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
+
+<!-- Footer section start -->
+<app-footer></app-footer>
+<!-- Footer section ends -->

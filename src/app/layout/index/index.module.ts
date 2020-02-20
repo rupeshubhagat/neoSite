@@ -10,8 +10,7 @@ import { IndexComponent } from './index/index.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { FulljsComponent } from './fulljs/fulljs.component';
-
-
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent],
@@ -21,7 +20,8 @@ import { FulljsComponent } from './fulljs/fulljs.component';
     MaterialModule,
     ClickOutsideModule,
     CarouselModule,
-    AngularFullpageModule
+    AngularFullpageModule,
+    ScrollToModule.forRoot()
   ],
   exports: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent]
 })

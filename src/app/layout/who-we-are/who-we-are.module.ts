@@ -49,6 +49,7 @@ import { DirectoriesComponent } from './directories/directories.component';
 //pagination Module:
 import {NgxPaginationModule} from 'ngx-pagination';
 import { SharedDetailDirectoriesComponent } from './shared-detail-directories/shared-detail-directories.component'; 
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 
 @NgModule({
@@ -58,7 +59,8 @@ import { SharedDetailDirectoriesComponent } from './shared-detail-directories/sh
     IndexModule,
     CarouselModule,
     WhoWeAreRoutingModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    ScrollToModule.forRoot()
   ],
   exports: [OverviewComponent, BannerComponent, CompetenciesComponent,IndustryserveComponent,MoreaboutneosoftComponent,CompetenciesServicesComponent,MobileAppDevelopmentComponent,WebDevelopmentComponent,CloudComputingComponent, AiandmlComponent,AnalyticsBigdataComponent, InternetOfThingsComponent,BlockchainComponent, DevOpsComponent,QaTestingComponent,SapComponent, UxUiComponent, SoftwareConsultingComponent, InternetMarketingComponent,OverviewNumbersetComponent,NeosoftServicesComponent,EnterpriseDigitalTransformationComponent,DedicatedTeamComponent,CompetenciesEngagementComponent,TeamAugmentationComponent,HireComponent,DemoOwlComponent,EndToEndProEnggComponent,ClienteleListComponent,CertificationComponent, PartnersComponent, InfrastructureComponent,CorporateFactComponent,GlobalPresenceComponent,OurCsrInitiativesComponent,OurVisionMissionComponent,OurCultureComponent, OurDnaComponent,DevelopmentModelComponent,EngagementModelComponent,CareerComponent,DirectoriesComponent,SharedDetailDirectoriesComponent],
 })

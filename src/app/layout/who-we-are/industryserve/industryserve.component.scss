@@ -45,7 +45,7 @@
             // margin-left: -14px;
             li {
                 //border: 1px solid grey;   
-                width: 14.83% !important;
+                width: 14.83%;
                 height: 90px;
                 // padding: 6px 0px;
                 margin-bottom: 20px;
@@ -71,15 +71,24 @@
                 position: relative;
                 vertical-align: middle;
                 // margin-left: 0px !important;
+                &:focus {
+                    outline: none;
+                }
+                @media (max-width: 767.98px) {
+                    width: 49%;
+                    height: 105px;
+                    margin-bottom: 6px;
+                    margin-right: 0px;
+                }
+                @media (min-width: 768px) and (max-width: 991.98px) {
+                    height: 102px;
+                }
                 @media (min-width: 992px) and (max-width: 1199.98px) {
                     width: 14.83% !important;
                     height: 111px !important;
                     padding: 4px 13px;
                 }
-                &:nth-child(6) {
-                    margin-right: 0px;
-                }
-                &:nth-child(12) {
+                &:nth-child(6n + 6) {
                     margin-right: 0px;
                 }
                 a {

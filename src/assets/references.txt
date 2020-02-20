@@ -58,7 +58,8 @@ npm install ngx-pagination --save
 *******
 
 *******
-Plugin: ngx-scroll-to
+Plugin: ngx-scroll-to:
+https://www.npmjs.com/package/@nicky-lenaers/ngx-scroll-to
 
 *******
 

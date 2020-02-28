@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 
-// declare var $: any;
+declare var $: any;
 
 @Component({
   selector: 'app-header',
@@ -226,7 +226,6 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit() {
-   
-   
+      
   }
 }

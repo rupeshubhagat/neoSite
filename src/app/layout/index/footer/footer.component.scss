@@ -32,7 +32,10 @@
     // margin-top: 60px;
     .footer-section-one {
         position: relative;
-        padding-bottom: 100px;
+        // padding-bottom: 100px;
+        @media (max-width: 767.98px) {
+            padding-bottom: 46px;
+        }
         .footer-wrapper {
             width: 100%;
             display: inline-block;

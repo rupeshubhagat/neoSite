@@ -870,3 +870,10 @@ button:focus {
 }
 
 // Directories/Blog pagination ends
+// for Header Css Global
+.marginTop {
+    margin-top: 97px;
+    @media (max-width: 767.98px) {
+        margin-top: 127px;
+    }
+}

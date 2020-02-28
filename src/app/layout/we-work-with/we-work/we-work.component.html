@@ -3,7 +3,7 @@
 <!-- header Bar ends -->
 
 <!-- Full js coding -->
-<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" #fullpageRef>
+<div fullpage id="fullpage" [options]="config" (ref)="getRef($event)" class="marginTop">
     <div class="section section-one commonSection fp-auto-height-responsive">
         <div class="container-fluid enterprise commonSectionFluid">
             <div class="container commonSectionContainer">
@@ -33,29 +33,96 @@
                         <h3>Brands speaks everything</h3>
                         <div class="rightOverlay">
                             <ul class="we-work-list">
-                                <li><img alt="" src="../../../../assets/images/weworkwith/we-work-slider/enterpriseClient/sbi-logo.png"></li>
-                                <li><img alt="" src="../../../../assets/images/weworkwith/we-work-slider/enterpriseClient/sbi-logo.png"></li>
-                                <li><img alt="" src="../../../../assets/images/weworkwith/we-work-slider/enterpriseClient/sbi-logo.png"></li>
-                                <li><img alt="" src="../../../../assets/images/weworkwith/we-work-slider/enterpriseClient/sbi-logo.png"></li>
-                                <li><img alt="" src="../../../../assets/images/weworkwith/we-work-slider/enterpriseClient/sbi-logo.png"></li>
-                                <li><img alt="" src="../../../../assets/images/weworkwith/we-work-slider/enterpriseClient/sbi-logo.png"></li>
-                                <li><img alt="" src="../../../../assets/images/weworkwith/we-work-slider/enterpriseClient/sbi-logo.png"></li>
-                                <li><img alt="" src="../../../../assets/images/weworkwith/we-work-slider/enterpriseClient/sbi-logo.png"></li>
-
-
+                                <ng-container *ngFor="let enterprise of enterprise">
+                                    <li><img [alt]="enterprise.imgAlt" [src]="enterprise.imgclient"></li>
+                                </ng-container>
                             </ul>
                         </div>
-                        <h3><a class="section--white-text" href="javascript:void(0);" (click)="goToUrl('https://www.neosofttech.com/clientele/')">Many more...</a></h3>
+                        <h3><a class="section--white-text" href="javascript:void(0);" (click)="goToUrl('http://www.neosofttech.com/clientele/')">Many more...</a></h3>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="section section-two commonSection fp-auto-height-responsive">
-
+        <div class="container-fluid enterprise commonSectionFluid">
+            <div class="container commonSectionContainer">
+                <div class="commonWrapper">
+                    <div class="sectionTop section--black-text">
+                        <div class="sectionHeading">
+                            <div class="heading agenciesHeading">
+                                <h2>Agencies</h2>
+                            </div>
+                            <div class="subheading">
+                                <h4>Working with Consulting Companies, Independent Software Vendors (ISVs), Software Product Development Companies OR Agencies</h4>
+                            </div>
+                        </div>
+                        <p class="custom-width">We partner with agencies to work on a project end-to-end, or as extended team to build their client's project successfully.</p>
+                        <p class="services-include">Our services include :</p>
+                        <div class="bulletList agenciesBulletList">
+                            <ul>
+                                <li>Team Augmentation - Onsite / Offshore</li>
+                                <li>End-to-end Product Engineering</li>
+                                <li>Technology Migration / Re-engineering</li>
+                                <li>Maintenance &amp; Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sectionBottom section--black-text">
+                        <h3>Brands speaks everything</h3>
+                        <div class="rightOverlay">
+                            <ul class="we-work-list">
+                                <ng-container *ngFor="let agencies of agencies">
+                                    <li><img [alt]="agencies.imgAlt" [src]="agencies.imgclient"></li>
+                                </ng-container>
+                            </ul>
+                        </div>
+                        <h3><a class="section--black-text" href="javascript:void(0);" (click)="goToUrl('http://www.neosofttech.com/clientele/')">Many more...</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section section-three commonSection fp-auto-height-responsive">
-
+        <div class="container-fluid enterprise commonSectionFluid">
+            <div class="container commonSectionContainer">
+                <div class="commonWrapper">
+                    <div class="sectionTop section--white-text">
+                        <div class="sectionHeading">
+                            <div class="heading">
+                                <h2>Startups</h2>
+                            </div>
+                            <div class="subheading">
+                                <h4>Worked with more than 100+ Global Tech Startups <br> - for their Web / Cloud / Mobile / IoT needs</h4>
+                            </div>
+                        </div>
+                        <p class="custom-width">We empower and support startups with our digital expertise & experience at each stage - whether you are at Seed stage OR Expansion stage</p>
+                        <p class="services-include">Our services include :</p>
+                        <div class="bulletList">
+                            <ul>
+                                <li>Idea to Prototype</li>
+                                <li>Minimal Viable Product (MVP)</li>
+                                <li>Complete Product Engineering</li>
+                                <li>Technology Migration / Re-engineering</li>
+                                <li>Maintenance &amp; Support</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sectionBottom section--white-text">
+                        <h3 class="startups_subheading">A track record you can trust</h3>
+                        <h3>We have helped more than 100+ Global Tech Startups in past 10 years, transformed their Ideas into reality</h3>
+                        <div class="rightOverlay">
+                            <ul class="we-work-list">
+                                <ng-container *ngFor="let startups of startups">
+                                    <li><img [alt]="startups.imgAlt" [src]="startups.imgclient"></li>
+                                </ng-container>
+                            </ul>
+                        </div>
+                        <h3><a class="section--white-text" href="javascript:void(0);" (click)="goToUrl('http://www.neosofttech.com/clientele/')">Many more...</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="section section-four commonSection fp-auto-height-responsive">
         <app-footer></app-footer>

@@ -511,32 +511,33 @@
     </div>
 </div>
 
-<!-- We work With -->
+<!-- We work With
+[routerLink]="['/we-work']" [queryParams]="{ order: 'popular'}" -->
 <div class="container-fluid we-work-with" *ngIf="isWeWorkWith" (click)="closeTopList()">
     &nbsp;
     <div class="container we-work">
         <h3 class="dropdown-title">We Work With</h3>
         <ul class="comapny-submenu">
-            <li class="draw meet" routerLink="."><span class="Icon"><img class="img-first" src="../../../../assets/images/header/mainheader/we-work-with/icon-enterprise_0.png" alt=""></span><a href="#">Enterprises</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/we-work-with/agencies-icon-top.png" alt=""></span><a href="#">Agencies</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/we-work-with/startup-icon-top.png" alt=""></span><a href="#">Startups</a></li>
+            <li class="draw meet" [routerLink]="['/we-work']" fragment="Enterprises" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-first" src="../../../../assets/images/header/mainheader/we-work-with/icon-enterprise_0.png" alt=""></span><a>Enterprises</a></li>
+            <li class="draw meet" [routerLink]="['/we-work']" fragment="Agencies" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/we-work-with/agencies-icon-top.png" alt=""></span><a>Agencies</a></li>
+            <li class="draw meet" [routerLink]="['/we-work']" fragment="Startups" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/we-work-with/startup-icon-top.png" alt=""></span><a>Startups</a></li>
         </ul>
     </div>
     <div class="container industry-serve">
         <h3 class="dropdown-title">Industry Served</h3>
         <ul class="comapny-submenu">
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#banking'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-first" src="../../../../assets/images/header/mainheader/we-work-with/banking-and-finance-top.png" alt=""></span><a href="#">Banking & Finance</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#ecommerce'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-second" src="../../../../assets/images/header/mainheader/we-work-with/ecommerce-and-retail-top.png" alt=""></span><a href="#">Ecommerce & Retail</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#education'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/we-work-with/education-and-elearning-top.png" alt=""></span><a href="#">Eduction & Elearning</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#government'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-forth" src="../../../../assets/images/header/mainheader/we-work-with/government-top.png" alt=""></span><a href="#">Goverment / Semi Goverment</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#healthcare'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-fifth" src="../../../../assets/images/header/mainheader/we-work-with/healthcare-top.png" alt=""></span><a href="#">Healthcare</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#insurance'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-six" src="../../../../assets/images/header/mainheader/we-work-with/insurance-top.png" alt=""></span><a href="#">Insurance</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#it'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/we-work-with/it-top.png" alt=""></span><a href="#">IT and Concultant</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#manufacturing'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-eight" src="../../../../assets/images/header/mainheader/we-work-with/manufacturing-top.png" alt=""></span><a href="#">Manufacturing</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#media'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-nine" src="../../../../assets/images/header/mainheader/we-work-with/media-and-entertainment-top.png" alt=""></span><a href="#">Media & Entertainement</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#news'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-ten" src="../../../../assets/images/header/mainheader/we-work-with/news-and-publication-top.png" alt=""></span><a href="#">News & Publication</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#startups'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-eleven" src="../../../../assets/images/header/mainheader/we-work-with/products-top.png" alt=""></span><a href="#">Startups</a></li>
-            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#telecom'" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-twelve" src="../../../../assets/images/header/mainheader/we-work-with/telecom-top.png" alt=""></span><a href="#">Telecom</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#banking'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-first" src="../../../../assets/images/header/mainheader/we-work-with/banking-and-finance-top.png" alt=""></span><a>Banking & Finance</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#ecommerce'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-second" src="../../../../assets/images/header/mainheader/we-work-with/ecommerce-and-retail-top.png" alt=""></span><a>Ecommerce & Retail</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#education'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-third" src="../../../../assets/images/header/mainheader/we-work-with/education-and-elearning-top.png" alt=""></span><a>Eduction & Elearning</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#government'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-forth" src="../../../../assets/images/header/mainheader/we-work-with/government-top.png" alt=""></span><a>Goverment / Semi Goverment</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#healthcare'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-fifth" src="../../../../assets/images/header/mainheader/we-work-with/healthcare-top.png" alt=""></span><a>Healthcare</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#insurance'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-six" src="../../../../assets/images/header/mainheader/we-work-with/insurance-top.png" alt=""></span><a>Insurance</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#it'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-seven" src="../../../../assets/images/header/mainheader/we-work-with/it-top.png" alt=""></span><a>IT and Concultant</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#manufacturing'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-eight" src="../../../../assets/images/header/mainheader/we-work-with/manufacturing-top.png" alt=""></span><a>Manufacturing</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#media'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-nine" src="../../../../assets/images/header/mainheader/we-work-with/media-and-entertainment-top.png" alt=""></span><a>Media & Entertainement</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#news'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-ten" src="../../../../assets/images/header/mainheader/we-work-with/news-and-publication-top.png" alt=""></span><a>News & Publication</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#startups'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-eleven" src="../../../../assets/images/header/mainheader/we-work-with/products-top.png" alt=""></span><a>Startups</a></li>
+            <li class="draw meet" routerLink="/industries" [ngx-scroll-to]="'#telecom'" [ngx-scroll-to-offset]="-97" (click)="isWeWorkWith =! isWeWorkWith"><span class="Icon"><img class="img-twelve" src="../../../../assets/images/header/mainheader/we-work-with/telecom-top.png" alt=""></span><a>Telecom</a></li>
         </ul>
         <h4 class="industry-tagline">Delivered over <span>6500+ </span> projects across <span> 22+ </span> industries, worldwide</h4>
     </div>
@@ -548,27 +549,27 @@
         <h3 class="dropdown-title">Technolgies</h3>
         <ul class="comapny-submenu">
             <li class="draw meet" routerLink="/technologies"><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/ms-top-icon.png" alt="Microsoft"></span><a>Microsoft</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/os-top-icon.png" alt="Open-Source"></span><a href="javascript:void(0);">Open-Source</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/java-top-icon.png" alt=""></span><a href="#">Java</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/mobile-icon.png" alt=""></span><a href="#">Mobile</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/frontend-top-icon.png" alt=""></span><a href="#">Frontend</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/database-top-icon.png" alt=""></span><a href="#">Databases</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/big-data-top-icon.png" alt=""></span><a href="#">Big Data & Analytics</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/iot-top-icon.png" alt=""></span><a href="#">Internet Of Things</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/cloud-top-icon.png" alt=""></span><a href="#">Cloud Infrastructure</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/menuchain_1.png" alt=""></span><a href="#">Block Chain</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/devops-icon_0.png" alt=""></span><a href="#">DevOps</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/sap1_1.png" alt=""></span><a href="#">SAP</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/ai-ml_1.png" alt=""></span><a href="#">AI & ML</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/os-top-icon.png" alt="Open-Source"></span><a>Open-Source</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/java-top-icon.png" alt=""></span><a>Java</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/mobile-icon.png" alt=""></span><a>Mobile</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/frontend-top-icon.png" alt=""></span><a>Frontend</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/database-top-icon.png" alt=""></span><a>Databases</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/big-data-top-icon.png" alt=""></span><a>Big Data & Analytics</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/iot-top-icon.png" alt=""></span><a>Internet Of Things</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/cloud-top-icon.png" alt=""></span><a>Cloud Infrastructure</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/menuchain_1.png" alt=""></span><a>Block Chain</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/devops-icon_0.png" alt=""></span><a>DevOps</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/sap1_1.png" alt=""></span><a>SAP</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/ai-ml_1.png" alt=""></span><a>AI & ML</a></li>
         </ul>
     </div>
     <div class="container enterprise">
         <h3 class="dropdown-title">Enterprise Solution</h3>
         <ul class="comapny-submenu">
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/enterprise/crm-top-icon.png" alt=""></span><a href="#">Customer Relationship Management(CRM)</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/enterprise/ecom-top-icon.png" alt=""></span><a href="#">Ecommerce Solution</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/enterprise/cms-top-icon.png" alt=""></span><a href="#">Content Management System(CMS)</a></li>
-            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/enterprise/enterprise-top-icon.png" alt=""></span><a href="#">Enterprise Resource Planning(ERP)</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/enterprise/crm-top-icon.png" alt=""></span><a>Customer Relationship Management(CRM)</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/enterprise/ecom-top-icon.png" alt=""></span><a>Ecommerce Solution</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/enterprise/cms-top-icon.png" alt=""></span><a>Content Management System(CMS)</a></li>
+            <li class="draw meet" routerLink="."><span class="Icon"><img src="../../../../assets/images/header/mainheader/technology/enterprise/enterprise-top-icon.png" alt=""></span><a>Enterprise Resource Planning(ERP)</a></li>
         </ul>
     </div>
 </div>

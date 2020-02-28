@@ -63,6 +63,11 @@ https://www.npmjs.com/package/@nicky-lenaers/ngx-scroll-to
 
 *******
 
+****
+Query params:
+https://alligator.io/angular/query-parameters/
+****
+
 madhav:
   // &:nth-of-type(1) {
                                 //     border-bottom: 2px solid #fbaa0a;

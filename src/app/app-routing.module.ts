@@ -10,6 +10,11 @@ const routes: Routes = [
     pathMatch:'full'
   }
   ,
+  {
+    path:'**',
+    redirectTo:'pagenotfound',
+    pathMatch:'full'
+  }
   // { 
   //   path: 'index',
   //   loadChildren: () => import(`./layout/index/index.module`).then(d =>d.IndexModule)
@@ -19,7 +24,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes ,{ scrollPositionRestoration: 'enabled'})],
+  imports: [RouterModule.forRoot(routes ,{scrollPositionRestoration: 'enabled'})],
   //, { scrollPositionRestoration: 'enabled'})
   exports: [RouterModule]
 })

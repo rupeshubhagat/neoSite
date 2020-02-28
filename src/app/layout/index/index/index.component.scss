@@ -1777,4 +1777,8 @@ sup {
 .section-eight {
     position: relative;
     height: auto !important;
+    padding-bottom: 97px;
+    @media (max-width: 767.98px) {
+        padding-bottom: 0px;
+    }
 }

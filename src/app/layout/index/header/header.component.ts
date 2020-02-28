@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation, HostListener, ElementRef, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 
 // declare var $: any;
 
@@ -59,7 +60,7 @@ export class HeaderComponent implements OnInit {
   
   
 
-  constructor() { 
+  constructor(private router:Router) { 
     //private eRef: ElementRef
   }
 

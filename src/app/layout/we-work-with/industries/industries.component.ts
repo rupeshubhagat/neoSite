@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-
+import { ActivatedRoute } from '@angular/router';
+import { ScrollToService } from 'src/app/shared/services/scroll-to.service';
+declare var $: any;
 @Component({
   selector: 'app-industries',
   templateUrl: './industries.component.html',
   styleUrls: ['./industries.component.scss']
 })
 export class IndustriesComponent implements OnInit {
-
-  constructor() { }
+  private fragment: string;
+  constructor(private route: ActivatedRoute,private scrollService: ScrollToService) { }
   //categeoryBanking:any[];
-  clienteleArray:any[]=[
+  clienteleArray:any[]=[  
     {
       id:1,
       imgUrl:"../../../../assets/images/whowearemodule/clientele/bankingandfinance/adityabirla-money.jpg",
@@ -932,6 +934,10 @@ export class IndustriesComponent implements OnInit {
   }
   ngOnInit() {
     // console.log(categeoryBanking);
+    this.route.fragment.subscribe(fragment => { this.fragment = fragment; });
+    console.log(this.fragment);
+    // this.scrollService.triggerScrollTo(this.fragment);
+    
   }
 
 }

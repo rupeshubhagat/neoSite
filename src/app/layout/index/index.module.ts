@@ -11,9 +11,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { FulljsComponent } from './fulljs/fulljs.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent],
+  declarations: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent, PagenotfoundComponent],
   imports: [
     CommonModule,
     IndexRoutingModule,
@@ -23,6 +24,6 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     AngularFullpageModule,
     ScrollToModule.forRoot()
   ],
-  exports: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent]
+  exports: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent,PagenotfoundComponent]
 })
 export class IndexModule { }

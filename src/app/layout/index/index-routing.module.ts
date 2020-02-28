@@ -5,6 +5,7 @@ import { ModalModule } from 'ngx-bootstrap/modal';
 import { FooterComponent } from './footer/footer.component';
 import { IndexComponent } from './index/index.component';
 import { FulljsComponent } from './fulljs/fulljs.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'footer',
     component: FooterComponent
+  },
+  {
+    path: 'pagenotfound',
+    component: PagenotfoundComponent
   }
   // {
   //   path: 'footer',

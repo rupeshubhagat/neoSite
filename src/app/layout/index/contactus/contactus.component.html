@@ -1,0 +1,117 @@
+<div class="container-fluid contactus">
+    <div class="container topSection">
+        <div class="topSectionWrapper">
+            <div class="logo">
+                <a routerLink="">
+                    <img src="../../../../assets/images/logo/logo.png" alt="neosoftlogo">
+                </a>
+            </div>
+            <div class="closeButton" routerLink="">
+                <button>close</button>
+            </div>
+        </div>
+    </div>
+    <div class="container middleSection">
+        <div class="middleSectionWrapper">
+            <!-- LeftSection -->
+            <div class="leftSection">
+                <div class="titleSection">
+                    <h3 class="inner-section-title">CONTACT US</h3>
+                    <h4 class="title-desc">Thank you for your interest in NeoSOFT’s services. <br>Please provide the following information about your business needs to help us serve you better. This information will enable us to route your request to the appropriate person.
+                        You should receive a response within 48 hours.</h4>
+                </div>
+                <form [formGroup]="sign" (ngSubmit)="register(sign.value)">
+
+                    <!-- first -->
+                    <div class="commonRow inquiryRow">
+                        <div class="leftSection">
+                            <div class="form-group">
+                                <label>INQUIRY TYPE <sup>*</sup></label>
+                                <select formControlName="inquiry" id="selectArrow">
+                                    <option value="Select Any Option" selected disabled>Please Select any Option</option>
+                                   <option value="{{item}}"  *ngFor="let item of inquiryTypes">{{ item }}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="rightSection inquiry">
+                            <p>Fields marked with an asterisk (*) are required.</p>
+                        </div>
+                    </div>
+
+                    <!-- second -->
+                    <div class="commonRow">
+                        <div class="leftSection">
+                            <div class="form-group">
+                                <label>NAME <sup>*</sup></label>
+                                <input type="text" formControlName="name">
+                            </div>
+                        </div>
+                        <div class="rightSection">
+                            <div class="form-group">
+                                <label>EMAIL <sup>*</sup></label>
+                                <input type="text" formControlName="name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- third -->
+                    <div class="commonRow">
+                        <div class="leftSection">
+                            <div class="form-group">
+                                <label>CONTACT NUMBER <sup>*</sup></label>
+                                <input type="text" formControlName="name">
+                            </div>
+                        </div>
+                        <div class="rightSection">
+                            <div class="form-group">
+                                <label>ORGANIZATION / INSTITUTE</label>
+                                <input type="text" formControlName="name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fourth  Country and Organization... -->
+                    <div class="commonRow">
+                        <div class="leftSection">
+                            <div class="form-group">
+                                <label>COUNTRY</label>
+                                <select formControlName="inquiry" id="selectArrow">
+                                    <option value="Select Any Option" selected disabled>Please Select any Option</option>
+                                   <option value="{{item}}"  *ngFor="let item of inquiryTypes">{{ item }}</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="rightSection">
+                            <div class="form-group">
+                                <label>ORGANIZATION / INSTITUTE</label>
+                                <input type="text" formControlName="name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- fifth -->
+                    <div class="commonRow">
+                        <div class="leftSection help">
+                            <div class="form-group">
+                                <label>HOW WE CAN HELP YOU ? <sup>*</sup></label>
+                                <input type="text" formControlName="name">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-success">SUBMIT</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <!-- RightSection -->
+            <div class="rightSection">Right</div>
+        </div>
+    </div>
+    <div class="container bottomSection"></div>
+</div>

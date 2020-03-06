@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewEncapsulation, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormGroup, FormControl } from '@angular/forms';
 
 declare var $: any;
 
@@ -54,7 +55,8 @@ export class HeaderComponent implements OnInit {
   whoWeAreUl:boolean = true;
   quickLinksUl:boolean = true;
 
-  
+  sign:FormGroup;
+  frmSign:object;
   
 
   
@@ -226,6 +228,10 @@ export class HeaderComponent implements OnInit {
 
 
   ngOnInit() {
+    
+    this.sign = new FormGroup({
+      search: new FormControl("")
+    });
       
   }
 }

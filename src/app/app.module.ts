@@ -12,6 +12,7 @@ import { TechnologyModule } from './layout/technology/technology.module';
 import { WhatWeDoModule } from './layout/what-we-do/what-we-do.module';
 import { WeWorkWithModule } from './layout/we-work-with/we-work-with.module';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { ReactiveFormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     BrowserAnimationsModule,
     MaterialModule,
     ClickOutsideModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

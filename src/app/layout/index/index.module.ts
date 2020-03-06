@@ -12,9 +12,11 @@ import { AngularFullpageModule } from '@fullpage/angular-fullpage';
 import { FulljsComponent } from './fulljs/fulljs.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent, PagenotfoundComponent],
+  declarations: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent, PagenotfoundComponent, ContactusComponent],
   imports: [
     CommonModule,
     IndexRoutingModule,
@@ -22,8 +24,9 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     ClickOutsideModule,
     CarouselModule,
     AngularFullpageModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    ReactiveFormsModule
   ],
-  exports: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent,PagenotfoundComponent]
+  exports: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent,PagenotfoundComponent,ContactusComponent]
 })
 export class IndexModule { }

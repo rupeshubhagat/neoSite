@@ -6,10 +6,10 @@ import { FooterComponent } from './footer/footer.component';
 import { IndexComponent } from './index/index.component';
 import { FulljsComponent } from './fulljs/fulljs.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { ContactusComponent } from './contactus/contactus.component';
 
 
 const routes: Routes = [
-  
   {
     path: 'index',
     component: IndexComponent
@@ -25,17 +25,12 @@ const routes: Routes = [
   {
     path: 'pagenotfound',
     component: PagenotfoundComponent
+  },
+  {
+    path: 'contactus',
+    component: ContactusComponent
   }
-  // {
-  //   path: 'footer',
-  //   component: FooterComponent
-  // },
-  // {
-  //   path: 'fulljs',
-  //   component: FulljsComponent
-  // }
-
-
+  
 ];
 
 @NgModule({

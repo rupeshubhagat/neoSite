@@ -223,6 +223,10 @@
 
     </div>
 
+    <!-- Modal -->
+
+    <!-- modal -->
+
 </header>
 
 <!-- Onclick Events Header TOP BAR start -->
@@ -247,20 +251,21 @@
 <div class="container-fluid searchTopBar" [ngClass]="isSearch ? 'activeSearch' : 'notactiveSearch'">
     <!-- *ngIf="isSearch"  -->
     <div class="container searchTopBar-wrapper">
-        <form action="">
+
+        <form [formGroup]="sign" (ngSubmit)="register(sign.value)">
             <!-- <div class="frm-group"> -->
-            <div class="example-container">
+            <div class="example-container form-group">
                 <mat-form-field>
-                    <input matInput class="matInput" placeholder="Enter your search term">
+                    <input matInput class="matInput" placeholder="Enter your search term" formControlName="search">
                 </mat-form-field>
             </div>
             <div class="form-group submit-btn">
                 <input type="button" class="btn" value="SEARCH">
                 <button class="mobile-btn"><span class="icon-search"></span></button>
-
             </div>
             <!-- </div> -->
         </form>
+
     </div>
 </div>
 

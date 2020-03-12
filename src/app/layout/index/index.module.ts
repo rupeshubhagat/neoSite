@@ -14,6 +14,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown';
 
 @NgModule({
   declarations: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent, PagenotfoundComponent, ContactusComponent],
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     CarouselModule,
     AngularFullpageModule,
     ScrollToModule.forRoot(),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AngularMultiSelectModule
   ],
   exports: [HeaderComponent, FooterComponent, IndexComponent, FulljsComponent,PagenotfoundComponent,ContactusComponent]
 })

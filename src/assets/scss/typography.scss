@@ -1,5 +1,43 @@
+html {
+    font-size: $base-font-size;
+    height: 100%;
+    font-family: $primary-font;
+}
+
+body {
+    font-size: $base-font-size;
+    font-family: $primary-font;
+    font-weight: 400;
+    // color: $secondary-color;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+::-moz-selection {
+    background: red;
+    color: white;
+}
+
+ ::selection {
+    background: red;
+    color: white;
+}
+
 a {
     text-decoration: none;
+    
     &:hover {
         text-decoration: none;
     }

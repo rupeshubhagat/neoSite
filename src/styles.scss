@@ -877,3 +877,23 @@ button:focus {
         margin-top: 127px;
     }
 }
+
+.countrySelect {
+    .countrySelectOption {
+        background-color: #ffffff;
+        padding: 6px 6px !important;
+        color: #2f2f2f;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        &:hover,
+         :active {
+            background-color: #E4E4E4 !important;
+        }
+    }
+    &:hover,
+     :active,
+     :visited {
+        box-shadow: 0 0 2px #7799D0;
+    }
+}
